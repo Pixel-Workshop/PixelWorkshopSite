@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solve To Snooze Support — PixelWorkshop</title>
+  <meta name="description" content="Support and FAQ for Solve To Snooze, the math alarm clock for iPhone." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+    <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-pixel">
+            <svg viewBox="0 0 10 10" aria-hidden="true">
+              <rect x="1" y="1" width="3" height="3"/><rect x="6" y="1" width="3" height="3"/>
+              <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
+            </svg>
+          </div>
+          PixelWorkshop
+        </a>
+        <ul class="nav__links">
+          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="index.html">Support</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Solve To Snooze</span>
+      </div>
+      <p class="section-label">Support</p>
+      <h1 class="section-title">Solve To Snooze Support</h1>
+      <p class="section-desc">Find answers to common questions below. Can't find what you're looking for? Use the contact form and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <!-- ======= FAQ ======= -->
+  <section class="section section--alt">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__question">My alarm isn't going off. What's wrong?</button>
+          <div class="faq-item__answer">
+            Make sure you have granted Solve To Snooze permission to send notifications. Go to iPhone Settings → Notifications → Solve To Snooze and ensure notifications are enabled and set to allow sounds and alerts. Also verify that your alarm is toggled on inside the app.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">The alarm goes off but there's no sound. How do I fix this?</button>
+          <div class="faq-item__answer">
+            Check that your iPhone is not on silent mode (the physical mute switch on the side). Also verify that the volume is turned up. In the app, confirm that a sound is selected for the alarm rather than "None."
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do I change the math difficulty?</button>
+          <div class="faq-item__answer">
+            When creating or editing an alarm, you'll find a "Difficulty" option. Tap it to choose between Easy, Medium, and Hard. Easy uses simple addition and subtraction, Medium introduces multiplication, and Hard includes multi-step problems.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Can I set an alarm that repeats on specific days?</button>
+          <div class="faq-item__answer">
+            Yes! When creating or editing an alarm, tap "Repeat" and select the days of the week you want the alarm to repeat. You can select any combination of days.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How many times can I snooze?</button>
+          <div class="faq-item__answer">
+            Each snooze requires solving a math problem — there is no limit on the number of snoozes, but you must correctly solve a puzzle every time. This is by design to ensure you actually wake up!
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Does the app work without an internet connection?</button>
+          <div class="faq-item__answer">
+            Yes. Solve To Snooze works entirely offline. All alarms and math problems are generated on-device — no internet connection is ever required.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Is Solve To Snooze free?</button>
+          <div class="faq-item__answer">
+            Please check the App Store listing for current pricing information. Pricing may vary by region and is subject to change.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Form ======= -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Still Need Help?</h2>
+      <p class="section-desc">Send us a message and we'll get back to you as soon as possible.</p>
+
+      <!--
+        TODO: Set up a free Formspree account at https://formspree.io
+        1. Sign up for a free account
+        2. Create a new form and copy your form endpoint URL
+        3. Replace "YOUR_FORMSPREE_ENDPOINT" below with your actual endpoint
+           e.g. https://formspree.io/f/abcd1234
+      -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mvzbdaka"
+        method="POST"
+        id="contact-form-sts"
+      >
+        <input type="hidden" name="_subject" value="Solve To Snooze Support Request" />
+        <input type="hidden" name="app" value="Solve To Snooze" />
+
+        <div class="form-group">
+          <label for="sts-name">Your Name</label>
+          <input type="text" id="sts-name" name="name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="form-group">
+          <label for="sts-email">Email Address</label>
+          <input type="email" id="sts-email" name="email" placeholder="jane@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="sts-topic">Topic</label>
+          <select id="sts-topic" name="topic" required>
+            <option value="" disabled selected>Select a topic…</option>
+            <option value="Alarm not firing">Alarm not firing</option>
+            <option value="No sound">No sound</option>
+            <option value="Math difficulty">Math difficulty</option>
+            <option value="Repeating alarms">Repeating alarms</option>
+            <option value="Notifications">Notifications</option>
+            <option value="App crashing">App crashing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sts-message">Message</label>
+          <textarea id="sts-message" name="message" placeholder="Describe the issue or question in as much detail as possible…" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </div>
+
+        <div class="form-success" id="sts-success">
+          Thanks for reaching out! We'll get back to you shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+    <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            PixelWorkshop
+          </div>
+          <p class="footer__tagline">Small indie iOS studio. Thoughtful apps, no fluff.</p>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="../apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../apps/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="../apps/calmly.html">Calmly: Focus Timer</a></li>
+            <li><a href="../apps/constellation-restore-game.html">Constellation Restore Game</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="../support/index.html">Support Hub</a></li>
+            <li><a href="../support/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../support/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="../support/calmly.html">Calmly</a></li>
+            <li><a href="../support/constellation-restore-game.html">Constellation</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> PixelWorkshop. All rights reserved. &nbsp;&middot;&nbsp; Richmond, VA</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item__question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Formspree AJAX submission
+    var form = document.getElementById('contact-form-sts');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            form.reset();
+            form.style.display = 'none';
+            document.getElementById('sts-success').style.display = 'block';
+          }
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

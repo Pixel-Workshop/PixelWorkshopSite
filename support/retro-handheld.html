@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Handheld Support — PixelWorkshop</title>
+  <meta name="description" content="Support and FAQ for Retro Handheld, the Game Boy emulator for iPhone." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+    <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-pixel">
+            <svg viewBox="0 0 10 10" aria-hidden="true">
+              <rect x="1" y="1" width="3" height="3"/><rect x="6" y="1" width="3" height="3"/>
+              <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
+            </svg>
+          </div>
+          PixelWorkshop
+        </a>
+        <ul class="nav__links">
+          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="index.html">Support</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Retro Handheld</span>
+      </div>
+      <p class="section-label">Support</p>
+      <h1 class="section-title">Retro Handheld Support</h1>
+      <p class="section-desc">Find answers to common questions below. Can't find what you're looking for? Use the contact form and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <!-- ======= FAQ ======= -->
+  <section class="section section--alt">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do I add ROMs to the app?</button>
+          <div class="faq-item__answer">
+            You can add ROM files using iTunes File Sharing or the Files app. Connect your iPhone to your computer, open Finder (Mac) or iTunes (Windows), select your device, navigate to the Retro Handheld app under File Sharing, and drag your ROM files in. Alternatively, you can use the Files app on your iPhone to import ROMs directly.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">What ROM formats are supported?</button>
+          <div class="faq-item__answer">
+            Retro Handheld supports standard Game Boy (.gb) and Game Boy Color (.gbc) ROM files. Please note that you must only use ROMs for games you legally own.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do save states work?</button>
+          <div class="faq-item__answer">
+            To save your progress at any point, open the in-game menu and tap "Save State." You can have multiple save slots per game. To load a save state, open the menu and tap "Load State," then select the slot you want to restore.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">The game is running too fast or too slow. What do I do?</button>
+          <div class="faq-item__answer">
+            Open the in-game settings and check the emulation speed setting. It should be set to 100% for normal speed. Adjusting it up or down lets you speed up or slow down gameplay intentionally, but 100% matches the original hardware speed.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Can I use a physical controller?</button>
+          <div class="faq-item__answer">
+            Yes! Retro Handheld supports MFi (Made for iPhone) Bluetooth controllers. Simply pair your controller with your iPhone via Bluetooth settings, then open the app — it will automatically detect the controller.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">My game saves aren't persisting after closing the app. Help!</button>
+          <div class="faq-item__answer">
+            In-game saves (using the game's own save system) are stored automatically. However, save states are separate — make sure to create a save state before closing if you want to resume mid-game. If in-game saves are still not persisting, try reinstalling the app (note: this will erase existing data).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Is Retro Handheld free?</button>
+          <div class="faq-item__answer">
+            Please check the App Store listing for current pricing information. Pricing may vary by region and is subject to change.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Form ======= -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Still Need Help?</h2>
+      <p class="section-desc">Send us a message and we'll get back to you as soon as possible.</p>
+
+      <!--
+        TODO: Set up a free Formspree account at https://formspree.io
+        1. Sign up for a free account
+        2. Create a new form and copy your form endpoint URL
+        3. Replace "YOUR_FORMSPREE_ENDPOINT" below with your actual endpoint
+           e.g. https://formspree.io/f/abcd1234
+      -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mvzbdaka"
+        method="POST"
+        id="contact-form-rh"
+      >
+        <input type="hidden" name="_subject" value="Retro Handheld Support Request" />
+        <input type="hidden" name="app" value="Retro Handheld" />
+
+        <div class="form-group">
+          <label for="rh-name">Your Name</label>
+          <input type="text" id="rh-name" name="name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="form-group">
+          <label for="rh-email">Email Address</label>
+          <input type="email" id="rh-email" name="email" placeholder="jane@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="rh-topic">Topic</label>
+          <select id="rh-topic" name="topic" required>
+            <option value="" disabled selected>Select a topic…</option>
+            <option value="ROM / file import">ROM / file import</option>
+            <option value="Save states">Save states</option>
+            <option value="Controller support">Controller support</option>
+            <option value="Performance / speed">Performance / speed</option>
+            <option value="Audio">Audio</option>
+            <option value="App crashing">App crashing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="rh-message">Message</label>
+          <textarea id="rh-message" name="message" placeholder="Describe the issue or question in as much detail as possible…" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </div>
+
+        <div class="form-success" id="rh-success">
+          Thanks for reaching out! We'll get back to you shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+    <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            PixelWorkshop
+          </div>
+          <p class="footer__tagline">Small indie iOS studio. Thoughtful apps, no fluff.</p>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="../apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../apps/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="../apps/calmly.html">Calmly: Focus Timer</a></li>
+            <li><a href="../apps/constellation-restore-game.html">Constellation Restore Game</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="../support/index.html">Support Hub</a></li>
+            <li><a href="../support/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../support/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="../support/calmly.html">Calmly</a></li>
+            <li><a href="../support/constellation-restore-game.html">Constellation</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> PixelWorkshop. All rights reserved. &nbsp;&middot;&nbsp; Richmond, VA</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item__question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        // Toggle clicked
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Formspree AJAX submission
+    var form = document.getElementById('contact-form-rh');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            form.reset();
+            form.style.display = 'none';
+            document.getElementById('rh-success').style.display = 'block';
+          }
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

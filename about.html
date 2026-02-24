@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — PixelWorkshop</title>
+  <meta name="description" content="PixelWorkshop is a small app studio based in Richmond, VA. We build focused, no-nonsense apps powered by AI-assisted development." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* === About-page specific styles === */
+    .about-hero {
+      padding: 100px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(124, 58, 237, 0.11) 1.5px, transparent 1.5px);
+      background-size: 30px 30px;
+      pointer-events: none;
+    }
+
+    .about-hero::after {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle at center, rgba(27,42,74,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .about-hero__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .about-hero__title {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.08;
+      margin-bottom: 24px;
+      background: linear-gradient(140deg, var(--color-navy) 20%, var(--color-vivid) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .about-hero__lead {
+      font-size: 1.2rem;
+      color: var(--color-muted);
+      line-height: 1.8;
+      max-width: 580px;
+    }
+
+    .about-hero__lead strong {
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+
+    /* Location badge */
+    .location-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-section);
+      border: 1px solid var(--color-border);
+      border-radius: 100px;
+      padding: 6px 16px 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: 28px;
+    }
+
+    .location-badge__pin {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    /* Story section */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .story-body p {
+      font-size: 1rem;
+      color: var(--color-muted);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+
+    .story-body p:last-child { margin-bottom: 0; }
+
+    .story-body strong {
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+
+    .story-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Stat cards */
+    .stat-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat-card__number {
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-vivid) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-card__label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: 4px;
+    }
+
+    .stat-card__desc {
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
+
+    /* How we build */
+    .build-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 52px;
+      counter-reset: step-counter;
+    }
+
+    .build-step {
+      display: flex;
+      gap: 28px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--color-border);
+      align-items: flex-start;
+    }
+
+    .build-step:last-child { border-bottom: none; }
+
+    .build-step__number {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-vivid) 100%);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .build-step__content { flex: 1; }
+
+    .build-step__title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .build-step__desc {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      line-height: 1.7;
+    }
+
+    /* Values grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 52px;
+    }
+
+    .value-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .value-card__emoji {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .value-card__title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .value-card__desc {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      line-height: 1.65;
+    }
+
+    /* CTA strip */
+    .cta-strip {
+      background: var(--color-section);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: 72px 0;
+      text-align: center;
+    }
+
+    .cta-strip__title {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--color-navy);
+      margin-bottom: 12px;
+    }
+
+    .cta-strip__desc {
+      font-size: 1rem;
+      color: var(--color-muted);
+      max-width: 440px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .cta-strip__actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 720px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <div class="nav__logo-pixel">
+            <svg viewBox="0 0 10 10" aria-hidden="true">
+              <rect x="1" y="1" width="3" height="3"/><rect x="6" y="1" width="3" height="3"/>
+              <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
+            </svg>
+          </div>
+          PixelWorkshop
+        </a>
+        <ul class="nav__links">
+          <li><a href="index.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav__hide-mobile"><a href="support/index.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-hero__inner animate-in">
+        <div class="location-badge">
+          <span class="location-badge__pin">📍</span>
+          Richmond, Virginia
+        </div>
+        <h1 class="about-hero__title">We Build Apps<br />We'd Actually Use.</h1>
+        <p class="about-hero__lead">
+          PixelWorkshop is a <strong>small, scrappy app studio</strong> based in Richmond, VA. We combine a passion for great software with AI-assisted development to ship focused, polished apps faster than you'd expect from a team our size.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Our Story ======= -->
+  <section class="section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-body animate-in">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Born out of frustration<br />with bloated software.</h2>
+          <p>
+            It started with a simple observation: most apps do too much, ask for too much, and respect you too little. Endless subscription prompts, invasive ads, feature bloat that buries the one thing you actually opened the app to do.
+          </p>
+          <p>
+            So we started building our own. <strong>Retro Handheld</strong> came first — a Game Boy emulator that just works, no strings attached. Then <strong>Solve To Snooze</strong>, because alarm clocks have been boring for too long and we needed something that actually got us out of bed.
+          </p>
+          <p>
+            Every app we ship follows the same rule: <strong>it has to earn a place on your home screen</strong>. That means doing one thing really well, staying out of your way, and never treating you like a data point.
+          </p>
+        </div>
+
+        <div class="story-aside animate-in delay-2">
+          <div class="stat-card">
+            <p class="stat-card__number">2</p>
+            <p class="stat-card__label">Apps Shipped</p>
+            <p class="stat-card__desc">And more on the way. We're just getting started.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__number">0</p>
+            <p class="stat-card__label">Ads. Ever.</p>
+            <p class="stat-card__desc">No ad SDKs, no tracking, no monetization at the cost of your experience.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__number">RVA</p>
+            <p class="stat-card__label">Based in Richmond, VA</p>
+            <p class="stat-card__desc">Proudly building from one of the best mid-sized cities in the country.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= How We Build ======= -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section-label animate-in">How We Work</span>
+      <h2 class="section-title animate-in delay-1">Small team.<br />AI-powered velocity.</h2>
+      <p class="section-desc animate-in delay-2">We use AI throughout our development process — not as a shortcut, but as a force multiplier. It lets us move fast without cutting corners on quality.</p>
+
+      <div class="build-steps">
+
+        <div class="build-step animate-in">
+          <div class="build-step__number">01</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Start with a real problem</p>
+            <p class="build-step__desc">Every app starts with something that genuinely annoyed us, or a gap we noticed in the market. If we wouldn't use it ourselves every day, we don't build it.</p>
+          </div>
+        </div>
+
+        <div class="build-step animate-in delay-1">
+          <div class="build-step__number">02</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Design for clarity, not features</p>
+            <p class="build-step__desc">We resist the urge to add. Every feature has to justify its existence. If something doesn't make the core experience better, it doesn't make it into the app.</p>
+          </div>
+        </div>
+
+        <div class="build-step animate-in delay-2">
+          <div class="build-step__number">03</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Build fast with AI assistance</p>
+            <p class="build-step__desc">We integrate AI at every stage — prototyping, code generation, QA, and copy. This lets our small team ship with the output of a much larger one, without ballooning headcount or timelines.</p>
+          </div>
+        </div>
+
+        <div class="build-step animate-in delay-3">
+          <div class="build-step__number">04</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Ship, listen, improve</p>
+            <p class="build-step__desc">We ship when something is genuinely good — not when it hits an arbitrary deadline. After launch, we listen to users and iterate quickly. No two-year roadmaps, no feature freezes.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Our Values ======= -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label animate-in">What We Stand For</span>
+      <h2 class="section-title animate-in delay-1">The rules we don't break.</h2>
+
+      <div class="values-grid">
+
+        <div class="value-card animate-in delay-1">
+          <span class="value-card__emoji">🚫</span>
+          <p class="value-card__title">No Ads. Full Stop.</p>
+          <p class="value-card__desc">Ads change incentives. Once you're optimizing for clicks and impressions, you're no longer optimizing for the user. We'd rather charge a fair price upfront.</p>
+        </div>
+
+        <div class="value-card animate-in delay-2">
+          <span class="value-card__emoji">🔒</span>
+          <p class="value-card__title">Privacy by Default</p>
+          <p class="value-card__desc">Your data lives on your device. We don't collect it, we don't sell it, and we don't even want it. Building apps that way keeps things simple for everyone.</p>
+        </div>
+
+        <div class="value-card animate-in delay-3">
+          <span class="value-card__emoji">🎯</span>
+          <p class="value-card__title">One Job, Done Right</p>
+          <p class="value-card__desc">We don't build Swiss Army knives. We build the best possible version of one specific thing. Scope creep is the enemy of quality.</p>
+        </div>
+
+        <div class="value-card animate-in delay-4">
+          <span class="value-card__emoji">💸</span>
+          <p class="value-card__title">No Subscription Traps</p>
+          <p class="value-card__desc">Subscriptions make sense for services with ongoing costs. A flashlight app doesn't have ongoing costs. We price things honestly and don't hide features behind paywalls.</p>
+        </div>
+
+        <div class="value-card animate-in delay-1">
+          <span class="value-card__emoji">⚡</span>
+          <p class="value-card__title">Speed Matters</p>
+          <p class="value-card__desc">Slow apps are bad apps. Performance is a feature, not an afterthought. If it's not fast, we're not done.</p>
+        </div>
+
+        <div class="value-card animate-in delay-2">
+          <span class="value-card__emoji">🌱</span>
+          <p class="value-card__title">Always Growing</p>
+          <p class="value-card__desc">We're a growing studio with a lot more ideas than hours in the day. More apps are coming — on iOS, Android, and wherever people need great software.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA Strip ======= -->
+  <section class="cta-strip">
+    <div class="container animate-in">
+      <h2 class="cta-strip__title">Want to try our apps?</h2>
+      <p class="cta-strip__desc">Both are available on the App Store now. No account required, no strings attached.</p>
+      <div class="cta-strip__actions">
+        <a href="index.html#apps" class="btn btn--vivid">Browse Apps</a>
+        <a href="support/index.html" class="btn btn--outline">Get Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            PixelWorkshop
+          </div>
+          <p class="footer__tagline">Small indie app studio. Thoughtful apps, no fluff.</p>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="apps/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="apps/calmly.html">Calmly: Focus Timer</a></li>
+            <li><a href="apps/constellation-restore-game.html">Constellation Restore Game</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="support/index.html">Support Hub</a></li>
+            <li><a href="support/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="support/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="support/calmly.html">Calmly</a></li>
+            <li><a href="support/constellation-restore-game.html">Constellation</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> PixelWorkshop. All rights reserved. &nbsp;·&nbsp; Richmond, VA</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-in').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

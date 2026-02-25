@@ -629,6 +629,13 @@ a:hover { color: var(--color-navy-hover); }
 .screenshots::-webkit-scrollbar-track { background: transparent; }
 .screenshots::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 2px; }
 
+/* Spacer so the last screenshot isn't clipped when scrolled to end */
+.screenshots::after {
+  content: '';
+  flex-shrink: 0;
+  width: 24px;
+}
+
 .screenshot {
   flex-shrink: 0;
   width: 200px;

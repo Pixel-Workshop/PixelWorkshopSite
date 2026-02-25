@@ -620,14 +620,16 @@ a:hover { color: var(--color-navy-hover); }
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
   padding: 8px 0 24px;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-border) transparent;
+  scrollbar-color: var(--color-vivid) var(--color-border);
 }
 
-.screenshots::-webkit-scrollbar       { height: 4px; }
-.screenshots::-webkit-scrollbar-track { background: transparent; }
-.screenshots::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 2px; }
+.screenshots::-webkit-scrollbar       { height: 6px; }
+.screenshots::-webkit-scrollbar-track { background: var(--color-border); border-radius: 3px; }
+.screenshots::-webkit-scrollbar-thumb { background: var(--color-vivid); border-radius: 3px; }
 
 /* Spacer so the last screenshot isn't clipped when scrolled to end */
 .screenshots::after {
@@ -643,6 +645,7 @@ a:hover { color: var(--color-navy-hover); }
   overflow: hidden;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-border);
+  scroll-snap-align: start;
 }
 
 .screenshot img { width: 100%; height: auto; }

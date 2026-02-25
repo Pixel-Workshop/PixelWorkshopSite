@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build With Us — Pixel Workshop</title>
+  <meta name="description" content="Pixel Workshop builds focused, native iOS apps for clients. Fixed-price projects, fast delivery, and the same care we put into our own products." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* === Hire-page specific styles === */
+    .hire-hero {
+      padding: 100px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hire-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(124, 58, 237, 0.11) 1.5px, transparent 1.5px);
+      background-size: 30px 30px;
+      pointer-events: none;
+    }
+
+    .hire-hero::after {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle at center, rgba(124, 58, 237, 0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hire-hero__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .hire-hero__title {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.08;
+      margin-bottom: 24px;
+      background: linear-gradient(140deg, var(--color-navy) 20%, var(--color-vivid) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hire-hero__lead {
+      font-size: 1.2rem;
+      color: var(--color-muted);
+      line-height: 1.8;
+      max-width: 580px;
+      margin-bottom: 32px;
+    }
+
+    .hire-hero__lead strong {
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+
+    /* Location badge */
+    .location-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-section);
+      border: 1px solid var(--color-border);
+      border-radius: 100px;
+      padding: 6px 16px 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: 28px;
+    }
+
+    .location-badge__pin {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    /* Services / Values grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 52px;
+    }
+
+    .value-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .value-card__emoji {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .value-card__title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .value-card__desc {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      line-height: 1.65;
+    }
+
+    /* Process steps */
+    .build-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 52px;
+      counter-reset: step-counter;
+    }
+
+    .build-step {
+      display: flex;
+      gap: 28px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--color-border);
+      align-items: flex-start;
+    }
+
+    .build-step:last-child { border-bottom: none; }
+
+    .build-step__number {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-vivid) 100%);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .build-step__content { flex: 1; }
+
+    .build-step__title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .build-step__desc {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      line-height: 1.7;
+    }
+
+    /* Pricing grid */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 52px;
+    }
+
+    .pricing-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pricing-card--featured {
+      border-color: var(--color-vivid);
+      box-shadow: 0 0 0 1px var(--color-vivid), var(--shadow-md);
+    }
+
+    .pricing-card__header {
+      padding: 28px 28px 20px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .pricing-card--featured .pricing-card__header {
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-vivid) 100%);
+      border-bottom: none;
+    }
+
+    .pricing-card__tier {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 8px;
+    }
+
+    .pricing-card--featured .pricing-card__tier {
+      color: rgba(255,255,255,0.7);
+    }
+
+    .pricing-card__price {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--color-navy);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .pricing-card--featured .pricing-card__price {
+      color: #fff;
+    }
+
+    .pricing-card__subtitle {
+      font-size: 0.82rem;
+      color: var(--color-muted);
+    }
+
+    .pricing-card--featured .pricing-card__subtitle {
+      color: rgba(255,255,255,0.65);
+    }
+
+    .pricing-card__body {
+      padding: 24px 28px 28px;
+    }
+
+    .pricing-card__features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pricing-card__features li {
+      font-size: 0.875rem;
+      color: var(--color-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .pricing-card__features li::before {
+      content: '✓';
+      color: var(--color-vivid);
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .pricing-note {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      margin-top: 24px;
+      line-height: 1.6;
+    }
+
+    /* Contact form section */
+    .hire-form-wrap {
+      max-width: 620px;
+    }
+
+    @media (max-width: 640px) {
+      .hire-hero {
+        padding: 80px 0 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <div class="nav__logo-pixel">
+            <svg viewBox="0 0 10 10" aria-hidden="true">
+              <rect x="1" y="1" width="3" height="3"/><rect x="6" y="1" width="3" height="3"/>
+              <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
+            </svg>
+          </div>
+          Pixel Workshop
+        </a>
+        <ul class="nav__links">
+          <li><a href="index.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav__hide-mobile"><a href="support/index.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section class="hire-hero">
+    <div class="container">
+      <div class="hire-hero__inner animate-in">
+        <div class="location-badge">
+          <span class="location-badge__pin">📍</span>
+          Richmond, Virginia
+        </div>
+        <h1 class="hire-hero__title">We Build Apps<br />for Your Business.</h1>
+        <p class="hire-hero__lead">
+          Pixel Workshop takes on a <strong>select number of client projects</strong> each year. We build the same way we build our own apps — fast, focused, and with obsessive attention to quality.
+        </p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn--vivid">Start a Conversation</a>
+          <a href="#how-it-works" class="btn btn--outline">See How It Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Services ======= -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section-label animate-in">What We Offer</span>
+      <h2 class="section-title animate-in delay-1">iOS apps built to<br />do one thing well.</h2>
+      <p class="section-desc animate-in delay-2">We specialize in focused, native iOS apps. No bloat, no feature sprawl — just clean software that solves a real problem.</p>
+
+      <div class="values-grid">
+
+        <div class="value-card animate-in delay-1">
+          <span class="value-card__emoji">📱</span>
+          <p class="value-card__title">Native iOS Development</p>
+          <p class="value-card__desc">Built in Swift for iPhone and iPad. No cross-platform compromises — your app will feel exactly the way Apple intended.</p>
+        </div>
+
+        <div class="value-card animate-in delay-2">
+          <span class="value-card__emoji">🎨</span>
+          <p class="value-card__title">UI/UX Design</p>
+          <p class="value-card__desc">Clean, intuitive interfaces designed from the ground up. We follow Apple's Human Interface Guidelines and push beyond them.</p>
+        </div>
+
+        <div class="value-card animate-in delay-3">
+          <span class="value-card__emoji">🚀</span>
+          <p class="value-card__title">App Store Submission</p>
+          <p class="value-card__desc">We handle the full App Store review process — screenshots, metadata, compliance, and getting you live without the headaches.</p>
+        </div>
+
+        <div class="value-card animate-in delay-4">
+          <span class="value-card__emoji">⚡</span>
+          <p class="value-card__title">AI-Assisted Velocity</p>
+          <p class="value-card__desc">We integrate AI at every stage of development. That means faster delivery and lower cost — without cutting corners on quality.</p>
+        </div>
+
+        <div class="value-card animate-in delay-1">
+          <span class="value-card__emoji">🔒</span>
+          <p class="value-card__title">Privacy by Default</p>
+          <p class="value-card__desc">Every app we build is designed with privacy first. No unnecessary data collection, no third-party trackers, no surprises.</p>
+        </div>
+
+        <div class="value-card animate-in delay-2">
+          <span class="value-card__emoji">🔧</span>
+          <p class="value-card__title">Post-Launch Support</p>
+          <p class="value-card__desc">We don't disappear after launch. Bug fixes, iOS compatibility updates, and iterative improvements are part of the deal.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Process ======= -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <span class="section-label animate-in">How It Works</span>
+      <h2 class="section-title animate-in delay-1">Simple process.<br />No surprises.</h2>
+      <p class="section-desc animate-in delay-2">We keep things straightforward. You always know where your project stands and what it costs.</p>
+
+      <div class="build-steps">
+
+        <div class="build-step animate-in">
+          <div class="build-step__number">01</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Discovery call</p>
+            <p class="build-step__desc">We start with a 30-minute call to understand your idea, your users, and what success looks like. No commitment required — just a conversation.</p>
+          </div>
+        </div>
+
+        <div class="build-step animate-in delay-1">
+          <div class="build-step__number">02</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Scope &amp; proposal</p>
+            <p class="build-step__desc">We send you a written proposal with a fixed scope, fixed price, and a realistic timeline. No hourly billing, no scope creep — what we quote is what you pay.</p>
+          </div>
+        </div>
+
+        <div class="build-step animate-in delay-2">
+          <div class="build-step__number">03</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Build</p>
+            <p class="build-step__desc">We build your app using our AI-assisted workflow. You get regular updates and early builds to test. Feedback is welcome at every stage.</p>
+          </div>
+        </div>
+
+        <div class="build-step animate-in delay-3">
+          <div class="build-step__number">04</div>
+          <div class="build-step__content">
+            <p class="build-step__title">Launch &amp; handoff</p>
+            <p class="build-step__desc">We submit to the App Store, handle the review process, and hand off the full codebase. You own everything, no strings attached.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Pricing ======= -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section-label animate-in">Pricing</span>
+      <h2 class="section-title animate-in delay-1">Transparent,<br />fixed-price projects.</h2>
+      <p class="section-desc animate-in delay-2">No hourly rates, no surprise invoices. We scope your project up front and lock in the price before we start.</p>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card animate-in delay-1">
+          <div class="pricing-card__header">
+            <p class="pricing-card__tier">Starter</p>
+            <p class="pricing-card__price">$5k–10k</p>
+            <p class="pricing-card__subtitle">Simple utility apps</p>
+          </div>
+          <div class="pricing-card__body">
+            <ul class="pricing-card__features">
+              <li>Single-screen or simple multi-screen app</li>
+              <li>Core functionality, no backend required</li>
+              <li>App Store design assets &amp; submission</li>
+              <li>30 days of post-launch support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing-card pricing-card--featured animate-in delay-2">
+          <div class="pricing-card__header">
+            <p class="pricing-card__tier">Standard</p>
+            <p class="pricing-card__price">$15k–35k</p>
+            <p class="pricing-card__subtitle">Feature-complete iOS apps</p>
+          </div>
+          <div class="pricing-card__body">
+            <ul class="pricing-card__features">
+              <li>Full multi-screen app with custom UI</li>
+              <li>Local data persistence or light backend</li>
+              <li>In-app purchases or one-time payment</li>
+              <li>App Store assets &amp; submission</li>
+              <li>60 days of post-launch support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing-card animate-in delay-3">
+          <div class="pricing-card__header">
+            <p class="pricing-card__tier">Custom</p>
+            <p class="pricing-card__price">Let's talk</p>
+            <p class="pricing-card__subtitle">Complex or multi-platform</p>
+          </div>
+          <div class="pricing-card__body">
+            <ul class="pricing-card__features">
+              <li>Complex apps with full backend</li>
+              <li>Multi-platform (iOS + web or Android)</li>
+              <li>Ongoing retainer arrangements</li>
+              <li>Enterprise &amp; B2B projects</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="pricing-note animate-in">Ranges are estimates — exact pricing depends on scope. We'll give you a firm number before any work begins.</p>
+    </div>
+  </section>
+
+  <!-- ======= Contact ======= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <span class="section-label animate-in">Get In Touch</span>
+      <h2 class="section-title animate-in delay-1">Tell us about<br />your project.</h2>
+      <p class="section-desc animate-in delay-2">Fill out the form and we'll get back to you within 1–2 business days.</p>
+
+      <div class="hire-form-wrap animate-in delay-3">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mvzbdaka"
+          method="POST"
+          id="hire-form"
+        >
+          <input type="hidden" name="_subject" value="Client Inquiry — Pixel Workshop" />
+          <input type="hidden" name="page" value="hire" />
+
+          <div class="form-group">
+            <label for="hire-name">Your Name</label>
+            <input type="text" id="hire-name" name="name" placeholder="Jane Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label for="hire-email">Email Address</label>
+            <input type="email" id="hire-email" name="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="hire-company">Company / Organization <span style="font-weight:400;color:var(--color-muted)">(optional)</span></label>
+            <input type="text" id="hire-company" name="company" placeholder="Acme Inc." />
+          </div>
+
+          <div class="form-group">
+            <label for="hire-budget">Approximate Budget</label>
+            <select id="hire-budget" name="budget" required>
+              <option value="" disabled selected>Select a range…</option>
+              <option value="Under $5,000">Under $5,000</option>
+              <option value="$5,000–$10,000">$5,000–$10,000</option>
+              <option value="$10,000–$35,000">$10,000–$35,000</option>
+              <option value="$35,000+">$35,000+</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hire-idea">Tell us about your app idea</label>
+            <textarea id="hire-idea" name="message" placeholder="Describe the app you have in mind — what it does, who it's for, and any specific requirements…" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn--vivid">Send Inquiry</button>
+          </div>
+
+          <div class="form-success" id="hire-success">
+            Thanks for reaching out! We'll review your inquiry and get back to you within 1–2 business days.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            Pixel Workshop
+          </div>
+          <p class="footer__tagline">Small indie app studio. Thoughtful apps, no fluff.</p>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="apps/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="apps/calmly.html">Calmly: Focus Timer</a></li>
+            <li><a href="apps/constellation-restore-game.html">Constellation Restore Game</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="support/index.html">Support Hub</a></li>
+            <li><a href="support/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="support/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="support/calmly.html">Calmly</a></li>
+            <li><a href="support/constellation-restore-game.html">Constellation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="hire.html">Hire Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop. All rights reserved. &nbsp;&middot;&nbsp; Richmond, VA</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll entrance animations
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-in').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Formspree AJAX submission
+    var form = document.getElementById('hire-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            form.reset();
+            form.style.display = 'none';
+            document.getElementById('hire-success').style.display = 'block';
+          }
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

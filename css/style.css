@@ -479,6 +479,11 @@ a:hover { color: var(--color-navy-hover); }
   border-bottom: 2px solid #2563EB;
 }
 
+.app-card--wf44 .app-card__header {
+  background: linear-gradient(135deg, rgba(77,94,42,0.1) 0%, rgba(44,58,26,0.03) 100%);
+  border-bottom: 2px solid #4D5E2A;
+}
+
 .app-card__icon-row {
   display: flex;
   align-items: center;

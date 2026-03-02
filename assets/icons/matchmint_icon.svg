@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Match Mint icon</title>
+  <desc id="desc">Match Mint app icon with colorful tiles and a gold coin badge.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFA66D" />
+      <stop offset="55%" stop-color="#EB6A3F" />
+      <stop offset="100%" stop-color="#D85A37" />
+    </linearGradient>
+
+    <radialGradient id="blob-a" cx="25%" cy="24%" r="48%">
+      <stop offset="0%" stop-color="#F7C08D" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#F7C08D" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blob-b" cx="90%" cy="22%" r="40%">
+      <stop offset="0%" stop-color="#F17B4D" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#F17B4D" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blob-c" cx="88%" cy="84%" r="40%">
+      <stop offset="0%" stop-color="#B7889F" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#B7889F" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="coin-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEB86" />
+      <stop offset="100%" stop-color="#F2B930" />
+    </linearGradient>
+    <linearGradient id="coin-core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C84E" />
+      <stop offset="100%" stop-color="#E5A72E" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)" />
+  <circle cx="128" cy="126" r="210" fill="url(#blob-a)" />
+  <circle cx="468" cy="118" r="170" fill="url(#blob-b)" />
+  <circle cx="442" cy="424" r="180" fill="url(#blob-c)" />
+
+  <rect x="80" y="92" width="352" height="352" rx="82" fill="url(#panel)" stroke="rgba(255,255,255,0.35)" stroke-width="2" />
+
+  <g stroke="#FFFFFF" stroke-width="2.5">
+    <rect x="104" y="140" width="88" height="88" rx="20" fill="#FF6558" />
+    <rect x="208" y="140" width="88" height="88" rx="20" fill="#55C09B" />
+    <rect x="312" y="140" width="88" height="88" rx="20" fill="#597FDE" />
+    <rect x="104" y="248" width="88" height="88" rx="20" fill="#F2B64E" />
+    <rect x="208" y="248" width="88" height="88" rx="20" fill="#67BFCC" />
+    <rect x="312" y="248" width="88" height="88" rx="20" fill="#D66AAD" />
+  </g>
+
+  <g fill="#F3F4F6">
+    <rect x="114" y="148" width="34" height="18" rx="9" />
+    <rect x="218" y="148" width="34" height="18" rx="9" />
+    <rect x="322" y="148" width="34" height="18" rx="9" />
+    <rect x="114" y="256" width="34" height="18" rx="9" />
+    <rect x="218" y="256" width="34" height="18" rx="9" />
+    <rect x="322" y="256" width="34" height="18" rx="9" />
+  </g>
+
+  <g fill="#F7F2D9">
+    <path d="M116 120l5 10 10 5-10 5-5 10-5-10-10-5 10-5z" />
+    <path d="M350 350l6 12 12 6-12 6-6 12-6-12-12-6 12-6z" />
+  </g>
+
+  <g>
+    <circle cx="256" cy="388" r="73" fill="url(#coin-ring)" />
+    <circle cx="256" cy="388" r="66" fill="url(#coin-core)" />
+    <circle cx="256" cy="388" r="58" fill="none" stroke="#F9DB79" stroke-width="4" opacity="0.8" />
+
+    <path fill="#F9F9F9" d="M226 421v-47l20 31 19-31v47h14v-74h-12l-21 33-21-33h-13v74z" />
+  </g>
+</svg>

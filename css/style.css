@@ -1476,6 +1476,7 @@ a:hover { color: var(--color-navy-hover); }
 .theme-neon.app--calmly        { --app-accent: #00F0FF; --app-glow: 0 0 20px rgba(0,240,255,0.4); }
 .theme-neon.app--constellation { --app-accent: #4D7CFF; --app-glow: 0 0 20px rgba(77,124,255,0.4); }
 .theme-neon.app--warfront      { --app-accent: #FF6B2B; --app-glow: 0 0 20px rgba(255,107,43,0.4); }
+.theme-neon.app--matchmint     { --app-accent: #2EF2A0; --app-glow: 0 0 20px rgba(46,242,160,0.4); }
 
 /* --- Neon: Global Scanline Overlay --- */
 .theme-neon::after {
@@ -1841,6 +1842,10 @@ a:hover { color: var(--color-navy-hover); }
   box-shadow: 0 20px 60px rgba(255, 107, 43, 0.15);
   border-color: rgba(255, 107, 43, 0.25);
 }
+.carousel__card[data-app-color="mint"] .carousel__card-inner:hover {
+  box-shadow: 0 20px 60px rgba(46, 242, 160, 0.15);
+  border-color: rgba(46, 242, 160, 0.3);
+}
 
 .carousel__card-icon {
   width: 72px;
@@ -1868,6 +1873,7 @@ a:hover { color: var(--color-navy-hover); }
 .carousel__card[data-app-color="cyan"] .carousel__card-category    { color: #00F0FF; }
 .carousel__card[data-app-color="blue"] .carousel__card-category    { color: #4D7CFF; }
 .carousel__card[data-app-color="orange"] .carousel__card-category  { color: #FF6B2B; }
+.carousel__card[data-app-color="mint"] .carousel__card-category    { color: #2EF2A0; }
 
 .carousel__card-name {
   font-size: 1.5rem;

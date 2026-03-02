@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Mint Support — Pixel Workshop</title>
+  <meta name="description" content="Support and FAQ for Match Mint, the memory puzzle game for iPhone." />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="theme-neon">
+
+  <!-- ======= Header ======= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-pixel">
+            <svg viewBox="0 0 10 10" aria-hidden="true">
+              <rect x="1" y="1" width="3" height="3"/><rect x="6" y="1" width="3" height="3"/>
+              <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
+            </svg>
+          </div>
+          Pixel Workshop
+        </a>
+        <ul class="nav__links">
+          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="index.html">Support</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Match Mint</span>
+      </div>
+      <p class="section-label">Support</p>
+      <h1 class="section-title">Match Mint Support</h1>
+      <p class="section-desc">Find answers to common questions below. If you still need help, send a message and we&rsquo;ll get back to you.</p>
+    </div>
+  </section>
+
+  <!-- ======= FAQ ======= -->
+  <section class="section section--alt">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do I play Match Mint?</button>
+          <div class="faq-item__answer">
+            Flip cards to reveal symbols, then find matching pairs before the round timer expires. The faster you clear pairs, the higher your score multiplier becomes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do combo streaks work?</button>
+          <div class="faq-item__answer">
+            Consecutive matches without mistakes increase your combo streak. A wrong flip resets the streak. Longer streaks earn bonus points and improve leaderboard placement.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">What is the Daily Challenge?</button>
+          <div class="faq-item__answer">
+            Daily Challenge gives you one curated board each day with fixed rules. Completing it tracks your participation streak and helps you compare your performance over time.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">I switched phones and lost my progress. Can it be restored?</button>
+          <div class="faq-item__answer">
+            Match Mint stores your gameplay data locally on-device. If you did not restore from a full iOS backup, previous progress may not be recoverable.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Does Match Mint require an internet connection?</button>
+          <div class="faq-item__answer">
+            No. Core gameplay works offline. You can play standard rounds and complete daily challenges without internet access.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do I report a bug or performance issue?</button>
+          <div class="faq-item__answer">
+            Use the contact form below and include your iPhone model, iOS version, and a short description of what happened. Steps to reproduce the issue are especially helpful.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Does Match Mint collect my data?</button>
+          <div class="faq-item__answer">
+            No. Match Mint does not collect personal data or analytics. Data stays on your device. See the <a href="../privacy/match-mint.html">Match Mint Privacy Policy</a> for full details.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Form ======= -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Still Need Help?</h2>
+      <p class="section-desc">Send us a message and we&rsquo;ll get back to you as soon as possible.</p>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mvzbdaka"
+        method="POST"
+        id="contact-form-mm"
+      >
+        <input type="hidden" name="_subject" value="Match Mint Support Request" />
+        <input type="hidden" name="app" value="Match Mint" />
+
+        <div class="form-group">
+          <label for="mm-name">Your Name</label>
+          <input type="text" id="mm-name" name="name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mm-email">Email Address</label>
+          <input type="email" id="mm-email" name="email" placeholder="jane@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mm-topic">Topic</label>
+          <select id="mm-topic" name="topic" required>
+            <option value="" disabled selected>Select a topic…</option>
+            <option value="Gameplay rules">Gameplay rules</option>
+            <option value="Daily challenge">Daily challenge</option>
+            <option value="Progress">Progress</option>
+            <option value="Performance">Performance</option>
+            <option value="App crashing">App crashing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mm-message">Message</label>
+          <textarea id="mm-message" name="message" placeholder="Describe the issue or question in as much detail as possible…" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </div>
+
+        <div class="form-success" id="mm-success">
+          Thanks for reaching out! We&rsquo;ll get back to you shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            Pixel Workshop
+          </div>
+          <p class="footer__tagline">Small indie iOS studio. Thoughtful apps, no fluff.</p>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="../apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../apps/match-mint.html">Match Mint</a></li>
+            <li><a href="../apps/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="../apps/calmly.html">Calmly: Focus Timer</a></li>
+            <li><a href="../apps/constellation-restore-game.html">Constellation Restore Game</a></li>
+            <li><a href="../apps/warfront-1944.html">Warfront: 1944</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="../support/index.html">Support Hub</a></li>
+            <li><a href="../support/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../support/match-mint.html">Match Mint</a></li>
+            <li><a href="../support/solve-to-snooze.html">Solve To Snooze</a></li>
+            <li><a href="../support/calmly.html">Calmly</a></li>
+            <li><a href="../support/constellation-restore-game.html">Constellation</a></li>
+            <li><a href="../support/warfront-1944.html">Warfront: 1944</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &nbsp;&middot;&nbsp; Richmond, VA</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item__question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Formspree AJAX submission
+    var form = document.getElementById('contact-form-mm');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            form.reset();
+            form.style.display = 'none';
+            document.getElementById('mm-success').style.display = 'block';
+          }
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

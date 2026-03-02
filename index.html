@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pixel Workshop — Apps Made with Care</title>
-  <meta name="description" content="Pixel Workshop is an indie mobile studio crafting focused, thoughtful apps. Browse our collection including Retro Handheld, Solve To Snooze, and Constellation Restore." />
+  <meta name="description" content="Pixel Workshop is an indie mobile studio crafting focused, thoughtful apps. Browse our collection including Retro Handheld, Solve To Snooze, Calmly, Constellation Restore, and Warfront: 1944." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="theme-neon">
 
   <!-- ======= Header ======= -->
   <header class="site-header">
@@ -33,38 +33,53 @@
   </header>
 
   <!-- ======= Hero ======= -->
-  <section class="hero">
+  <section class="neon-hero">
+    <div class="neon-hero__grid-bg"></div>
+    <div class="neon-hero__scanlines"></div>
+
+    <div class="neon-hero__3d-scene">
+      <div class="neon-hero__float-card neon-hero__float-card--1">
+        <img src="assets/icons/retrohandheld_icon.png" alt="" />
+      </div>
+      <div class="neon-hero__float-card neon-hero__float-card--2">
+        <img src="assets/icons/warfront1944_icon.png" alt="" />
+      </div>
+      <div class="neon-hero__float-card neon-hero__float-card--3">
+        <img src="assets/icons/stars_icon.png" alt="" />
+      </div>
+    </div>
+
     <div class="container">
-      <div class="hero__inner">
-        <div class="hero__eyebrow animate-in">
-          <span class="hero__eyebrow-dot"></span>
+      <div class="neon-hero__inner">
+        <div class="neon-hero__eyebrow animate-in">
+          <span class="neon-hero__eyebrow-dot"></span>
           Indie App Studio
         </div>
 
-        <h1 class="hero__title animate-in delay-1">
-          Small Studio.<br />Thoughtful Apps.
+        <h1 class="neon-hero__title animate-in delay-1">
+          Play Beyond<br />Ordinary.
         </h1>
 
-        <p class="hero__subtitle animate-in delay-2">
-          We build focused apps that do one thing really well — no subscriptions, no clutter, no ads, no nonsense.
+        <p class="neon-hero__subtitle animate-in delay-2">
+          Retro emulation, puzzle adventures, real-time strategy, and productivity tools — all crafted with zero ads, zero subscriptions, and zero compromise.
         </p>
 
-        <div class="hero__cta animate-in delay-3">
-          <a href="#apps" class="btn btn--vivid">Browse Apps</a>
-          <a href="support/index.html" class="btn btn--outline">Get Support</a>
+        <div class="neon-hero__cta animate-in delay-3">
+          <a href="#showcase" class="btn btn--neon-primary">Explore Apps</a>
+          <a href="#download" class="btn btn--neon-outline">Download Now</a>
         </div>
 
-        <div class="stats-bar animate-in delay-4">
-          <div class="stats-bar__item">
-            <span class="stats-bar__icon">📱</span>
+        <div class="neon-stats-bar animate-in delay-4">
+          <div class="neon-stats-bar__item">
+            <span class="neon-stats-bar__icon">&#x1F3AE;</span>
             5 Apps
           </div>
-          <div class="stats-bar__item">
-            <span class="stats-bar__icon">🔒</span>
+          <div class="neon-stats-bar__item">
+            <span class="neon-stats-bar__icon">&#x1F512;</span>
             Privacy First
           </div>
-          <div class="stats-bar__item">
-            <span class="stats-bar__icon">⚡</span>
+          <div class="neon-stats-bar__item">
+            <span class="neon-stats-bar__icon">&#x26A1;</span>
             No Subscriptions
           </div>
         </div>
@@ -72,150 +87,148 @@
     </div>
   </section>
 
-  <!-- ======= Apps ======= -->
-  <section class="section section--alt" id="apps">
+  <!-- ======= Game Showcase Carousel ======= -->
+  <section class="section neon-showcase" id="showcase">
     <div class="container">
-      <span class="section-label animate-in">Our Apps</span>
-      <h2 class="section-title animate-in delay-1">Available on the App Store</h2>
-      <p class="section-desc animate-in delay-2">Each app is built with a clear purpose. Nothing unnecessary, nothing missing.</p>
+      <span class="section-label animate-in">Our Collection</span>
+      <h2 class="section-title animate-in delay-1">The Lineup</h2>
+      <p class="section-desc animate-in delay-2">Games, tools, and experiences — each built to do one thing exceptionally well.</p>
+    </div>
 
-      <div class="apps-grid">
+    <div class="carousel">
+      <div class="carousel__track">
 
         <!-- Retro Handheld -->
-        <div class="app-card app-card--rh animate-in delay-1">
-          <div class="app-card__header">
-            <div class="app-card__icon-row">
-              <div class="app-card__icon"><img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld icon" /></div>
-              <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end;">
-                <span class="app-card__platform-badge">iOS</span>
-                <span class="badge--coming-soon">Coming Soon</span>
-              </div>
+        <div class="carousel__card" data-app-color="green">
+          <div class="carousel__card-inner">
+            <div class="carousel__card-icon">
+              <img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld" />
             </div>
-          </div>
-          <div class="app-card__body">
-            <p class="app-card__name">Retro Handheld</p>
-            <p class="app-card__tagline">A Game Boy emulator that brings your favorite classic games back to life on your iPhone. Full-speed emulation, save states.</p>
-            <div class="app-card__actions">
-              <a href="#" class="btn--app-store btn--disabled" aria-disabled="true" tabindex="-1">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <span>
-                  <span class="btn__label-top">Coming soon to the</span>
-                  <span class="btn__label-main">App Store</span>
-                </span>
-              </a>
-              <a href="apps/retro-handheld.html" class="btn btn--outline">Learn More</a>
+            <span class="carousel__card-category">Emulator</span>
+            <h3 class="carousel__card-name">Retro Handheld</h3>
+            <p class="carousel__card-desc">Classic Game Boy emulation on your iPhone. Full-speed, save states, and customizable controls.</p>
+            <div class="carousel__card-actions">
+              <span class="badge--coming-soon" style="margin-bottom:8px;">Coming Soon</span>
+              <a href="apps/retro-handheld.html" class="btn btn--neon-outline btn--sm">Learn More</a>
             </div>
           </div>
         </div>
 
         <!-- Solve To Snooze -->
-        <div class="app-card app-card--sts animate-in delay-2">
-          <div class="app-card__header">
-            <div class="app-card__icon-row">
-              <!-- TODO: Replace with actual icon -->
-              <div class="app-card__icon"><img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze icon" /></div>
-              <span class="app-card__platform-badge">iOS</span>
+        <div class="carousel__card" data-app-color="magenta">
+          <div class="carousel__card-inner">
+            <div class="carousel__card-icon">
+              <img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze" />
             </div>
-          </div>
-          <div class="app-card__body">
-            <p class="app-card__name">Solve To Snooze</p>
-            <p class="app-card__tagline">An alarm clock that makes you solve a math puzzle before you can snooze. Wake up smarter, one morning at a time.</p>
-            <div class="app-card__actions">
-              <a href="https://apps.apple.com/us/app/solve-to-snooze/id6759344968" class="btn--app-store">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <span>
-                  <span class="btn__label-top">Download on the</span>
-                  <span class="btn__label-main">App Store</span>
-                </span>
-              </a>
-              <a href="apps/solve-to-snooze.html" class="btn btn--outline">Learn More</a>
+            <span class="carousel__card-category">Productivity</span>
+            <h3 class="carousel__card-name">Solve To Snooze</h3>
+            <p class="carousel__card-desc">An alarm clock that makes you solve a math puzzle before you can snooze. Wake up smarter.</p>
+            <div class="carousel__card-actions">
+              <a href="https://apps.apple.com/us/app/solve-to-snooze/id6759344968" class="btn btn--neon-primary btn--sm">App Store</a>
+              <a href="apps/solve-to-snooze.html" class="btn btn--neon-outline btn--sm">Learn More</a>
             </div>
           </div>
         </div>
 
         <!-- Calmly: Focus Timer -->
-        <div class="app-card app-card--calmly animate-in delay-3">
-          <div class="app-card__header">
-            <div class="app-card__icon-row">
-               <div class="app-card__icon"><img src="assets/icons/calmy_icon.png" alt="Calmy icon" /></div>
-              <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end;">
-                <span class="app-card__platform-badge">iOS</span>
-              </div>
+        <div class="carousel__card" data-app-color="cyan">
+          <div class="carousel__card-inner">
+            <div class="carousel__card-icon">
+              <img src="assets/icons/calmy_icon.png" alt="Calmly" />
             </div>
-          </div>
-          <div class="app-card__body">
-            <p class="app-card__name">Calmly: Focus Timer</p>
-            <p class="app-card__tagline">A premium, minimalist focus timer built for deep work. No noise, no clutter just you and the task in front of you.</p>
-            <div class="app-card__actions">
-              <a href="https://apps.apple.com/us/app/calmly-focus-timer/id6759624884" class="btn--app-store">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <span>
-                  <span class="btn__label-top">Download on the</span>
-                  <span class="btn__label-main">App Store</span>
-                </span>
-              </a>
-              <a href="apps/calmly.html" class="btn btn--outline">Learn More</a>
+            <span class="carousel__card-category">Focus Timer</span>
+            <h3 class="carousel__card-name">Calmly: Focus Timer</h3>
+            <p class="carousel__card-desc">A premium, minimalist focus timer for deep work. Now with Apple Watch support.</p>
+            <div class="carousel__card-actions">
+              <a href="https://apps.apple.com/us/app/calmly-focus-timer/id6759624884" class="btn btn--neon-primary btn--sm">App Store</a>
+              <a href="apps/calmly.html" class="btn btn--neon-outline btn--sm">Learn More</a>
             </div>
           </div>
         </div>
 
         <!-- Constellation Restore -->
-        <div class="app-card app-card--crg animate-in delay-4">
-          <div class="app-card__header">
-            <div class="app-card__icon-row">
-              <div class="app-card__icon"><img src="assets/icons/stars_icon.png" alt="Constellation Restore icon" /></div>
-              <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end;">
-                <span class="app-card__platform-badge">iOS</span>
-              </div>
+        <div class="carousel__card" data-app-color="blue">
+          <div class="carousel__card-inner">
+            <div class="carousel__card-icon">
+              <img src="assets/icons/stars_icon.png" alt="Constellation Restore" />
             </div>
-          </div>
-          <div class="app-card__body">
-            <p class="app-card__name">Constellation Restore</p>
-            <p class="app-card__tagline">A relaxing puzzle game where you reconnect scattered stars to restore constellations. Clean visuals, satisfying progression, and no distractions.</p>
-            <div class="app-card__actions">
-              <a href="https://apps.apple.com/th/app/constellation-restore/id6759622578" class="btn--app-store">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <span>
-                  <span class="btn__label-top">Download on the</span>
-                  <span class="btn__label-main">App Store</span>
-                </span>
-              </a>
-              <a href="apps/constellation-restore-game.html" class="btn btn--outline">Learn More</a>
+            <span class="carousel__card-category">Puzzle Game</span>
+            <h3 class="carousel__card-name">Constellation Restore</h3>
+            <p class="carousel__card-desc">Reconnect scattered stars to restore constellations. Clean visuals, satisfying progression.</p>
+            <div class="carousel__card-actions">
+              <a href="https://apps.apple.com/th/app/constellation-restore/id6759622578" class="btn btn--neon-primary btn--sm">App Store</a>
+              <a href="apps/constellation-restore-game.html" class="btn btn--neon-outline btn--sm">Learn More</a>
             </div>
           </div>
         </div>
 
         <!-- Warfront: 1944 -->
-        <div class="app-card app-card--wf44 animate-in delay-1">
-          <div class="app-card__header">
-            <div class="app-card__icon-row">
-              <div class="app-card__icon"><img src="assets/icons/warfront1944_icon.png" alt="Warfront: 1944 icon" /></div>
-              <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end;">
-                <span class="app-card__platform-badge">iOS</span>
-                <span class="badge--coming-soon">Coming Soon</span>
-              </div>
+        <div class="carousel__card" data-app-color="orange">
+          <div class="carousel__card-inner">
+            <div class="carousel__card-icon">
+              <img src="assets/icons/warfront1944_icon.png" alt="Warfront: 1944" />
             </div>
-          </div>
-          <div class="app-card__body">
-            <p class="app-card__name">Warfront: 1944</p>
-            <p class="app-card__tagline">A WWII real-time strategy game for iPhone and iPad. Build your base, command troops and tanks, and fight through campaign missions or jump into skirmish battles.</p>
-            <div class="app-card__actions">
-              <a href="#" class="btn--app-store btn--disabled" aria-disabled="true" tabindex="-1">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <span>
-                  <span class="btn__label-top">Coming soon to the</span>
-                  <span class="btn__label-main">App Store</span>
-                </span>
-              </a>
-              <a href="apps/warfront-1944.html" class="btn btn--outline">Learn More</a>
+            <span class="carousel__card-category">Strategy / RTS</span>
+            <h3 class="carousel__card-name">Warfront: 1944</h3>
+            <p class="carousel__card-desc">WWII real-time strategy for iPhone and iPad. Base building, campaigns, and skirmish battles.</p>
+            <div class="carousel__card-actions">
+              <span class="badge--coming-soon" style="margin-bottom:8px;">Coming Soon</span>
+              <a href="apps/warfront-1944.html" class="btn btn--neon-outline btn--sm">Learn More</a>
             </div>
           </div>
         </div>
 
       </div>
+
+      <div class="carousel__nav">
+        <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel__dots">
+          <button class="carousel__dot carousel__dot--active" data-index="0" aria-label="Go to slide 1"></button>
+          <button class="carousel__dot" data-index="1" aria-label="Go to slide 2"></button>
+          <button class="carousel__dot" data-index="2" aria-label="Go to slide 3"></button>
+          <button class="carousel__dot" data-index="3" aria-label="Go to slide 4"></button>
+          <button class="carousel__dot" data-index="4" aria-label="Go to slide 5"></button>
+        </div>
+        <button class="carousel__btn carousel__btn--next" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
     </div>
   </section>
 
+  <!-- ======= Download CTA ======= -->
+  <section class="neon-cta" id="download">
+    <div class="neon-cta__glow"></div>
+    <div class="container">
+      <h2 class="neon-cta__title animate-in">Ready to Play?</h2>
+      <p class="neon-cta__desc animate-in delay-1">Download our apps from the App Store. No subscriptions, no ads, no nonsense.</p>
+      <div class="neon-cta__buttons animate-in delay-2">
+        <a href="https://apps.apple.com/us/app/solve-to-snooze/id6759344968" class="btn--app-store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span>
+            <span class="btn__label-top">Download</span>
+            <span class="btn__label-main">Solve To Snooze</span>
+          </span>
+        </a>
+        <a href="https://apps.apple.com/us/app/calmly-focus-timer/id6759624884" class="btn--app-store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span>
+            <span class="btn__label-top">Download</span>
+            <span class="btn__label-main">Calmly: Focus Timer</span>
+          </span>
+        </a>
+        <a href="https://apps.apple.com/th/app/constellation-restore/id6759622578" class="btn--app-store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span>
+            <span class="btn__label-top">Download</span>
+            <span class="btn__label-main">Constellation Restore</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- ======= About Strip ======= -->
   <section class="about-strip">
@@ -297,6 +310,55 @@
     document.querySelectorAll('.animate-in').forEach(function(el) {
       observer.observe(el);
     });
+
+    // Carousel
+    (function() {
+      var track = document.querySelector('.carousel__track');
+      if (!track) return;
+
+      var cards = track.querySelectorAll('.carousel__card');
+      var dots = document.querySelectorAll('.carousel__dot');
+      var prevBtn = document.querySelector('.carousel__btn--prev');
+      var nextBtn = document.querySelector('.carousel__btn--next');
+      var currentIndex = 0;
+
+      function scrollToCard(index) {
+        if (index < 0) index = 0;
+        if (index >= cards.length) index = cards.length - 1;
+        currentIndex = index;
+        cards[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        updateDots();
+      }
+
+      function updateDots() {
+        dots.forEach(function(dot, i) {
+          dot.classList.toggle('carousel__dot--active', i === currentIndex);
+        });
+      }
+
+      prevBtn.addEventListener('click', function() { scrollToCard(currentIndex - 1); });
+      nextBtn.addEventListener('click', function() { scrollToCard(currentIndex + 1); });
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          scrollToCard(parseInt(this.dataset.index));
+        });
+      });
+
+      // Update active dot on scroll
+      var scrollObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var idx = Array.prototype.indexOf.call(cards, entry.target);
+            if (idx !== -1) {
+              currentIndex = idx;
+              updateDots();
+            }
+          }
+        });
+      }, { root: track, threshold: 0.6 });
+
+      cards.forEach(function(card) { scrollObserver.observe(card); });
+    })();
   </script>
 
 </body>

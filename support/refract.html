@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Refract Support — Pixel Workshop</title>
-  <meta name="description" content="Support and FAQ for Refract, the laser puzzle game for iPhone." />
+  <meta name="description" content="Support and FAQ for Refract, the laser puzzle game for iPhone and iPad with accessibility, Game Center, and a daily challenge widget." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -68,6 +68,48 @@
         </div>
 
         <div class="faq-item">
+          <button class="faq-item__question">How do I change music, sound effects, or haptics?</button>
+          <div class="faq-item__answer">
+            Open the Settings screen in Refract. Music, sound effects, and haptics can each be toggled independently so you can tune the feel of the game to your preference.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Does Refract support color blind accessibility?</button>
+          <div class="faq-item__answer">
+            Yes. Refract includes color blind palettes for Deuteranopia, Protanopia, and Tritanopia, plus an optional symbol overlay so beams are readable by shape as well as color.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do Game Center achievements and leaderboards work?</button>
+          <div class="faq-item__answer">
+            Refract supports Game Center achievements for stars earned, puzzles solved, login streaks, and hint-free clears. Leaderboards track total stars and login streak globally when you are signed into Game Center.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Why is my Game Center progress or streak not syncing?</button>
+          <div class="faq-item__answer">
+            Make sure you are signed into Game Center in iOS Settings and that you have an internet connection available. Core puzzle progress remains on-device, but Game Center features need Apple&apos;s service to sync achievements and leaderboard data.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Does Refract require an internet connection?</button>
+          <div class="faq-item__answer">
+            Core gameplay and local progress do not require an internet connection. Game Center achievements, leaderboards, and profile sync use Apple&apos;s services and may need internet access to update.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do I add the daily challenge widget?</button>
+          <div class="faq-item__answer">
+            Touch and hold your Home Screen, tap Edit, then Add Widget. Search for Refract and choose the daily challenge widget. Tapping it will deep link you straight into today&apos;s challenge.
+          </div>
+        </div>
+
+        <div class="faq-item">
           <button class="faq-item__question">My progress disappeared after reinstalling or switching devices. Can it be restored?</button>
           <div class="faq-item__answer">
             Refract stores progress locally on your device. If you reinstall the app or move to a new device without restoring from a full iOS backup, previous progress may not be recoverable.
@@ -75,23 +117,9 @@
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">Does Refract require an internet connection?</button>
-          <div class="faq-item__answer">
-            No. Refract is designed for offline play. Core gameplay and saved progress do not require an internet connection.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-item__question">A puzzle looks solved, but it is not completing. What should I check?</button>
-          <div class="faq-item__answer">
-            Make sure every required target is lit and that the correct color reaches each destination. Some levels also require multiple beams to be active at the same time, not just one final endpoint.
-          </div>
-        </div>
-
-        <div class="faq-item">
           <button class="faq-item__question">How do I report a bug or visual issue?</button>
           <div class="faq-item__answer">
-            Use the contact form below and include your iPhone model, iOS version, the level name or number if possible, and a short description of what happened. Steps to reproduce the issue are especially helpful.
+            Use the contact form below and include your iPhone or iPad model, iOS version, the level name or number if possible, and a short description of what happened. Steps to reproduce the issue are especially helpful.
           </div>
         </div>
 
@@ -136,7 +164,10 @@
           <select id="refract-topic" name="topic" required>
             <option value="" disabled selected>Select a topic…</option>
             <option value="Puzzle rules">Puzzle rules</option>
-            <option value="Level progression">Level progression</option>
+            <option value="Audio / haptics">Audio / haptics</option>
+            <option value="Accessibility">Accessibility</option>
+            <option value="Game Center">Game Center</option>
+            <option value="Widget / daily challenge">Widget / daily challenge</option>
             <option value="Progress or save data">Progress or save data</option>
             <option value="Visual issue">Visual issue</option>
             <option value="Performance">Performance</option>

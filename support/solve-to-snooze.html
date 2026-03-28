@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solve To Snooze Support — Pixel Workshop</title>
-  <meta name="description" content="Support and FAQ for Solve To Snooze, the math alarm clock for iPhone." />
+  <meta name="description" content="Support and FAQ for Solve To Snooze, the challenge alarm app for iPhone with barcode, typed phrase, step-count wake-ups, reliability checks, and wake-up insights." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -59,42 +59,63 @@
         <div class="faq-item">
           <button class="faq-item__question">My alarm isn't going off. What's wrong?</button>
           <div class="faq-item__answer">
-            Make sure you have granted Solve To Snooze permission to send notifications. Go to iPhone Settings → Notifications → Solve To Snooze and ensure notifications are enabled and set to allow sounds and alerts. Also verify that your alarm is toggled on inside the app.
+            First, make sure Notifications are enabled in iPhone Settings → Notifications → Solve To Snooze, and confirm your alarm is toggled on inside the app. Then open the Reliability Check Center and run the alarm access, sound, challenge flow, and lock-screen readiness tests to catch anything that could block the next alarm.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">The alarm goes off but there's no sound. How do I fix this?</button>
+          <button class="faq-item__question">What wake-up challenges are available?</button>
           <div class="faq-item__answer">
-            Check that your iPhone is not on silent mode (the physical mute switch on the side). Also verify that the volume is turned up. In the app, confirm that a sound is selected for the alarm rather than "None."
+            Solve To Snooze supports math problems, typed phrase, barcode scan, and step-count challenges. You can choose the wake-up method that fits the kind of push you need in the alarm editor.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">How do I change the math difficulty?</button>
+          <button class="faq-item__question">Why is the barcode or step-count challenge not working?</button>
           <div class="faq-item__answer">
-            When creating or editing an alarm, you'll find a "Difficulty" option. Tap it to choose between Easy, Medium, and Hard. Easy uses simple addition and subtraction, Medium introduces multiplication, and Hard includes multi-step problems.
+            Barcode Scan needs camera access, and Step Count needs Motion &amp; Fitness access. Check those permissions in iPhone Settings for Solve To Snooze. For step count, also make sure you are carrying the phone while taking the required steps.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">Can I set an alarm that repeats on specific days?</button>
+          <button class="faq-item__question">What is the Reliability Check Center?</button>
           <div class="faq-item__answer">
-            Yes! When creating or editing an alarm, tap "Repeat" and select the days of the week you want the alarm to repeat. You can select any combination of days.
+            The Reliability Check Center is a built-in test area for alarm access, sound playback, challenge flow, and lock-screen readiness. It is there to help you confirm the app is ready before you depend on it the next morning.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">How many times can I snooze?</button>
+          <button class="faq-item__question">Can I set one-time alarms or use quick presets?</button>
           <div class="faq-item__answer">
-            Each snooze requires solving a math problem — there is no limit on the number of snoozes, but you must correctly solve a puzzle every time. This is by design to ensure you actually wake up!
+            Yes. Solve To Snooze supports exact one-time alarms and quick presets including Weekdays, Weekends, Every Day, Tomorrow Only, and Skip Next. You can also build repeating schedules for regular routines.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do escalation mode and max snoozes work?</button>
+          <div class="faq-item__answer">
+            Escalation mode increases the difficulty after repeated snoozes, and the max-snooze setting can enforce a hard limit so you cannot keep pushing alarms indefinitely. Both settings are designed to make repeated snoozing less automatic.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">What are Today, Tomorrow, Later, and Next Up?</button>
+          <div class="faq-item__answer">
+            The alarm list groups your schedule into Today, Tomorrow, and Later so it is easier to read. The Next Up card highlights your upcoming alarm and shows a countdown to when it will ring.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Where do I see streaks, wake score, and recent alarm history?</button>
+          <div class="faq-item__answer">
+            Open the Insights dashboard to review wake-up streaks, wake score, average snoozes, and your recent alarm history in one place.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">Does the app work without an internet connection?</button>
           <div class="faq-item__answer">
-            Yes. Solve To Snooze works entirely offline. All alarms and math problems are generated on-device — no internet connection is ever required.
+            Yes. Solve To Snooze works offline. Alarm scheduling, challenge logic, and insights are handled on-device, with no account or internet connection required for normal use.
           </div>
         </div>
 
@@ -146,10 +167,13 @@
           <label for="sts-topic">Topic</label>
           <select id="sts-topic" name="topic" required>
             <option value="" disabled selected>Select a topic…</option>
-            <option value="Alarm not firing">Alarm not firing</option>
-            <option value="No sound">No sound</option>
-            <option value="Math difficulty">Math difficulty</option>
-            <option value="Repeating alarms">Repeating alarms</option>
+            <option value="Alarm reliability">Alarm reliability</option>
+            <option value="Wake-up challenge">Wake-up challenge</option>
+            <option value="Barcode / camera">Barcode / camera</option>
+            <option value="Step count / motion">Step count / motion</option>
+            <option value="Scheduling / presets">Scheduling / presets</option>
+            <option value="Snooze / escalation">Snooze / escalation</option>
+            <option value="Insights dashboard">Insights dashboard</option>
             <option value="Notifications">Notifications</option>
             <option value="App crashing">App crashing</option>
             <option value="Other">Other</option>

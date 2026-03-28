@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solve To Snooze — Pixel Workshop</title>
-  <meta name="description" content="Solve To Snooze is a smarter alarm and reminder app that makes you solve a quick math puzzle to silence alerts. Great for mornings, routines, and medication reminders." />
+  <meta name="description" content="Solve To Snooze is a challenge alarm app with math, typed phrase, barcode, and step-count wake-ups, reliability checks, exact one-time alarms, and wake-up insights." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -45,11 +45,16 @@
           <img src="../assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze icon" />
         </div>
         <div class="app-hero__text">
-          <p class="app-hero__category">Utilities &bull; Alarm Clock</p>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+            <p class="app-hero__category" style="margin-bottom: 0;">Utilities &bull; Alarm Clock</p>
+            <span class="app-card__platform-badge">Challenges</span>
+            <span class="app-card__platform-badge">Reliability</span>
+            <span class="app-card__platform-badge">Insights</span>
+            <span class="app-card__platform-badge">Offline</span>
+          </div>
           <h1 class="app-hero__title">Solve To Snooze</h1>
           <p class="app-hero__desc">
-            No more mindlessly hitting snooze. Solve a quick math puzzle to dismiss an alarm, build better mornings, and stay accountable to your daily routine.
-            Many people also use Solve To Snooze for important reminders like medication, where a simple tap can be too easy to ignore.
+            Make mornings harder to ignore and easier to manage. Wake up with math, typed phrase, barcode scan, or step-count challenges, test alarm readiness in the Reliability Check Center, schedule exact one-time or repeating alarms with faster presets, and track your wake score, streaks, snoozes, and recent alarm history in one place.
           </p>
           <a href="https://apps.apple.com/us/app/solve-to-snooze/id6759344968" class="btn--app-store">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -89,49 +94,95 @@
   <section class="section section--alt">
     <div class="container">
       <p class="section-label">Features</p>
-      <h2 class="section-title">Wake Up Smarter</h2>
+      <h2 class="section-title">Harder To Ignore, Easier To Run</h2>
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">🧮</span>
-          <p class="feature-item__title">Math-Gated Snooze</p>
-          <p class="feature-item__desc">Earn your snooze by solving a math problem. No cheating. No correct answer, no snooze.</p>
+          <span class="feature-item__icon">🧩</span>
+          <p class="feature-item__title">Wake-Up Challenges</p>
+          <p class="feature-item__desc">Choose the challenge that gets you moving: math, typed phrase, barcode scan, or step count.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🎯</span>
-          <p class="feature-item__title">Adjustable Difficulty</p>
-          <p class="feature-item__desc">Choose easy, medium, or hard problems depending on how much of a challenge you want.</p>
+          <span class="feature-item__icon">🛡️</span>
+          <p class="feature-item__title">Reliability Check Center</p>
+          <p class="feature-item__desc">Test alarm access, sound, challenge flow, and lock-screen readiness before tomorrow morning does it for you.</p>
         </div>
 
         <div class="feature-item">
           <span class="feature-item__icon">⏰</span>
-          <p class="feature-item__title">Multiple Alarms</p>
-          <p class="feature-item__desc">Set as many alarms as you need, each with its own schedule, label, and difficulty level.</p>
+          <p class="feature-item__title">Exact One-Time Alarms</p>
+          <p class="feature-item__desc">Schedule one-off alarms precisely when you need them, alongside repeating routines for the rest of the week.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">⚡</span>
+          <p class="feature-item__title">Quick Presets</p>
+          <p class="feature-item__desc">Set Weekdays, Weekends, Every Day, Tomorrow Only, or Skip Next in a couple of taps instead of rebuilding schedules by hand.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">📈</span>
+          <p class="feature-item__title">Escalation Mode</p>
+          <p class="feature-item__desc">Repeated snoozes can make the next alarm tougher, helping you break out of the loop when a normal snooze cycle is not enough.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">🚫</span>
+          <p class="feature-item__title">Real Max-Snooze Limits</p>
+          <p class="feature-item__desc">Set a true cap on how many times you can snooze and let the app enforce it cleanly when the limit is reached.</p>
         </div>
 
         <div class="feature-item">
           <span class="feature-item__icon">💊</span>
-          <p class="feature-item__title">Medication & Routine Reminders</p>
-          <p class="feature-item__desc">Use alarms as reminders for routines like taking medication, staying hydrated, or starting a planned task. The challenge helps prevent accidental dismissals.</p>
+          <p class="feature-item__title">Routine Reminders</p>
+          <p class="feature-item__desc">Use challenge alarms for medication, hydration, or start-of-day routines where a normal notification is too easy to ignore.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Daily Flow</p>
+      <h2 class="section-title">See What&apos;s Next and How You&apos;re Doing</h2>
+      <div class="features-grid">
+
+        <div class="feature-item">
+          <span class="feature-item__icon">🗂️</span>
+          <p class="feature-item__title">Today, Tomorrow, and Later</p>
+          <p class="feature-item__desc">Keep alarms organized by when they matter so your schedule is easier to scan at a glance.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">⏳</span>
+          <p class="feature-item__title">Next Up Countdown</p>
+          <p class="feature-item__desc">See your next alarm immediately with a live countdown card that keeps tomorrow morning visible.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">📊</span>
+          <p class="feature-item__title">Insights Dashboard</p>
+          <p class="feature-item__desc">Track wake-up streaks, wake score, average snoozes, and recent alarm history without leaving the app.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">✏️</span>
+          <p class="feature-item__title">Refreshed Alarm Editor</p>
+          <p class="feature-item__desc">Create and edit alarms with a cleaner flow, faster schedule choices, and a more polished ringing experience.</p>
         </div>
 
         <div class="feature-item">
           <span class="feature-item__icon">🔔</span>
-          <p class="feature-item__title">Custom Sounds</p>
-          <p class="feature-item__desc">Pick from built-in alarm tones to find one that wakes you up without ruining your morning.</p>
-        </div>
-
-        <div class="feature-item">
-          <span class="feature-item__icon">📅</span>
-          <p class="feature-item__title">Repeating Schedules</p>
-          <p class="feature-item__desc">Set alarms to repeat on specific days of the week. Perfect for weekday routines.</p>
+          <p class="feature-item__title">Stronger Alarm Flow</p>
+          <p class="feature-item__desc">Sound selection, challenge flow, and lock-screen behavior are easier to test and more predictable before you rely on them.</p>
         </div>
 
         <div class="feature-item">
           <span class="feature-item__icon">🔒</span>
           <p class="feature-item__title">Private by Design</p>
-          <p class="feature-item__desc">Everything stays on your device. No account needed, no data collected, no ads.</p>
+          <p class="feature-item__desc">Everything stays on your device. No account, no cloud dependency, no ads, and no subscriptions.</p>
         </div>
 
       </div>
@@ -143,7 +194,7 @@
     <div class="container">
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">We've Got You Covered</h2>
-      <p class="section-desc">Having trouble or have a question? Check our support page for FAQs or get in touch directly.</p>
+      <p class="section-desc">Need help with wake-up challenges, Reliability Check Center, snooze rules, or alarm scheduling? Check the support page or review the privacy policy below.</p>
       <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
         <a href="../support/solve-to-snooze.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/solve-to-snooze.html" class="btn btn--outline">Privacy Policy</a>

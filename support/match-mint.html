@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Match Mint Support — Pixel Workshop</title>
-  <meta name="description" content="Support and FAQ for Match Mint, the memory puzzle game for iPhone." />
+  <meta name="description" content="Support and FAQ for Match Mint, the memory puzzle game for iPhone with combo multipliers, special tiles, blocker boards, daily streak rewards, and Game Center leaderboards." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -59,21 +59,42 @@
         <div class="faq-item">
           <button class="faq-item__question">How do I play Match Mint?</button>
           <div class="faq-item__answer">
-            Flip cards to reveal symbols, then find matching pairs before the round timer expires. The faster you clear pairs, the higher your score multiplier becomes.
+            Flip cards to reveal symbols, then find matching pairs before the round timer expires. Building clean matches quickly helps you increase your score and make better use of the board.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">How do combo streaks work?</button>
+          <button class="faq-item__question">How do combo multipliers work?</button>
           <div class="faq-item__answer">
-            Consecutive matches without mistakes increase your combo streak. A wrong flip resets the streak. Longer streaks earn bonus points and improve leaderboard placement.
+            Consecutive successful matches increase your combo multiplier. Breaking the rhythm or making mistakes can interrupt the build, so the highest scores come from sustained clean play.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">What is the Daily Challenge?</button>
+          <button class="faq-item__question">How do special tiles and blocker tiles work?</button>
           <div class="faq-item__answer">
-            Daily Challenge gives you one curated board each day with fixed rules. Completing it tracks your participation streak and helps you compare your performance over time.
+            Matching 4 or more tiles can create special tiles with stronger effects, while blocker tiles add extra board friction and may need to be cleared before the board opens back up. They are there to make higher-level boards more tactical without slowing the pace too much.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Where is the Hint button and what does it do?</button>
+          <div class="faq-item__answer">
+            The Hint button appears in-game and can help point you toward a playable move when you get stuck. Match Mint also includes an improved tutorial so new mechanics are introduced more clearly as you play.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do daily streak rewards work?</button>
+          <div class="faq-item__answer">
+            Complete daily challenges on consecutive days to keep your streak active and earn streak rewards. Missing a day can break the chain, so consistency matters.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">How do Game Center leaderboards work?</button>
+          <div class="faq-item__answer">
+            If you sign in to Game Center, Match Mint can submit eligible campaign and daily challenge scores to Apple&apos;s leaderboards. You can still enjoy core play without connecting Game Center.
           </div>
         </div>
 
@@ -87,7 +108,7 @@
         <div class="faq-item">
           <button class="faq-item__question">Does Match Mint require an internet connection?</button>
           <div class="faq-item__answer">
-            No. Core gameplay works offline. You can play standard rounds and complete daily challenges without internet access.
+            Core gameplay works offline. Game Center leaderboards and profile sync may need an internet connection and an active Game Center sign-in.
           </div>
         </div>
 
@@ -101,7 +122,7 @@
         <div class="faq-item">
           <button class="faq-item__question">Does Match Mint collect my data?</button>
           <div class="faq-item__answer">
-            No. Match Mint does not collect personal data or analytics. Data stays on your device. See the <a href="../privacy/match-mint.html">Match Mint Privacy Policy</a> for full details.
+            Match Mint does not collect personal data or analytics for Pixel Workshop. Core data stays on your device. If you use Game Center, Apple may process leaderboard and profile data under Apple&apos;s privacy policies. See the <a href="../privacy/match-mint.html">Match Mint Privacy Policy</a> for full details.
           </div>
         </div>
 
@@ -140,7 +161,11 @@
           <select id="mm-topic" name="topic" required>
             <option value="" disabled selected>Select a topic…</option>
             <option value="Gameplay rules">Gameplay rules</option>
-            <option value="Daily challenge">Daily challenge</option>
+            <option value="Combos / special tiles">Combos / special tiles</option>
+            <option value="Blocker tiles">Blocker tiles</option>
+            <option value="Hints / tutorial">Hints / tutorial</option>
+            <option value="Daily challenge / streak rewards">Daily challenge / streak rewards</option>
+            <option value="Game Center">Game Center</option>
             <option value="Progress">Progress</option>
             <option value="Performance">Performance</option>
             <option value="App crashing">App crashing</option>

@@ -632,6 +632,21 @@ a:hover { color: var(--color-navy-hover); }
   scrollbar-color: var(--color-vivid) var(--color-border);
 }
 
+.screenshots__label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin: 28px 0 12px;
+}
+
+.section-title + .screenshots__label { margin-top: 0; }
+
+.screenshots--tablet {
+  gap: 24px;
+}
+
 .screenshots::-webkit-scrollbar       { height: 6px; }
 .screenshots::-webkit-scrollbar-track { background: var(--color-border); border-radius: 3px; }
 .screenshots::-webkit-scrollbar-thumb { background: var(--color-vivid); border-radius: 3px; }
@@ -654,6 +669,10 @@ a:hover { color: var(--color-navy-hover); }
 }
 
 .screenshot img { width: 100%; height: auto; }
+
+.screenshot--tablet {
+  width: clamp(320px, 58vw, 560px);
+}
 
 .screenshot--placeholder {
   flex-shrink: 0;

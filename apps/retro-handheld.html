@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retro Handheld — Pixel Workshop</title>
-  <meta name="description" content="Retro Handheld is a Game Boy emulator for iPhone. Play your favorite classic games anywhere." />
+  <meta name="description" content="Retro Handheld turns iPhone and iPad into a retro gaming machine with Game Boy through PlayStation support, controllers, cheats, save states, and private offline play." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -47,11 +47,13 @@
         <div class="app-hero__text">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
             <p class="app-hero__category" style="margin-bottom: 0;">Games &bull; Emulator</p>
-            <span class="badge--coming-soon">Coming Soon</span>
+            <span class="app-card__platform-badge">Version 2.0</span>
+            <span class="app-card__platform-badge">iPhone &amp; iPad</span>
+            <span class="app-card__platform-badge">7 Consoles</span>
+            <span class="app-card__platform-badge">Offline</span>
           </div>
           <h1 class="app-hero__title">Retro Handheld</h1>
-          <p class="app-hero__desc">Bring your favorite classic Game Boy games back to life on your iPhone. Full-speed emulation with a clean, customizable interface built for modern iOS.</p>
-          <!-- TODO: Replace with live App Store link and remove btn--disabled when available -->
+          <p class="app-hero__desc">Turn your iPhone or iPad into the ultimate retro gaming machine. Import your own game files from the Files app and play Game Boy through PlayStation in one app, with controller support, cheats, save states, and no accounts or internet required.</p>
           <a href="https://apps.apple.com/us/app/retrohandheld/id6759585946" class="btn--app-store">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <span>
@@ -68,7 +70,7 @@
   <section class="section">
     <div class="container">
       <p class="section-label">Screenshots</p>
-      <h2 class="section-title">See It in Action</h2>
+      <h2 class="section-title">Classic Libraries, Modern iOS Feel</h2>
       <div class="screenshots">
         <div class="screenshot"><img src="../assets/screenshots/retrohandheld/IMG_3150.PNG" alt="Retro Handheld screenshot 1" /></div>
         <div class="screenshot"><img src="../assets/screenshots/retrohandheld/IMG_3151.PNG" alt="Retro Handheld screenshot 2" /></div>
@@ -81,39 +83,137 @@
   <section class="section section--alt">
     <div class="container">
       <p class="section-label">Features</p>
-      <h2 class="section-title">Everything You Need</h2>
+      <h2 class="section-title">Built for Your Whole Retro Library</h2>
       <div class="features-grid">
 
         <div class="feature-item">
           <span class="feature-item__icon">🎮</span>
-          <p class="feature-item__title">Full-Speed Emulation</p>
-          <p class="feature-item__desc">Accurate Game Boy and Game Boy Color emulation running at full speed on all modern iPhones.</p>
+          <p class="feature-item__title">Play 7 Classic Consoles</p>
+          <p class="feature-item__desc">Play Game Boy, Game Boy Color, Game Boy Advance, NES, Super NES, Sega Genesis, Nintendo 64, and PlayStation in one app, with N64 hardware acceleration and PlayStation support that works immediately with bundled OpenBIOS.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">🕹️</span>
+          <p class="feature-item__title">Built for Controllers</p>
+          <p class="feature-item__desc">Pair Xbox, PlayStation, Switch Pro, and MFi controllers with automatic per-console mapping, or use touch controls and Bluetooth keyboard support when you want a different setup.</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-item__icon">🧠</span>
+          <p class="feature-item__title">Cheat Codes</p>
+          <p class="feature-item__desc">Enter Game Genie, GameShark, or Action Replay codes for each game, then toggle individual cheats on or off whenever you want to switch styles mid-run.</p>
         </div>
 
         <div class="feature-item">
           <span class="feature-item__icon">💾</span>
-          <p class="feature-item__title">Save States</p>
-          <p class="feature-item__desc">Save your progress at any point and pick up exactly where you left off.</p>
+          <p class="feature-item__title">Save Anywhere</p>
+          <p class="feature-item__desc">Use save states at any point, rely on auto-save when you exit, and jump back in with one-tap resume so your progress is always ready when you are.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🔊</span>
-          <p class="feature-item__title">Audio Support</p>
-          <p class="feature-item__desc">Full audio emulation with volume controls and the option to play in silent mode.</p>
+          <span class="feature-item__icon">🎛️</span>
+          <p class="feature-item__title">Make It Yours</p>
+          <p class="feature-item__desc">Choose fullscreen or a retro TV shell on iPad, tune scanlines, color filters, volume, and haptics, and shape the look and feel of each session around the way you like to play.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🔗</span>
-          <p class="feature-item__title">ROM Import</p>
-          <p class="feature-item__desc">Import your own ROM files directly from the Files app or via iTunes file sharing.</p>
+          <span class="feature-item__icon">📂</span>
+          <p class="feature-item__title">Import and Play</p>
+          <p class="feature-item__desc">Bring in your own game files from the Files app and start playing without account setup, online checks, or extra downloads. The emulator cores ship inside the app, ready to go.</p>
         </div>
 
-        <div class="feature-item">
-          <span class="feature-item__icon">📱</span>
-          <p class="feature-item__title">iPhone Native</p>
-          <p class="feature-item__desc">Designed specifically for iOS. Clean, native UI that feels right at home on your iPhone.</p>
-        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Compatibility</p>
+      <h2 class="section-title">Systems, Formats, and Controls</h2>
+      <div class="legal-content">
+        <h2>Supported Consoles and Cores</h2>
+        <ul>
+          <li><strong>Game Boy</strong> — mGBA — Playable</li>
+          <li><strong>Game Boy Color</strong> — mGBA — Playable</li>
+          <li><strong>Game Boy Advance</strong> — mGBA — Playable</li>
+          <li><strong>NES</strong> — ares — Playable</li>
+          <li><strong>Super NES</strong> — ares — Playable</li>
+          <li><strong>Sega Genesis</strong> — ares — Playable</li>
+          <li><strong>Nintendo 64</strong> — Mupen64Plus + GLideN64 — Playable</li>
+          <li><strong>PlayStation</strong> — SwanStation + OpenBIOS — Playable</li>
+          <li><strong>Sega Master System</strong> — ares — Planned</li>
+          <li><strong>Game Gear</strong> — ares — Planned</li>
+          <li><strong>PSP</strong> — PPSSPP — Planned</li>
+          <li><strong>Dreamcast</strong> — TBD — Planned</li>
+        </ul>
+
+        <h2>Supported File Formats</h2>
+        <ul>
+          <li><strong>Game Boy</strong> — <code>.gb</code></li>
+          <li><strong>Game Boy Color</strong> — <code>.gbc</code></li>
+          <li><strong>Game Boy Advance</strong> — <code>.gba</code></li>
+          <li><strong>NES</strong> — <code>.nes</code></li>
+          <li><strong>Super NES</strong> — <code>.smc</code>, <code>.sfc</code>, <code>.fig</code></li>
+          <li><strong>Sega Genesis</strong> — <code>.gen</code>, <code>.md</code></li>
+          <li><strong>Nintendo 64</strong> — <code>.n64</code>, <code>.z64</code>, <code>.v64</code></li>
+          <li><strong>PlayStation</strong> — <code>.bin</code>, <code>.cue</code>, <code>.iso</code>, <code>.pbp</code>, <code>.chd</code>, <code>.ecm</code></li>
+          <li><strong>PSP</strong> — <code>.cso</code> planned</li>
+        </ul>
+
+        <h2>Controller Support</h2>
+        <ul>
+          <li>Xbox Wireless Controller</li>
+          <li>PlayStation DualSense and DualShock 4</li>
+          <li>Nintendo Switch Pro Controller</li>
+          <li>MFi game controllers</li>
+          <li>Bluetooth keyboards with full per-console key mapping</li>
+        </ul>
+
+        <h2>Keyboard Controls</h2>
+        <ul>
+          <li><strong>Arrow Keys or WASD</strong> — D-Pad</li>
+          <li><strong>Z</strong> — A or Circle</li>
+          <li><strong>X</strong> — B or Cross</li>
+          <li><strong>C</strong> — X or Square</li>
+          <li><strong>V</strong> — Y or Triangle</li>
+          <li><strong>Q</strong> — L or L1</li>
+          <li><strong>E</strong> — R or R1</li>
+          <li><strong>R</strong> — L2</li>
+          <li><strong>T</strong> — R2</li>
+          <li><strong>Enter</strong> — Start</li>
+          <li><strong>Right Shift</strong> — Select</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <p class="section-label">Open Source</p>
+      <h2 class="section-title">Bundled, Configured, and Ready to Play</h2>
+      <div class="legal-content">
+        <h2>What You Need</h2>
+        <p>Retro Handheld does not include games. You must own the original cartridge or disc to legally use game files with the app. Import your library from the Files app and keep control of it on your own device.</p>
+
+        <h2>Powered by Open Source</h2>
+        <p>Retro Handheld is built on proven emulation cores that are compiled and bundled inside the app, so there is nothing extra to download or configure before you play.</p>
+        <ul>
+          <li><strong>mGBA</strong> — Game Boy, Game Boy Color, Game Boy Advance</li>
+          <li><strong>ares</strong> — NES, Super NES, Sega Genesis</li>
+          <li><strong>Mupen64Plus + GLideN64</strong> — Nintendo 64</li>
+          <li><strong>SwanStation</strong> — PlayStation with bundled OpenBIOS</li>
+        </ul>
+
+        <h2>Licenses</h2>
+        <ul>
+          <li><strong>Retro Handheld app</strong> — Proprietary</li>
+          <li><strong>mGBA</strong> — MPL-2.0</li>
+          <li><strong>ares</strong> — ISC</li>
+          <li><strong>Mupen64Plus</strong> — GPL-2.0</li>
+          <li><strong>GLideN64</strong> — GPL-2.0</li>
+          <li><strong>SwanStation</strong> — GPL-3.0</li>
+          <li><strong>OpenBIOS</strong> — MIT</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -123,7 +223,7 @@
     <div class="container">
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">We've Got You Covered</h2>
-      <p class="section-desc">Having trouble or have a question? Check our support page for FAQs or get in touch directly.</p>
+      <p class="section-desc">Need help with game imports, supported systems, controllers, cheats, or save states? Use the dedicated support page or review the Retro Handheld privacy policy below.</p>
       <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
         <a href="../support/retro-handheld.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/retro-handheld.html" class="btn btn--outline">Privacy Policy</a>

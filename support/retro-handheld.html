@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retro Handheld Support — Pixel Workshop</title>
-  <meta name="description" content="Support and FAQ for Retro Handheld, the Game Boy emulator for iPhone." />
+  <meta name="description" content="Support and FAQ for Retro Handheld, the multi-system retro emulator for iPhone and iPad." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -44,7 +44,7 @@
       </div>
       <p class="section-label">Support</p>
       <h1 class="section-title">Retro Handheld Support</h1>
-      <p class="section-desc">Find answers to common questions below. Can't find what you're looking for? Use the contact form and we'll get back to you.</p>
+      <p class="section-desc">Find answers to common questions about imports, supported systems, controllers, cheats, save states, and compatibility. If you still need help, use the contact form and we'll get back to you.</p>
     </div>
   </section>
 
@@ -57,51 +57,58 @@
       <div class="faq-list">
 
         <div class="faq-item">
-          <button class="faq-item__question">How do I add ROMs to the app?</button>
+          <button class="faq-item__question">How do I add game files to the app?</button>
           <div class="faq-item__answer">
-            You can add ROM files using iTunes File Sharing or the Files app. Connect your iPhone to your computer, open Finder (Mac) or iTunes (Windows), select your device, navigate to the Retro Handheld app under File Sharing, and drag your ROM files in. Alternatively, you can use the Files app on your iPhone to import ROMs directly.
+            Import your game files directly from the Files app on iPhone or iPad. Retro Handheld is designed so you can bring in your library without an account, without online setup, and without extra downloads before you start playing.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">What ROM formats are supported?</button>
+          <button class="faq-item__question">What systems and file formats are supported right now?</button>
           <div class="faq-item__answer">
-            Retro Handheld supports standard Game Boy (.gb) and Game Boy Color (.gbc) ROM files. Please note that you must only use ROMs for games you legally own.
+            Retro Handheld currently supports Game Boy (.gb), Game Boy Color (.gbc), Game Boy Advance (.gba), NES (.nes), Super NES (.smc, .sfc, .fig), Sega Genesis (.gen, .md), Nintendo 64 (.n64, .z64, .v64), and PlayStation (.bin, .cue, .iso, .pbp, .chd, .ecm). Planned formats include PSP (.cso), plus future support for Sega Master System, Game Gear, and Dreamcast.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">How do save states work?</button>
+          <button class="faq-item__question">Do I need BIOS files, an account, or internet access?</button>
           <div class="faq-item__answer">
-            To save your progress at any point, open the in-game menu and tap "Save State." You can have multiple save slots per game. To load a save state, open the menu and tap "Load State," then select the slot you want to restore.
+            No. Retro Handheld is built for offline play and does not require an account. The current emulator cores are bundled inside the app, and PlayStation support works with bundled OpenBIOS, so there is nothing extra to download before you play.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">The game is running too fast or too slow. What do I do?</button>
+          <button class="faq-item__question">Which controllers and keyboards are supported?</button>
           <div class="faq-item__answer">
-            Open the in-game settings and check the emulation speed setting. It should be set to 100% for normal speed. Adjusting it up or down lets you speed up or slow down gameplay intentionally, but 100% matches the original hardware speed.
+            Retro Handheld supports Xbox Wireless Controller, PlayStation DualSense and DualShock 4, Nintendo Switch Pro Controller, MFi controllers, and Bluetooth keyboards. Button mapping is set up automatically for each console, and you can also use on-screen touch controls.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">Can I use a physical controller?</button>
+          <button class="faq-item__question">How do save states, auto-save, and resume work?</button>
           <div class="faq-item__answer">
-            Yes! Retro Handheld supports MFi (Made for iPhone) Bluetooth controllers. Simply pair your controller with your iPhone via Bluetooth settings, then open the app — it will automatically detect the controller.
+            You can create save states at any point during a game. Retro Handheld also auto-saves when you exit and offers one-tap resume when you come back, so you can keep progress even when you leave mid-session.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">My game saves aren't persisting after closing the app. Help!</button>
+          <button class="faq-item__question">How do cheat codes work?</button>
           <div class="faq-item__answer">
-            In-game saves (using the game's own save system) are stored automatically. However, save states are separate — make sure to create a save state before closing if you want to resume mid-game. If in-game saves are still not persisting, try reinstalling the app (note: this will erase existing data).
+            Retro Handheld supports Game Genie, GameShark, and Action Replay codes. Add codes per game, save them for later, and toggle individual cheats on or off whenever you want without re-entering them every time.
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-item__question">Is Retro Handheld free?</button>
+          <button class="faq-item__question">Can I customize the display and feel?</button>
           <div class="faq-item__answer">
-            Please check the App Store listing for current pricing information. Pricing may vary by region and is subject to change.
+            Yes. On iPad you can choose fullscreen play or a retro TV shell for supported systems. You can also adjust scanline effects, color filters, volume, and haptic feedback to match the style you want.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">Does Retro Handheld include games?</button>
+          <div class="faq-item__answer">
+            No. Retro Handheld does not include games. You must own the original cartridge or disc to legally use game files with the app, and you are responsible for the content you import.
           </div>
         </div>
 
@@ -146,11 +153,13 @@
           <label for="rh-topic">Topic</label>
           <select id="rh-topic" name="topic" required>
             <option value="" disabled selected>Select a topic…</option>
-            <option value="ROM / file import">ROM / file import</option>
-            <option value="Save states">Save states</option>
-            <option value="Controller support">Controller support</option>
-            <option value="Performance / speed">Performance / speed</option>
-            <option value="Audio">Audio</option>
+            <option value="Game import / supported files">Game import / supported files</option>
+            <option value="Controllers / keyboards">Controllers / keyboards</option>
+            <option value="Save states / resume">Save states / resume</option>
+            <option value="Cheat codes">Cheat codes</option>
+            <option value="Display / audio / haptics">Display / audio / haptics</option>
+            <option value="Performance / compatibility">Performance / compatibility</option>
+            <option value="Legal / game ownership">Legal / game ownership</option>
             <option value="App crashing">App crashing</option>
             <option value="Other">Other</option>
           </select>

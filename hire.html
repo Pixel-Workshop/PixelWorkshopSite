@@ -6,298 +6,10 @@
   <title>Build With Us — Pixel Workshop</title>
   <meta name="description" content="Pixel Workshop builds focused, native iOS apps for clients. Fixed-price projects, fast delivery, and the same care we put into our own products." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* === Hire-page specific styles === */
-    .hire-hero {
-      padding: 100px 0 80px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hire-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(circle, rgba(124, 58, 237, 0.11) 1.5px, transparent 1.5px);
-      background-size: 30px 30px;
-      pointer-events: none;
-    }
-
-    .hire-hero::after {
-      content: '';
-      position: absolute;
-      top: -100px;
-      right: -100px;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle at center, rgba(124, 58, 237, 0.06) 0%, transparent 65%);
-      pointer-events: none;
-    }
-
-    .hire-hero__inner {
-      position: relative;
-      z-index: 1;
-      max-width: 700px;
-    }
-
-    .hire-hero__title {
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      line-height: 1.08;
-      margin-bottom: 24px;
-      background: linear-gradient(140deg, var(--color-navy) 20%, var(--color-vivid) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hire-hero__lead {
-      font-size: 1.2rem;
-      color: var(--color-muted);
-      line-height: 1.8;
-      max-width: 580px;
-      margin-bottom: 32px;
-    }
-
-    .hire-hero__lead strong {
-      color: var(--color-navy);
-      font-weight: 700;
-    }
-
-    /* Location badge */
-    .location-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--color-section);
-      border: 1px solid var(--color-border);
-      border-radius: 100px;
-      padding: 6px 16px 6px 10px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--color-navy);
-      margin-bottom: 28px;
-    }
-
-    .location-badge__pin {
-      font-size: 1rem;
-      line-height: 1;
-    }
-
-    /* Services / Values grid */
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      margin-top: 52px;
-    }
-
-    .value-card {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-    }
-
-    .value-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .value-card__emoji {
-      font-size: 1.6rem;
-      margin-bottom: 14px;
-      display: block;
-    }
-
-    .value-card__title {
-      font-size: 0.95rem;
-      font-weight: 800;
-      color: var(--color-navy);
-      letter-spacing: -0.01em;
-      margin-bottom: 8px;
-    }
-
-    .value-card__desc {
-      font-size: 0.85rem;
-      color: var(--color-muted);
-      line-height: 1.65;
-    }
-
-    /* Process steps */
-    .build-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      margin-top: 52px;
-      counter-reset: step-counter;
-    }
-
-    .build-step {
-      display: flex;
-      gap: 28px;
-      padding: 32px 0;
-      border-bottom: 1px solid var(--color-border);
-      align-items: flex-start;
-    }
-
-    .build-step:last-child { border-bottom: none; }
-
-    .build-step__number {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-vivid) 100%);
-      color: #fff;
-      font-size: 0.9rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .build-step__content { flex: 1; }
-
-    .build-step__title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-navy);
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-
-    .build-step__desc {
-      font-size: 0.9rem;
-      color: var(--color-muted);
-      line-height: 1.7;
-    }
-
-    /* Pricing grid */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      margin-top: 52px;
-    }
-
-    .pricing-card {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .pricing-card--featured {
-      border-color: var(--color-vivid);
-      box-shadow: 0 0 0 1px var(--color-vivid), var(--shadow-md);
-    }
-
-    .pricing-card__header {
-      padding: 28px 28px 20px;
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .pricing-card--featured .pricing-card__header {
-      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-vivid) 100%);
-      border-bottom: none;
-    }
-
-    .pricing-card__tier {
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-muted);
-      margin-bottom: 8px;
-    }
-
-    .pricing-card--featured .pricing-card__tier {
-      color: rgba(255,255,255,0.7);
-    }
-
-    .pricing-card__price {
-      font-size: 2rem;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      color: var(--color-navy);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-
-    .pricing-card--featured .pricing-card__price {
-      color: #fff;
-    }
-
-    .pricing-card__subtitle {
-      font-size: 0.82rem;
-      color: var(--color-muted);
-    }
-
-    .pricing-card--featured .pricing-card__subtitle {
-      color: rgba(255,255,255,0.65);
-    }
-
-    .pricing-card__body {
-      padding: 24px 28px 28px;
-    }
-
-    .pricing-card__features {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .pricing-card__features li {
-      font-size: 0.875rem;
-      color: var(--color-muted);
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      line-height: 1.5;
-    }
-
-    .pricing-card__features li::before {
-      content: '✓';
-      color: var(--color-vivid);
-      font-weight: 800;
-      font-size: 0.85rem;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .pricing-note {
-      text-align: center;
-      font-size: 0.82rem;
-      color: var(--color-muted);
-      margin-top: 24px;
-      line-height: 1.6;
-    }
-
-    /* Contact form section */
-    .hire-form-wrap {
-      max-width: 620px;
-    }
-
-    @media (max-width: 640px) {
-      .hire-hero {
-        padding: 80px 0 60px;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -336,7 +48,7 @@
           Pixel Workshop takes on a <strong>select number of client projects</strong> each year. We build the same way we build our own apps — fast, focused, and with obsessive attention to quality.
         </p>
         <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-          <a href="#contact" class="btn btn--vivid">Start a Conversation</a>
+          <a href="#contact" class="btn btn--primary">Start a Conversation</a>
           <a href="#how-it-works" class="btn btn--outline">See How It Works</a>
         </div>
       </div>
@@ -551,7 +263,7 @@
           </div>
 
           <div>
-            <button type="submit" class="btn btn--vivid">Send Inquiry</button>
+            <button type="submit" class="btn btn--primary">Send Inquiry</button>
           </div>
 
           <div class="form-success" id="hire-success">
@@ -571,31 +283,23 @@
             <div class="footer__logo-pixel"></div>
             Pixel Workshop
           </div>
-          <p class="footer__tagline">Small indie app studio. Thoughtful apps, no fluff.</p>
+          <p class="footer__tagline">App studio. Thoughtful software, no compromise.</p>
         </div>
-
         <div class="footer__nav-group">
           <p class="footer__nav-heading">Apps</p>
           <ul class="footer__nav-links">
             <li><a href="apps/retro-handheld.html">Retro Handheld</a></li>
-            <li><a href="apps/solve-to-snooze.html">Solve To Snooze</a></li>
-            <li><a href="apps/calmly.html">Calmly: Focus Timer</a></li>
-            <li><a href="apps/constellation-restore-game.html">Constellation Restore Game</a></li>
-            <li><a href="apps/warfront-1944.html">Warfront: 1944</a></li>
+            <li><a href="apps/match-mint.html">Match Mint</a></li>
+            <li><a href="apps/refract.html">Refract</a></li>
+            <li><a href="apps/calmly.html">Calmly</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-group">
           <p class="footer__nav-heading">Support</p>
           <ul class="footer__nav-links">
             <li><a href="support/index.html">Support Hub</a></li>
-            <li><a href="support/retro-handheld.html">Retro Handheld</a></li>
-            <li><a href="support/solve-to-snooze.html">Solve To Snooze</a></li>
-            <li><a href="support/calmly.html">Calmly</a></li>
-            <li><a href="support/constellation-restore-game.html">Constellation</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-group">
           <p class="footer__nav-heading">Company</p>
           <ul class="footer__nav-links">
@@ -605,7 +309,7 @@
           </ul>
         </div>
       </div>
-      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &nbsp;&middot;&nbsp; Richmond, VA</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &middot; Richmond, VA</p>
     </div>
   </footer>
 

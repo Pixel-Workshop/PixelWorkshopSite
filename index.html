@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel Workshop — Apps Made with Care</title>
-  <meta name="description" content="Pixel Workshop is an indie mobile studio crafting focused, thoughtful apps. Browse our collection including Match Mint, Refract, ForgeSets, Retro Handheld, Solve To Snooze, Calmly, Constellation Restore, and Warfront: 1944." />
+  <title>Pixel Workshop — Focused iOS Apps</title>
+  <meta name="description" content="Pixel Workshop builds focused iOS apps with no ads, no subscriptions, and no bloat. Eight apps. Zero compromise." />
+  <meta property="og:title" content="Pixel Workshop — Focused iOS Apps" />
+  <meta property="og:description" content="No ads. No subscriptions. Just software." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="theme-neon">
+<body>
 
-  <!-- ======= Header ======= -->
   <header class="site-header">
     <div class="container">
       <nav class="nav">
@@ -32,228 +38,154 @@
     </div>
   </header>
 
-  <!-- ======= Hero ======= -->
-  <section class="neon-hero">
-    <div class="neon-hero__grid-bg"></div>
-    <div class="neon-hero__scanlines"></div>
+  <section class="hero">
     <div class="container">
-      <div class="neon-hero__inner">
-        <div class="neon-hero__eyebrow animate-in">
-          <span class="neon-hero__eyebrow-dot"></span>
-          Indie App Studio
+      <div class="hero__inner">
+        <div class="hero__eyebrow animate-in">
+          <span class="hero__eyebrow-dot"></span>
+          App Studio — Richmond, VA
         </div>
-
-        <h1 class="neon-hero__title animate-in delay-1">
-          Play Beyond<br />Ordinary.
-        </h1>
-
-        <p class="neon-hero__subtitle animate-in delay-2">
-          Retro emulation, puzzle games, strength planning, real-time strategy, and productivity tools all crafted with zero ads, zero subscriptions, and zero compromise.
-        </p>
-
-        <div class="neon-hero__cta animate-in delay-3">
-          <a href="#showcase" class="btn btn--neon-primary">Explore Apps</a>
-          <a href="#download" class="btn btn--neon-outline">Download Now</a>
+        <h1 class="hero__title animate-in delay-1">No Ads. No Subscriptions.<br>Just Software.</h1>
+        <p class="hero__subtitle animate-in delay-2">We build focused iOS apps that respect your time, your privacy, and your home screen. Eight apps. Zero compromise.</p>
+        <div class="hero__cta animate-in delay-3">
+          <a href="#apps" class="btn btn--primary">Explore Our Apps</a>
+          <a href="about.html" class="btn btn--outline">About Us</a>
         </div>
-
-        <div class="neon-stats-bar animate-in delay-4">
-          <div class="neon-stats-bar__item">
-            <span class="neon-stats-bar__icon">&#x1F3AE;</span>
-            8 Apps
+        <div class="stats-bar animate-in delay-4">
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">8</div>
+            <div class="stats-bar__label">Apps Shipped</div>
           </div>
-          <div class="neon-stats-bar__item">
-            <span class="neon-stats-bar__icon">&#x1F512;</span>
-            Privacy First
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">0</div>
+            <div class="stats-bar__label">Ads or Trackers</div>
           </div>
-          <div class="neon-stats-bar__item">
-            <span class="neon-stats-bar__icon">&#x26A1;</span>
-            No Subscriptions
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">4.5★</div>
+            <div class="stats-bar__label">Avg Rating</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======= Game Showcase Carousel ======= -->
-  <section class="section neon-showcase" id="showcase">
+  <div class="divider"></div>
+
+  <section class="section" id="apps">
     <div class="container">
-      <span class="section-label animate-in">Our Collection</span>
-      <h2 class="section-title animate-in delay-1">The Lineup</h2>
+      <span class="section-label animate-in">Our Apps</span>
+      <h2 class="section-title animate-in delay-1">The Collection</h2>
       <p class="section-desc animate-in delay-2">Games, tools, and experiences — each built to do one thing exceptionally well.</p>
-    </div>
-
-    <div class="carousel">
-      <div class="carousel__track">
-
-        <!-- Match Mint -->
-        <div class="carousel__card" data-app-color="mint">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/matchmint_icon.svg" alt="MatchMint" />
-            </div>
-            <span class="carousel__card-category">Puzzle Game</span>
-            <h3 class="carousel__card-name">Match Mint</h3>
-            <p class="carousel__card-desc">Match pairs, stack combo multipliers, trigger special tiles, and chase daily rewards and Game Center leaderboards.</p>
-            <div class="carousel__card-actions">
-              <a href="https://apps.apple.com/us/app/matchmint/id6759932261" class="btn btn--neon-primary btn--sm">App Store</a>
-              <a href="apps/match-mint.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Refract -->
-        <div class="carousel__card" data-app-color="purple">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/refract_icon.png" alt="Refract" />
-            </div>
-            <span class="carousel__card-category">Puzzle Game</span>
-            <h3 class="carousel__card-name">Refract</h3>
-            <p class="carousel__card-desc">Guide beams through mirrors and prisms with rich feedback, color-blind support, Game Center goals, and a daily challenge widget.</p>
-            <div class="carousel__card-actions">
-              <a href="https://apps.apple.com/us/app/refract-puzzle-game/id6760363639" class="btn btn--neon-primary btn--sm">App Store</a>
-              <a href="apps/refract.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ForgeSets -->
-        <div class="carousel__card" data-app-color="yellow">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/forgesets_icon.png" alt="ForgeSets" />
-            </div>
-            <span class="carousel__card-category">AI Strength Coach</span>
-            <h3 class="carousel__card-name">ForgeSets</h3>
-            <p class="carousel__card-desc">Smart programs, live workout tracking, AI plan generation, and real-time form coaching all private and on-device.</p>
-            <div class="carousel__card-actions">
-              <span class="badge--coming-soon" style="margin-bottom:8px;">Coming Soon</span>
-              <a href="apps/forge-sets.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Retro Handheld -->
-        <div class="carousel__card" data-app-color="green">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld" />
-            </div>
-            <span class="carousel__card-category">Emulator</span>
-            <h3 class="carousel__card-name">Retro Handheld</h3>
-            <p class="carousel__card-desc">Play Game Boy through PlayStation in one private app with controller support, cheats, save states, and zero setup friction.</p>
-            <div class="carousel__card-actions">
-              <a href="https://apps.apple.com/us/app/retrohandheld/id6759585946" class="btn btn--neon-primary btn--sm">App Store</a>
-              <a href="apps/retro-handheld.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Solve To Snooze -->
-        <div class="carousel__card" data-app-color="magenta">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze" />
-            </div>
-            <span class="carousel__card-category">Productivity</span>
-            <h3 class="carousel__card-name">Solve To Snooze</h3>
-            <p class="carousel__card-desc">Challenge alarms with typed phrase, barcode scan, step count, smarter scheduling, and wake-up insights for harder-to-ignore mornings.</p>
-            <div class="carousel__card-actions">
-              <a href="https://apps.apple.com/us/app/solve-to-snooze/id6759344968" class="btn btn--neon-primary btn--sm">App Store</a>
-              <a href="apps/solve-to-snooze.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Calmly: Focus Timer -->
-        <div class="carousel__card" data-app-color="cyan">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/calmy_icon.png" alt="Calmly" />
-            </div>
-            <span class="carousel__card-category">Focus Timer</span>
-            <h3 class="carousel__card-name">Calmly: Focus Timer</h3>
-            <p class="carousel__card-desc">Custom presets, goals, streaks, Live Activities, Siri Shortcuts, and Apple Watch support for a calmer focus flow.</p>
-            <div class="carousel__card-actions">
-              <a href="https://apps.apple.com/us/app/calmly-focus-timer/id6759624884" class="btn btn--neon-primary btn--sm">App Store</a>
-              <a href="apps/calmly.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Constellation Restore -->
-        <div class="carousel__card" data-app-color="blue">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/stars_icon.png" alt="Constellation Restore" />
-            </div>
-            <span class="carousel__card-category">Puzzle Game</span>
-            <h3 class="carousel__card-name">Constellation Restore</h3>
-            <p class="carousel__card-desc">Restore constellations, unlock myth-rich atlas entries, and use Find in Sky AR to locate tonight's featured pattern above you.</p>
-            <div class="carousel__card-actions">
-              <a href="https://apps.apple.com/us/app/constellation-restore/id6759622578" class="btn btn--neon-primary btn--sm">App Store</a>
-              <a href="apps/constellation-restore-game.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Warfront: 1944 -->
-        <div class="carousel__card" data-app-color="orange">
-          <div class="carousel__card-inner">
-            <div class="carousel__card-icon">
-              <img src="assets/icons/warfront1944_icon.png" alt="Warfront: 1944" />
-            </div>
-            <span class="carousel__card-category">Strategy / RTS</span>
-            <h3 class="carousel__card-name">Warfront: 1944</h3>
-            <p class="carousel__card-desc">WWII real-time strategy for iPhone and iPad. Base building, campaigns, and skirmish battles.</p>
-            <div class="carousel__card-actions">
-              <span class="badge--coming-soon" style="margin-bottom:8px;">Coming Soon</span>
-              <a href="apps/warfront-1944.html" class="btn btn--neon-outline btn--sm">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="carousel__nav">
-        <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <div class="carousel__dots">
-          <button class="carousel__dot carousel__dot--active" data-index="0" aria-label="Go to slide 1"></button>
-          <button class="carousel__dot" data-index="1" aria-label="Go to slide 2"></button>
-          <button class="carousel__dot" data-index="2" aria-label="Go to slide 3"></button>
-          <button class="carousel__dot" data-index="3" aria-label="Go to slide 4"></button>
-          <button class="carousel__dot" data-index="4" aria-label="Go to slide 5"></button>
-          <button class="carousel__dot" data-index="5" aria-label="Go to slide 6"></button>
-          <button class="carousel__dot" data-index="6" aria-label="Go to slide 7"></button>
-          <button class="carousel__dot" data-index="7" aria-label="Go to slide 8"></button>
-        </div>
-        <button class="carousel__btn carousel__btn--next" aria-label="Next">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
+      <div class="app-grid animate-in delay-3">
+        <a href="apps/match-mint.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/matchmint_icon.svg" alt="Match Mint" /></div>
+          <div class="app-card__category">Puzzle</div>
+          <div class="app-card__name">Match Mint</div>
+          <div class="app-card__desc">Memory puzzle with combos, special tiles, and daily leaderboards.</div>
+        </a>
+        <a href="apps/refract.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/refract_icon.png" alt="Refract" /></div>
+          <div class="app-card__category">Puzzle</div>
+          <div class="app-card__name">Refract</div>
+          <div class="app-card__desc">Guide beams through mirrors and prisms with AR support.</div>
+        </a>
+        <a href="apps/forge-sets.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/forgesets_icon.png" alt="ForgeSets" /></div>
+          <div class="app-card__category">AI Coach</div>
+          <div class="app-card__name">ForgeSets</div>
+          <div class="app-card__desc">AI-powered strength training, fully on-device.</div>
+          <span class="app-card__badge">Coming Soon</span>
+        </a>
+        <a href="apps/retro-handheld.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld" /></div>
+          <div class="app-card__category">Emulator</div>
+          <div class="app-card__name">Retro Handheld</div>
+          <div class="app-card__desc">Multi-system retro gaming with controller support and save states.</div>
+        </a>
+        <a href="apps/solve-to-snooze.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze" /></div>
+          <div class="app-card__category">Productivity</div>
+          <div class="app-card__name">Solve To Snooze</div>
+          <div class="app-card__desc">Smart alarm challenges that actually get you out of bed.</div>
+        </a>
+        <a href="apps/calmly.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/calmy_icon.png" alt="Calmly" /></div>
+          <div class="app-card__category">Focus Timer</div>
+          <div class="app-card__name">Calmly</div>
+          <div class="app-card__desc">Pomodoro timer with Apple Watch, streaks, and Siri Shortcuts.</div>
+        </a>
+        <a href="apps/constellation-restore-game.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/stars_icon.png" alt="Constellation Restore" /></div>
+          <div class="app-card__category">Puzzle</div>
+          <div class="app-card__name">Constellation Restore</div>
+          <div class="app-card__desc">Restore star patterns with AR sky-finding.</div>
+        </a>
+        <a href="apps/warfront-1944.html" class="app-card">
+          <div class="app-card__icon"><img src="assets/icons/warfront1944_icon.png" alt="Warfront: 1944" /></div>
+          <div class="app-card__category">Strategy</div>
+          <div class="app-card__name">Warfront: 1944</div>
+          <div class="app-card__desc">WWII real-time strategy with base building and campaigns.</div>
+          <span class="app-card__badge">Coming Soon</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ======= About Strip ======= -->
-  <section class="about-strip">
+  <div class="divider"></div>
+
+  <section class="section">
     <div class="container">
-      <div class="about-strip__inner animate-in">
-        <div class="about-strip__text">
-          <p class="section-label section-label--light">About Pixel Workshop</p>
-          <h2 class="about-strip__title">Built by a small team,<br />for everyday use.</h2>
-          <p class="about-strip__desc">Pixel Workshop is an indie app studio focused on building apps that are genuinely useful. Every app is crafted with attention to detail, respect for your privacy, and a commitment to keeping things simple.</p>
+      <span class="section-label animate-in">Our Approach</span>
+      <h2 class="section-title animate-in delay-1">Built different, on purpose.</h2>
+      <div class="bento-grid animate-in delay-2">
+        <div class="bento-card">
+          <span class="bento-card__emoji">🚫</span>
+          <p class="bento-card__title">No Ads, Ever</p>
+          <p class="bento-card__desc">Your experience is the product, not your attention. We don't run ads.</p>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 16px; flex-shrink: 0;">
-          <a href="support/index.html" class="btn btn--outline-white">Get Support</a>
-          <a href="privacy.html" class="btn btn--outline-white">Privacy Policy</a>
+        <div class="bento-card">
+          <span class="bento-card__emoji">🔒</span>
+          <p class="bento-card__title">Privacy by Default</p>
+          <p class="bento-card__desc">Your data stays on your device. We don't collect, track, or sell it.</p>
+        </div>
+        <div class="bento-card">
+          <span class="bento-card__emoji">💰</span>
+          <p class="bento-card__title">No Subscription Traps</p>
+          <p class="bento-card__desc">Pay once or download free. No features hidden behind paywalls.</p>
+        </div>
+        <div class="bento-card">
+          <span class="bento-card__emoji">⚡</span>
+          <p class="bento-card__title">Built to Be Fast</p>
+          <p class="bento-card__desc">Performance is a feature. Instant launch, smooth scrolling, minimal battery drain.</p>
+        </div>
+        <div class="bento-card">
+          <span class="bento-card__emoji">🎯</span>
+          <p class="bento-card__title">One Job, Done Right</p>
+          <p class="bento-card__desc">Each app does one thing exceptionally well. No feature bloat.</p>
+        </div>
+        <div class="bento-card">
+          <span class="bento-card__emoji">🌱</span>
+          <p class="bento-card__title">Always Shipping</p>
+          <p class="bento-card__desc">We listen to users and iterate fast. More apps are always in the works.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======= Footer ======= -->
+  <section class="about-strip">
+    <div class="about-strip__inner">
+      <div class="about-strip__text">
+        <span class="section-label">About Pixel Workshop</span>
+        <h2 class="about-strip__title">Built by a small team,<br>driven by quality.</h2>
+        <p class="about-strip__desc">We're an app studio in Richmond, VA. We combine deliberate design with AI-assisted development to ship software that respects your time and your home screen.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-shrink:0;">
+        <a href="about.html" class="btn btn--outline">About Us</a>
+        <a href="support/index.html" class="btn btn--outline">Support</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer__top">
@@ -262,36 +194,23 @@
             <div class="footer__logo-pixel"></div>
             Pixel Workshop
           </div>
-          <p class="footer__tagline">Small indie app studio. Thoughtful apps, no fluff.</p>
+          <p class="footer__tagline">App studio. Thoughtful software, no compromise.</p>
         </div>
-
         <div class="footer__nav-group">
           <p class="footer__nav-heading">Apps</p>
           <ul class="footer__nav-links">
-            <li><a href="apps/refract.html">Refract</a></li>
-            <li><a href="apps/forge-sets.html">ForgeSets</a></li>
             <li><a href="apps/retro-handheld.html">Retro Handheld</a></li>
             <li><a href="apps/match-mint.html">Match Mint</a></li>
-            <li><a href="apps/solve-to-snooze.html">Solve To Snooze</a></li>
-            <li><a href="apps/calmly.html">Calmly: Focus Timer</a></li>
-            <li><a href="apps/constellation-restore-game.html">Constellation Restore Game</a></li>
-            <li><a href="apps/warfront-1944.html">Warfront: 1944</a></li>
+            <li><a href="apps/refract.html">Refract</a></li>
+            <li><a href="apps/calmly.html">Calmly</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-group">
           <p class="footer__nav-heading">Support</p>
           <ul class="footer__nav-links">
             <li><a href="support/index.html">Support Hub</a></li>
-            <li><a href="support/retro-handheld.html">Retro Handheld</a></li>
-            <li><a href="support/match-mint.html">Match Mint</a></li>
-            <li><a href="support/solve-to-snooze.html">Solve To Snooze</a></li>
-            <li><a href="support/calmly.html">Calmly</a></li>
-            <li><a href="support/constellation-restore-game.html">Constellation</a></li>
-            <li><a href="support/warfront-1944.html">Warfront: 1944</a></li>
           </ul>
         </div>
-
         <div class="footer__nav-group">
           <p class="footer__nav-heading">Company</p>
           <ul class="footer__nav-links">
@@ -301,74 +220,18 @@
           </ul>
         </div>
       </div>
-      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &nbsp;&middot;&nbsp; Richmond, VA</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &middot; Richmond, VA</p>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Scroll entrance animations
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.1 });
-
-    document.querySelectorAll('.animate-in').forEach(function(el) {
-      observer.observe(el);
-    });
-
-    // Carousel
-    (function() {
-      var track = document.querySelector('.carousel__track');
-      if (!track) return;
-
-      var cards = track.querySelectorAll('.carousel__card');
-      var dots = document.querySelectorAll('.carousel__dot');
-      var prevBtn = document.querySelector('.carousel__btn--prev');
-      var nextBtn = document.querySelector('.carousel__btn--next');
-      var currentIndex = 0;
-
-      function scrollToCard(index) {
-        if (index < 0) index = 0;
-        if (index >= cards.length) index = cards.length - 1;
-        currentIndex = index;
-        cards[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        updateDots();
-      }
-
-      function updateDots() {
-        dots.forEach(function(dot, i) {
-          dot.classList.toggle('carousel__dot--active', i === currentIndex);
-        });
-      }
-
-      prevBtn.addEventListener('click', function() { scrollToCard(currentIndex - 1); });
-      nextBtn.addEventListener('click', function() { scrollToCard(currentIndex + 1); });
-      dots.forEach(function(dot) {
-        dot.addEventListener('click', function() {
-          scrollToCard(parseInt(this.dataset.index));
-        });
-      });
-
-      // Update active dot on scroll
-      var scrollObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var idx = Array.prototype.indexOf.call(cards, entry.target);
-            if (idx !== -1) {
-              currentIndex = idx;
-              updateDots();
-            }
-          }
-        });
-      }, { root: track, threshold: 0.6 });
-
-      cards.forEach(function(card) { scrollObserver.observe(card); });
-    })();
+    document.querySelectorAll('.animate-in').forEach(function(el) { observer.observe(el); });
   </script>
 
 </body>

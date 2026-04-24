@@ -13,10 +13,12 @@
 </head>
 <body class="app--warfront">
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- ======= Header ======= -->
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
@@ -27,14 +29,16 @@
           Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../index.html" aria-current="page">Apps</a></li>
           <li><a href="../about.html">About</a></li>
           <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <!-- ======= App Hero ======= -->
   <section class="app-hero">
     <div class="container">
@@ -48,8 +52,8 @@
           <img src="../assets/icons/warfront1944_icon.png" alt="Warfront: 1944 icon" />
         </div>
         <div class="app-hero__text">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-            <p class="app-hero__category" style="margin-bottom: 0;">Games &bull; Strategy &bull; RTS</p>
+          <div class="app-hero__badges">
+            <p class="app-hero__category">Games &bull; Strategy &bull; RTS</p>
             <span class="badge--coming-soon">Coming Soon</span>
             <span class="app-card__platform-badge">iPhone &amp; iPad</span>
           </div>
@@ -99,37 +103,37 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">🏗️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
           <p class="feature-item__title">Base Building</p>
           <p class="feature-item__desc">Construct barracks, vehicle depots, airfields, and defenses. Manage resources and tech up your base to gain the upper hand.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🪖</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <p class="feature-item__title">Authentic WW2 Units</p>
           <p class="feature-item__desc">Deploy historically inspired infantry, Sherman tanks, Tiger tanks, artillery, and fighter aircraft — each with distinct roles and strengths.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🗺️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
           <p class="feature-item__title">Diverse Maps</p>
           <p class="feature-item__desc">Battle across Normandy beaches, French villages, Pacific jungles, and North African deserts — each map demanding different strategies.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🤖</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
           <p class="feature-item__title">Scalable AI</p>
           <p class="feature-item__desc">From casual to commander — the AI scales to your skill level so every skirmish feels like the right amount of challenge.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📱</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
           <p class="feature-item__title">iPhone &amp; iPad Native</p>
           <p class="feature-item__desc">Built for both screen sizes with intuitive touch controls designed specifically for the RTS genre on mobile.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📦</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
           <p class="feature-item__title">Expanding Content</p>
           <p class="feature-item__desc">The base game is just the beginning. Add-on packs will bring new campaigns, maps, and units as the war unfolds.</p>
         </div>
@@ -179,14 +183,17 @@
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">We've Got You Covered</h2>
       <p class="section-desc">Having trouble or have a question? Check our support page for FAQs or get in touch directly.</p>
-      <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="app-support-cta">
         <a href="../support/warfront-1944.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/warfront-1944.html" class="btn btn--outline">Privacy Policy</a>
         <a href="../terms.html" class="btn btn--outline">Terms of Use</a>
       </div>
     </div>
   </section>
+  </main>
+
   <!-- ======= Footer ======= -->
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer__top">

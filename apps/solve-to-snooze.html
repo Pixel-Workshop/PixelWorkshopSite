@@ -13,10 +13,12 @@
 </head>
 <body class="app--snooze">
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- ======= Header ======= -->
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
@@ -27,14 +29,16 @@
           Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../index.html" aria-current="page">Apps</a></li>
           <li><a href="../about.html">About</a></li>
           <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <!-- ======= App Hero ======= -->
   <section class="app-hero">
     <div class="container">
@@ -48,8 +52,8 @@
           <img src="../assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze icon" />
         </div>
         <div class="app-hero__text">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-            <p class="app-hero__category" style="margin-bottom: 0;">Utilities &bull; Alarm Clock</p>
+          <div class="app-hero__badges">
+            <p class="app-hero__category">Utilities &bull; Alarm Clock</p>
             <span class="app-card__platform-badge">Challenges</span>
             <span class="app-card__platform-badge">Reliability</span>
             <span class="app-card__platform-badge">Insights</span>
@@ -102,43 +106,43 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">🧩</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"/></svg></div>
           <p class="feature-item__title">Wake-Up Challenges</p>
           <p class="feature-item__desc">Choose the challenge that gets you moving: math, typed phrase, barcode scan, or step count.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🛡️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <p class="feature-item__title">Reliability Check Center</p>
           <p class="feature-item__desc">Test alarm access, sound, challenge flow, and lock-screen readiness before tomorrow morning does it for you.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">⏰</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <p class="feature-item__title">Exact One-Time Alarms</p>
           <p class="feature-item__desc">Schedule one-off alarms precisely when you need them, alongside repeating routines for the rest of the week.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">⚡</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <p class="feature-item__title">Quick Presets</p>
           <p class="feature-item__desc">Set Weekdays, Weekends, Every Day, Tomorrow Only, or Skip Next in a couple of taps instead of rebuilding schedules by hand.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📈</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></svg></div>
           <p class="feature-item__title">Escalation Mode</p>
           <p class="feature-item__desc">Repeated snoozes can make the next alarm tougher, helping you break out of the loop when a normal snooze cycle is not enough.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🚫</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <p class="feature-item__title">Real Max-Snooze Limits</p>
           <p class="feature-item__desc">Set a true cap on how many times you can snooze and let the app enforce it cleanly when the limit is reached.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">💊</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
           <p class="feature-item__title">Routine Reminders</p>
           <p class="feature-item__desc">Use challenge alarms for medication, hydration, or start-of-day routines where a normal notification is too easy to ignore.</p>
         </div>
@@ -154,37 +158,37 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">🗂️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
           <p class="feature-item__title">Today, Tomorrow, and Later</p>
           <p class="feature-item__desc">Keep alarms organized by when they matter so your schedule is easier to scan at a glance.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">⏳</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <p class="feature-item__title">Next Up Countdown</p>
           <p class="feature-item__desc">See your next alarm immediately with a live countdown card that keeps tomorrow morning visible.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📊</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></svg></div>
           <p class="feature-item__title">Insights Dashboard</p>
           <p class="feature-item__desc">Track wake-up streaks, wake score, average snoozes, and recent alarm history without leaving the app.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">✏️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
           <p class="feature-item__title">Refreshed Alarm Editor</p>
           <p class="feature-item__desc">Create and edit alarms with a cleaner flow, faster schedule choices, and a more polished ringing experience.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🔔</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
           <p class="feature-item__title">Stronger Alarm Flow</p>
           <p class="feature-item__desc">Sound selection, challenge flow, and lock-screen behavior are easier to test and more predictable before you rely on them.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🔒</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
           <p class="feature-item__title">Private by Design</p>
           <p class="feature-item__desc">Everything stays on your device. No account, no cloud dependency, no ads, and no subscriptions.</p>
         </div>
@@ -202,37 +206,37 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇺🇸</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">English</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇫🇷</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">French</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇩🇪</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">German</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇪🇸</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">Spanish</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇮🇹</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">Italian</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇳🇱</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">Dutch</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🇵🇹</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">Portuguese</p>
         </div>
 
@@ -246,7 +250,7 @@
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">We've Got You Covered</h2>
       <p class="section-desc">Need help with wake-up challenges, Reliability Check Center, snooze rules, or alarm scheduling? Check the support page or review the privacy policy below.</p>
-      <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="app-support-cta">
         <a href="../support/solve-to-snooze.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/solve-to-snooze.html" class="btn btn--outline">Privacy Policy</a>
         <a href="../terms.html" class="btn btn--outline">Terms of Use</a>
@@ -254,7 +258,10 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ======= Footer ======= -->
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer__top">

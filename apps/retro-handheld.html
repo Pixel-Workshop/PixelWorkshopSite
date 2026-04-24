@@ -13,10 +13,12 @@
 </head>
 <body class="app--retro">
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- ======= Header ======= -->
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
@@ -27,14 +29,16 @@
           Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../index.html" aria-current="page">Apps</a></li>
           <li><a href="../about.html">About</a></li>
           <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <!-- ======= App Hero ======= -->
   <section class="app-hero">
     <div class="container">
@@ -48,8 +52,8 @@
           <img src="../assets/icons/retrohandheld_icon.png" alt="Retro Handheld icon" />
         </div>
         <div class="app-hero__text">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-            <p class="app-hero__category" style="margin-bottom: 0;">Games &bull; Emulator</p>
+          <div class="app-hero__badges">
+            <p class="app-hero__category">Games &bull; Emulator</p>
             <span class="app-card__platform-badge">Version 2.0</span>
             <span class="app-card__platform-badge">iPhone &amp; iPad</span>
             <span class="app-card__platform-badge">7 Consoles</span>
@@ -96,37 +100,37 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">🎮</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg></div>
           <p class="feature-item__title">Play 7 Classic Consoles</p>
           <p class="feature-item__desc">Play GameBoy, GameBoy Color, GameBoy Advance, NES, Super NES, Sega Genesis, Nintendo 64, and PlayStation in one app, with N64 hardware acceleration and PlayStation support that works immediately with bundled OpenBIOS.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🕹️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg></div>
           <p class="feature-item__title">Built for Controllers</p>
           <p class="feature-item__desc">Pair Xbox, PlayStation, Switch Pro, and MFi controllers with automatic per-console mapping, or use touch controls and Bluetooth keyboard support when you want a different setup.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🧠</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
           <p class="feature-item__title">Cheat Codes</p>
           <p class="feature-item__desc">Enter Game Genie, GameShark, or Action Replay codes for each game, then toggle individual cheats on or off whenever you want to switch styles mid-run.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">💾</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <p class="feature-item__title">Save Anywhere</p>
           <p class="feature-item__desc">Use save states at any point, rely on auto-save when you exit, and jump back in with one-tap resume so your progress is always ready when you are.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🎛️</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
           <p class="feature-item__title">Make It Yours</p>
           <p class="feature-item__desc">Choose fullscreen or a retro TV shell on iPad, tune scanlines, color filters, volume, and haptics, and shape the look and feel of each session around the way you like to play.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📂</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <p class="feature-item__title">Import and Play</p>
           <p class="feature-item__desc">Bring in your own game files from the Files app and start playing without account setup, online checks, or extra downloads. The emulator cores ship inside the app, ready to go.</p>
         </div>
@@ -233,7 +237,7 @@
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">We've Got You Covered</h2>
       <p class="section-desc">Need help with game imports, supported systems, controllers, cheats, or save states? Use the dedicated support page or review the Retro Handheld privacy policy below.</p>
-      <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="app-support-cta">
         <a href="../support/retro-handheld.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/retro-handheld.html" class="btn btn--outline">Privacy Policy</a>
         <a href="../terms.html" class="btn btn--outline">Terms of Use</a>
@@ -241,7 +245,10 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ======= Footer ======= -->
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer__top">

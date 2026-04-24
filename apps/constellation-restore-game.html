@@ -13,9 +13,11 @@
 </head>
 <body class="app--constellation">
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
@@ -26,14 +28,16 @@
           Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../index.html" aria-current="page">Apps</a></li>
           <li><a href="../about.html">About</a></li>
           <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <section class="app-hero">
     <div class="container">
       <div class="breadcrumb">
@@ -46,8 +50,8 @@
           <img src="../assets/icons/stars_icon.png" alt="Constellation Restore icon" />
         </div>
         <div class="app-hero__text">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-            <p class="app-hero__category" style="margin-bottom: 0;">Games &bull; Puzzle</p>
+          <div class="app-hero__badges">
+            <p class="app-hero__category">Games &bull; Puzzle</p>
             <span class="app-card__platform-badge">iOS 17+</span>
             <span class="app-card__platform-badge">AR Sky Guide</span>
             <span class="app-card__platform-badge">Atlas</span>
@@ -89,32 +93,32 @@
       <h2 class="section-title">Restore It, Then Find It</h2>
       <div class="features-grid">
         <div class="feature-item">
-          <div class="feature-item__icon">📷</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <p class="feature-item__title">Find in Sky</p>
           <p class="feature-item__desc">Point your camera at the night sky and see a real-time overlay that draws constellation lines over the stars, with a direction arrow when the target is out of frame.</p>
         </div>
         <div class="feature-item">
-          <div class="feature-item__icon">📚</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <p class="feature-item__title">Constellation Atlas</p>
           <p class="feature-item__desc">Unlock mythology, featured star facts, and sky guides as you solve, all collected in a growing atlas with detailed constellation views.</p>
         </div>
         <div class="feature-item">
-          <div class="feature-item__icon">🌙</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
           <p class="feature-item__title">Tonight's Sky</p>
           <p class="feature-item__desc">See which constellation is featured tonight, why it is worth finding, your observing streak, and jump straight into the real-sky finder.</p>
         </div>
         <div class="feature-item">
-          <div class="feature-item__icon">⭐</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
           <p class="feature-item__title">Star Ratings</p>
           <p class="feature-item__desc">Earn up to 3 stars on each puzzle based on how few hints you use, with your best rating saved per constellation.</p>
         </div>
         <div class="feature-item">
-          <div class="feature-item__icon">👁️</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <p class="feature-item__title">Peek Mode</p>
           <p class="feature-item__desc">Hold the peek button to briefly reveal the solution shape, letting you study the pattern without fully giving up on the puzzle.</p>
         </div>
         <div class="feature-item">
-          <div class="feature-item__icon">✨</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
           <p class="feature-item__title">Discovery Cards</p>
           <p class="feature-item__desc">After each solve, a full-screen discovery card celebrates the constellation with mythology, star facts, and observing guidance before adding it to your atlas.</p>
         </div>
@@ -127,13 +131,15 @@
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">Support and Privacy</h2>
       <p class="section-desc">Need help with Find in Sky, Tonight's Sky, atlas unlocks, Peek Mode, or camera and location access? Use the support page or review the privacy policy below.</p>
-      <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="app-support-cta">
         <a href="../support/constellation-restore-game.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/constellation-restore-game.html" class="btn btn--outline">Privacy Policy</a>
         <a href="../terms.html" class="btn btn--outline">Terms of Use</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="site-footer">
     <div class="container">

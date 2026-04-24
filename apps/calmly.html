@@ -13,10 +13,12 @@
 </head>
 <body class="app--calmly">
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- ======= Header ======= -->
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
@@ -27,14 +29,16 @@
           Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../index.html" aria-current="page">Apps</a></li>
           <li><a href="../about.html">About</a></li>
           <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <!-- ======= App Hero ======= -->
   <section class="app-hero">
     <div class="container">
@@ -48,8 +52,8 @@
           <img src="../assets/icons/calmy_icon.png" alt="Calmly icon" />
         </div>
         <div class="app-hero__text">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-            <p class="app-hero__category" style="margin-bottom: 0;">Productivity &bull; Focus Timer</p>
+          <div class="app-hero__badges">
+            <p class="app-hero__category">Productivity &bull; Focus Timer</p>
             <span class="app-card__platform-badge">iOS</span>
             <span class="app-card__platform-badge">watchOS</span>
             <span class="app-card__platform-badge">Live Activities</span>
@@ -92,61 +96,61 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <div class="feature-item__icon">⏱️</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <p class="feature-item__title">Custom Timer Presets</p>
           <p class="feature-item__desc">Save your favorite focus routines and bring them back instantly instead of rebuilding the same timer setup every day.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">🎯</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
           <p class="feature-item__title">Daily Goals</p>
           <p class="feature-item__desc">Set a clear daily target for focused time so you know what you are aiming for before the first session even starts.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">📊</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></svg></div>
           <p class="feature-item__title">History and Streaks</p>
           <p class="feature-item__desc">Review session history, watch your streak build, and see progress over time without turning the app into a noisy productivity dashboard.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">📱</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
           <p class="feature-item__title">Live Activities</p>
           <p class="feature-item__desc">Keep the current session visible on the Lock Screen and in Dynamic Island so your timer stays readable at a glance.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">🗣️</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
           <p class="feature-item__title">Siri Shortcuts</p>
           <p class="feature-item__desc">Start, pause, and resume sessions faster with Siri Shortcuts that fit neatly into your existing workflow.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">🎵</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
           <p class="feature-item__title">Imported Ambient Audio</p>
           <p class="feature-item__desc">Bring your own ambient tracks into Calmly for a more personal background soundscape during focus sessions.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">⌚</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><polyline points="12 9 12 12 13.5 13.5"/><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"/></svg></div>
           <p class="feature-item__title">Apple Watch Reliability</p>
           <p class="feature-item__desc">Improved timer accuracy, notifications, syncing, and overall reliability keep Calmly more dependable across iPhone and Apple Watch.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">🎨</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <p class="feature-item__title">Minimal by Design</p>
           <p class="feature-item__desc">A clean, distraction-free interface that gets out of your way the moment you start a session. Nothing on screen but what matters.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">🔔</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
           <p class="feature-item__title">Gentle Session Alerts</p>
           <p class="feature-item__desc">Soft, non-jarring end-of-session sounds that bring you out of focus gradually instead of yanking your attention back all at once.</p>
         </div>
 
         <div class="feature-item">
-          <div class="feature-item__icon">🔒</div>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
           <p class="feature-item__title">Premium. Once.</p>
           <p class="feature-item__desc">Pay once, own it forever. No subscriptions, no hidden upsells, and no feature tier that walls off the basics.</p>
         </div>
@@ -178,7 +182,7 @@
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">Support and Privacy</h2>
       <p class="section-desc">Need help with presets, session history, Live Activities, Siri Shortcuts, imported audio, or Apple Watch syncing? Use the support page or review the Calmly privacy policy below.</p>
-      <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="app-support-cta">
         <a href="../support/calmly.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/calmly.html" class="btn btn--outline">Privacy Policy</a>
         <a href="../terms.html" class="btn btn--outline">Terms of Use</a>
@@ -186,7 +190,10 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ======= Footer ======= -->
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer__top">

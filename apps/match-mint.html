@@ -13,10 +13,12 @@
 </head>
 <body class="app--matchmint">
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- ======= Header ======= -->
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
@@ -27,14 +29,16 @@
           Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../index.html" aria-current="page">Apps</a></li>
           <li><a href="../about.html">About</a></li>
           <li class="nav__hide-mobile"><a href="../support/index.html">Support</a></li>
+          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <!-- ======= App Hero ======= -->
   <section class="app-hero">
     <div class="container">
@@ -48,8 +52,8 @@
           <img src="../assets/icons/matchmint_icon.svg" alt="Match Mint icon" />
         </div>
         <div class="app-hero__text">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
-            <p class="app-hero__category" style="margin-bottom: 0;">Games &bull; Puzzle</p>
+          <div class="app-hero__badges">
+            <p class="app-hero__category">Games &bull; Puzzle</p>
             <span class="app-card__platform-badge">Daily Rewards</span>
             <span class="app-card__platform-badge">Game Center</span>
             <span class="app-card__platform-badge">Offline Core Play</span>
@@ -89,49 +93,49 @@
       <div class="features-grid">
 
         <div class="feature-item">
-          <span class="feature-item__icon">⚡</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <p class="feature-item__title">Combo Multipliers</p>
           <p class="feature-item__desc">Build bigger scores by chaining clean matches together and letting the combo multiplier keep climbing.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">✨</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
           <p class="feature-item__title">Special Tiles</p>
           <p class="feature-item__desc">Create powerful special tiles from 4+ matches and use them to swing difficult boards back in your favor.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🧱</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
           <p class="feature-item__title">Blocker Tiles</p>
           <p class="feature-item__desc">Break through new blocker tiles that add friction, force better board reading, and make late-round decisions matter more.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">💡</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
           <p class="feature-item__title">Hints and Tutorial</p>
           <p class="feature-item__desc">Use the new Hint button when you get stuck and learn faster with an improved tutorial flow.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📅</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
           <p class="feature-item__title">Daily Streak Rewards</p>
           <p class="feature-item__desc">Complete challenges on consecutive days to build a streak and unlock better daily rewards.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🏆</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 8 12 8s5-4 7.5-4a2.5 2.5 0 0 1 0 5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
           <p class="feature-item__title">Game Center Leaderboards</p>
           <p class="feature-item__desc">Connect to Game Center and compete on campaign and daily leaderboards without changing the fast, pick-up-and-play core loop.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">🧠</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></svg></div>
           <p class="feature-item__title">Fast Memory Rounds</p>
           <p class="feature-item__desc">Play quick boards designed to test recall without overwhelming you, now with better balance and cleaner reward pacing.</p>
         </div>
 
         <div class="feature-item">
-          <span class="feature-item__icon">📶</span>
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
           <p class="feature-item__title">Offline Core Play</p>
           <p class="feature-item__desc">Standard gameplay still works offline. Game Center features can sync when you are connected and signed in.</p>
         </div>
@@ -146,13 +150,15 @@
       <p class="section-label">Need Help?</p>
       <h2 class="section-title">Support Is Ready</h2>
       <p class="section-desc">Need help with combos, special tiles, blocker boards, daily streak rewards, or Game Center leaderboards? Visit support or review the privacy policy below.</p>
-      <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="app-support-cta">
         <a href="../support/match-mint.html" class="btn btn--primary">Get Support</a>
         <a href="../privacy/match-mint.html" class="btn btn--outline">Privacy Policy</a>
         <a href="../terms.html" class="btn btn--outline">Terms of Use</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer class="site-footer">

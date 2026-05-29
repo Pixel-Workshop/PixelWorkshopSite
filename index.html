@@ -29,107 +29,118 @@
               <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
             </svg>
           </div>
-          Pixel Workshop
+          PIXEL_WORKSHOP
         </a>
         <ul class="nav__links">
-          <li><a href="index.html" aria-current="page">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="nav__hide-mobile"><a href="support/index.html">Support</a></li>
-          <li><a href="hire.html" class="nav__cta">Hire Us</a></li>
+          <li><a href="index.html" aria-current="page">APPS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li class="nav__hide-mobile"><a href="support/index.html">SUPPORT</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
+
+  <!-- ======= Boot Sequence Hero ======= -->
   <section class="hero">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
     <div class="container">
       <div class="hero__inner">
-        <div class="hero__eyebrow animate-in">
-          <span class="hero__eyebrow-dot"></span>
-          App Studio — Richmond, VA
-        </div>
-        <h1 class="hero__title animate-in delay-1">No Ads. No Subscriptions.<br>Just Software.</h1>
-        <p class="hero__subtitle animate-in delay-2">We build focused iOS apps that respect your time, your privacy, and your home screen. Eight apps. Zero compromise.</p>
-        <div class="hero__cta animate-in delay-3">
-          <a href="#apps" class="btn btn--primary">Explore Our Apps</a>
-          <a href="about.html" class="btn btn--outline">About Us</a>
-        </div>
-        <div class="stats-bar animate-in delay-4">
-          <div class="stats-bar__item">
-            <div class="stats-bar__number">8</div>
-            <div class="stats-bar__label">Apps Shipped</div>
+        <div id="boot-text" class="boot-text" data-lines="> PIXEL_WORKSHOP v8.0|> LOCATION: RICHMOND, VA|> STATUS: ONLINE|> INITIALIZING INTERFACE..."></div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">No Ads. No Subs.<br><span class="glow-cyan">Just Software.</span></h1>
+          <p class="hero__subtitle">We build focused iOS apps that respect your time, your privacy, and your home screen. Eight apps. Zero compromise.</p>
+          <div class="hero__cta">
+            <a href="#apps" class="btn btn--primary">EXPLORE_APPS</a>
+            <a href="about.html" class="btn btn--outline">ABOUT_US</a>
           </div>
-          <div class="stats-bar__item">
-            <div class="stats-bar__number">0</div>
-            <div class="stats-bar__label">Ads or Trackers</div>
-          </div>
-          <div class="stats-bar__item">
-            <div class="stats-bar__number">4.5★</div>
-            <div class="stats-bar__label">Avg Rating</div>
+
+          <div class="stats-bar">
+            <div class="stats-bar__item">
+              <div class="stats-bar__number">8</div>
+              <div class="stats-bar__label">DEPLOYED</div>
+            </div>
+            <div class="stats-bar__item">
+              <div class="stats-bar__number">0</div>
+              <div class="stats-bar__label">TRACKERS</div>
+            </div>
+            <div class="stats-bar__item">
+              <div class="stats-bar__number">4.5</div>
+              <div class="stats-bar__label">RATING</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="hero__edge"></div>
   </section>
 
-  <div class="divider"></div>
-
+  <!-- ======= Deployed Modules ======= -->
   <section class="section" id="apps">
     <div class="container">
-      <span class="section-label animate-in">Our Apps</span>
-      <h2 class="section-title animate-in delay-1">The Collection</h2>
+      <span class="section-label animate-in">// DEPLOYED_MODULES [8]</span>
+      <h2 class="section-title animate-in delay-1">The <span class="glow-cyan">Collection</span></h2>
       <p class="section-desc animate-in delay-2">Games, tools, and experiences — each built to do one thing exceptionally well.</p>
       <div class="app-grid animate-in delay-3">
         <a href="apps/match-mint.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/matchmint_icon.svg" alt="Match Mint" /></div>
-          <div class="app-card__category">Puzzle</div>
+          <div class="app-card__category">PUZZLE</div>
           <div class="app-card__name">Match Mint</div>
           <div class="app-card__desc">Memory puzzle with combos, special tiles, and daily leaderboards.</div>
+          <div class="app-card__module-id">MODULE_01</div>
         </a>
         <a href="apps/refract.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/refract_icon.png" alt="Refract" /></div>
-          <div class="app-card__category">Puzzle</div>
+          <div class="app-card__category">PUZZLE</div>
           <div class="app-card__name">Refract</div>
           <div class="app-card__desc">Guide beams through mirrors and prisms with AR support.</div>
+          <div class="app-card__module-id">MODULE_02</div>
         </a>
         <a href="apps/forge-sets.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/forgesets_icon.png" alt="ForgeSets" /></div>
-          <div class="app-card__category">AI Coach</div>
+          <div class="app-card__category">AI COACH</div>
           <div class="app-card__name">ForgeSets</div>
           <div class="app-card__desc">AI-powered strength training, fully on-device.</div>
-          <span class="app-card__badge">Coming Soon</span>
+          <span class="app-card__badge">PENDING</span>
+          <div class="app-card__module-id">MODULE_03</div>
         </a>
         <a href="apps/retro-handheld.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld" /></div>
-          <div class="app-card__category">Emulator</div>
+          <div class="app-card__category">EMULATOR</div>
           <div class="app-card__name">Retro Handheld</div>
           <div class="app-card__desc">Multi-system retro gaming with controller support and save states.</div>
+          <div class="app-card__module-id">MODULE_04</div>
         </a>
         <a href="apps/solve-to-snooze.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze" /></div>
-          <div class="app-card__category">Productivity</div>
+          <div class="app-card__category">PRODUCTIVITY</div>
           <div class="app-card__name">Solve To Snooze</div>
           <div class="app-card__desc">Smart alarm challenges that actually get you out of bed.</div>
+          <div class="app-card__module-id">MODULE_05</div>
         </a>
         <a href="apps/calmly.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/calmy_icon.png" alt="Calmly" /></div>
-          <div class="app-card__category">Focus Timer</div>
+          <div class="app-card__category">FOCUS TIMER</div>
           <div class="app-card__name">Calmly</div>
           <div class="app-card__desc">Pomodoro timer with Apple Watch, streaks, and Siri Shortcuts.</div>
+          <div class="app-card__module-id">MODULE_06</div>
         </a>
         <a href="apps/constellation-restore-game.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/stars_icon.png" alt="Constellation Restore" /></div>
-          <div class="app-card__category">Puzzle</div>
+          <div class="app-card__category">PUZZLE</div>
           <div class="app-card__name">Constellation Restore</div>
           <div class="app-card__desc">Restore star patterns with AR sky-finding.</div>
+          <div class="app-card__module-id">MODULE_07</div>
         </a>
         <a href="apps/warfront-1944.html" class="app-card">
           <div class="app-card__icon"><img src="assets/icons/warfront1944_icon.png" alt="Warfront: 1944" /></div>
-          <div class="app-card__category">Strategy</div>
+          <div class="app-card__category">STRATEGY</div>
           <div class="app-card__name">Warfront: 1944</div>
           <div class="app-card__desc">WWII real-time strategy with base building and campaigns.</div>
-          <span class="app-card__badge">Coming Soon</span>
+          <span class="app-card__badge">PENDING</span>
+          <div class="app-card__module-id">MODULE_08</div>
         </a>
       </div>
     </div>
@@ -137,55 +148,73 @@
 
   <div class="divider"></div>
 
+  <!-- ======= System Diagnostics ======= -->
   <section class="section">
     <div class="container">
-      <span class="section-label animate-in">Our Approach</span>
-      <h2 class="section-title animate-in delay-1">Built different, on purpose.</h2>
-      <div class="bento-grid animate-in delay-2">
-        <div class="bento-card">
-          <div class="bento-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></div>
-          <p class="bento-card__title">No Ads, Ever</p>
-          <p class="bento-card__desc">Your experience is the product, not your attention. We don't run ads.</p>
+      <span class="section-label animate-in">// SYSTEM_DIAGNOSTICS</span>
+      <h2 class="section-title animate-in delay-1">Built different, <span class="glow-cyan">on purpose.</span></h2>
+      <div class="diag-grid animate-in delay-2">
+        <div class="diag-card">
+          <div class="diag-card__led"><div class="diag-card__dot"></div></div>
+          <div>
+            <p class="diag-card__title">AD_BLOCK</p>
+            <p class="diag-card__status">STATUS: PERMANENT</p>
+          </div>
         </div>
-        <div class="bento-card">
-          <div class="bento-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-          <p class="bento-card__title">Privacy by Default</p>
-          <p class="bento-card__desc">Your data stays on your device. We don't collect, track, or sell it.</p>
+        <div class="diag-card">
+          <div class="diag-card__led"><div class="diag-card__dot"></div></div>
+          <div>
+            <p class="diag-card__title">PRIVACY_MODE</p>
+            <p class="diag-card__status">ENCRYPTION: ON-DEVICE</p>
+          </div>
         </div>
-        <div class="bento-card">
-          <div class="bento-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-          <p class="bento-card__title">No Subscription Traps</p>
-          <p class="bento-card__desc">Pay once or download free. No features hidden behind paywalls.</p>
+        <div class="diag-card">
+          <div class="diag-card__led"><div class="diag-card__dot"></div></div>
+          <div>
+            <p class="diag-card__title">SUB_TRAP</p>
+            <p class="diag-card__status">STATUS: ELIMINATED</p>
+          </div>
         </div>
-        <div class="bento-card">
-          <div class="bento-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-          <p class="bento-card__title">Built to Be Fast</p>
-          <p class="bento-card__desc">Performance is a feature. Instant launch, smooth scrolling, minimal battery drain.</p>
+        <div class="diag-card">
+          <div class="diag-card__led"><div class="diag-card__dot"></div></div>
+          <div>
+            <p class="diag-card__title">PERF_ENGINE</p>
+            <p class="diag-card__status">LATENCY: 0ms BLOAT</p>
+          </div>
         </div>
-        <div class="bento-card">
-          <div class="bento-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-          <p class="bento-card__title">One Job, Done Right</p>
-          <p class="bento-card__desc">Each app does one thing exceptionally well. No feature bloat.</p>
+        <div class="diag-card">
+          <div class="diag-card__led"><div class="diag-card__dot"></div></div>
+          <div>
+            <p class="diag-card__title">FOCUS_PROTOCOL</p>
+            <p class="diag-card__status">MODE: ONE_JOB_DONE_RIGHT</p>
+          </div>
         </div>
-        <div class="bento-card">
-          <div class="bento-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20v-6M6 20V10M18 20V4"/></svg></div>
-          <p class="bento-card__title">Always Shipping</p>
-          <p class="bento-card__desc">We listen to users and iterate fast. More apps are always in the works.</p>
+        <div class="diag-card">
+          <div class="diag-card__led"><div class="diag-card__dot"></div></div>
+          <div>
+            <p class="diag-card__title">SHIP_CYCLE</p>
+            <p class="diag-card__status">STATUS: ALWAYS_ACTIVE</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about-strip">
-    <div class="about-strip__inner">
-      <div class="about-strip__text">
-        <span class="section-label">About Pixel Workshop</span>
-        <h2 class="about-strip__title">Built by a small team,<br>driven by quality.</h2>
-        <p class="about-strip__desc">We're an app studio in Richmond, VA. We combine deliberate design with AI-assisted development to ship software that respects your time and your home screen.</p>
-      </div>
-      <div class="about-strip__actions">
-        <a href="about.html" class="btn btn--outline">About Us</a>
-        <a href="support/index.html" class="btn btn--outline">Support</a>
+  <!-- ======= Incoming Transmission ======= -->
+  <section class="section">
+    <div class="container">
+      <div class="transmission animate-in">
+        <span class="section-label">// INCOMING_TRANSMISSION</span>
+        <div class="transmission__inner">
+          <div class="transmission__text">
+            <h2 class="transmission__title">Built by a small team,<br>driven by quality.</h2>
+            <p class="transmission__desc">We're an app studio in Richmond, VA. We combine deliberate design with AI-assisted development to ship software that respects your time and your home screen.</p>
+          </div>
+          <div class="transmission__actions">
+            <a href="about.html" class="btn btn--primary">ABOUT_US</a>
+            <a href="support/index.html" class="btn btn--outline">SUPPORT</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -194,51 +223,16 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand-block">
-          <div class="footer__logo">
-            <div class="footer__logo-pixel"></div>
-            Pixel Workshop
-          </div>
-          <p class="footer__tagline">App studio. Thoughtful software, no compromise.</p>
-        </div>
-        <div class="footer__nav-group">
-          <p class="footer__nav-heading">Apps</p>
-          <ul class="footer__nav-links">
-            <li><a href="apps/retro-handheld.html">Retro Handheld</a></li>
-            <li><a href="apps/match-mint.html">Match Mint</a></li>
-            <li><a href="apps/refract.html">Refract</a></li>
-            <li><a href="apps/calmly.html">Calmly</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav-group">
-          <p class="footer__nav-heading">Support</p>
-          <ul class="footer__nav-links">
-            <li><a href="support/index.html">Support Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav-group">
-          <p class="footer__nav-heading">Company</p>
-          <ul class="footer__nav-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-          </ul>
-        </div>
+      <div class="footer__terminal">
+        <span>> PIXEL_WORKSHOP LLC // RICHMOND, VA</span>
+        <span><a href="index.html">APPS</a> | <a href="about.html">ABOUT</a> | <a href="support/index.html">SUPPORT</a> | <a href="privacy.html">PRIVACY</a> | <a href="terms.html">TERMS</a></span>
+        <span>> &copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
       </div>
-      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &middot; Richmond, VA</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.animate-in').forEach(function(el) { observer.observe(el); });
-  </script>
+  <script src="js/particles.js"></script>
+  <script src="js/glitch.js"></script>
 
 </body>
 </html>

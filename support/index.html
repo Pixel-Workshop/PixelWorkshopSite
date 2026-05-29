@@ -16,23 +16,22 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- ======= Header ======= -->
-    <header class="site-header">
+  <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Main navigation">
-        <a href="../index.html" class="nav__logo">
+        <a href="../index.html" class="nav__logo" style="font-family:monospace">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
-              <rect x="1" y="1" width="3" height="3"/><rect x="6" y="1" width="3" height="3"/>
-              <rect x="1" y="6" width="3" height="3"/><rect x="6" y="6" width="3" height="3"/>
+              <rect x="1" y="1" width="3" height="3" fill="#000"/><rect x="6" y="1" width="3" height="3" fill="#000"/>
+              <rect x="1" y="6" width="3" height="3" fill="#000"/><rect x="6" y="6" width="3" height="3" fill="#000"/>
             </svg>
           </div>
-          Pixel Workshop
+          PIXEL_WORKSHOP
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">Apps</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li class="nav__hide-mobile"><a href="../support/index.html" aria-current="page">Support</a></li>
-          <li><a href="../hire.html" class="nav__cta">Hire Us</a></li>
+          <li><a href="../index.html">APPS</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="index.html" aria-current="page">SUPPORT</a></li>
         </ul>
       </nav>
     </div>
@@ -42,8 +41,9 @@
   <!-- ======= Hero ======= -->
   <section class="section">
     <div class="container">
-      <p class="section-label">Support</p>
-      <h1 class="section-title">How Can We Help?</h1>
+      <p class="breadcrumb" style="font-family:monospace">> SUPPORT</p>
+      <p class="section-label">// DATABANK :: SUPPORT_HUB</p>
+      <h1 class="section-title glow-cyan">How Can We Help?</h1>
       <p class="section-desc">Select your app below to find answers to common questions or get in touch with us directly.</p>
 
       <div class="support-grid">
@@ -112,45 +112,18 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand-block">
-          <div class="footer__logo">
-            <div class="footer__logo-pixel"></div>
-            Pixel Workshop
-          </div>
-          <p class="footer__tagline">App studio. Thoughtful software, no compromise.</p>
-        </div>
-        <div class="footer__nav-group">
-          <p class="footer__nav-heading">Apps</p>
-          <ul class="footer__nav-links">
-            <li><a href="../apps/retro-handheld.html">Retro Handheld</a></li>
-            <li><a href="../apps/match-mint.html">Match Mint</a></li>
-            <li><a href="../apps/refract.html">Refract</a></li>
-            <li><a href="../apps/calmly.html">Calmly</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav-group">
-          <p class="footer__nav-heading">Support</p>
-          <ul class="footer__nav-links">
-            <li><a href="../support/index.html">Support Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav-group">
-          <p class="footer__nav-heading">Company</p>
-          <ul class="footer__nav-links">
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="../privacy.html">Privacy Policy</a></li>
-            <li><a href="../terms.html">Terms of Use</a></li>
-          </ul>
-        </div>
+      <div class="footer__terminal">
+        <span>> PIXEL_WORKSHOP LLC // RICHMOND, VA</span>
+        <span><a href="../index.html">APPS</a> | <a href="../about.html">ABOUT</a> | <a href="index.html">SUPPORT</a> | <a href="../privacy.html">PRIVACY</a> | <a href="../terms.html">TERMS</a></span>
+        <span>> &copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
       </div>
-      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &middot; Richmond, VA</p>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script src="../js/glitch.js"></script>
 
 </body>
 </html>

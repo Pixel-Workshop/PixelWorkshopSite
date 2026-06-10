@@ -1083,6 +1083,12 @@ a:focus-visible, button:focus-visible {
   box-shadow: 0 0 24px var(--color-glow-1);
   transform: translateY(-2px);
 }
+.btn--app-store.btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
 .btn--app-store svg { width: 20px; height: 20px; fill: var(--color-accent-1); }
 .btn__label-top { font-size: 0.6rem; opacity: 0.6; display: block; line-height: 1; }
 .btn__label-main { font-size: 0.85rem; font-weight: 700; display: block; line-height: 1.2; }
@@ -1101,6 +1107,30 @@ a:focus-visible, button:focus-visible {
 }
 .screenshot:hover { box-shadow: 0 0 30px rgba(0, 240, 255, 0.15); }
 .screenshot img { height: 480px; width: auto; }
+.screenshot--placeholder {
+  width: 280px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top, rgba(0, 240, 255, 0.08), transparent 48%),
+    rgba(255, 255, 255, 0.02);
+}
+.screenshot-placeholder__content {
+  padding: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+.screenshot-placeholder__content strong {
+  color: var(--color-text);
+  font-size: 0.92rem;
+}
 
 /* Features Grid */
 .features-grid {

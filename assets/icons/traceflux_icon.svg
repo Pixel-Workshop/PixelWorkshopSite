@@ -1,0 +1,42 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="traceflux_bg" x1="144" y1="128" x2="896" y2="896" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081120"/>
+      <stop offset="1" stop-color="#15103A"/>
+    </linearGradient>
+    <linearGradient id="traceflux_glow" x1="224" y1="208" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F0FF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="traceflux_core" x1="360" y1="320" x2="664" y2="704" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="traceflux_blur" x="140" y="140" width="744" height="744" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <rect x="96" y="96" width="832" height="832" rx="196" fill="url(#traceflux_bg)"/>
+  <rect x="96" y="96" width="832" height="832" rx="196" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+
+  <g filter="url(#traceflux_blur)" opacity="0.28">
+    <circle cx="512" cy="512" r="236" fill="url(#traceflux_glow)"/>
+  </g>
+
+  <path d="M250 304H774" stroke="url(#traceflux_glow)" stroke-width="38" stroke-linecap="round" opacity="0.95"/>
+  <path d="M250 512H650" stroke="url(#traceflux_glow)" stroke-width="38" stroke-linecap="round" opacity="0.95"/>
+  <path d="M250 720H546" stroke="url(#traceflux_glow)" stroke-width="38" stroke-linecap="round" opacity="0.95"/>
+
+  <circle cx="774" cy="304" r="54" fill="#F97316"/>
+  <circle cx="650" cy="512" r="54" fill="#22D3EE"/>
+  <circle cx="546" cy="720" r="54" fill="#8B5CF6"/>
+
+  <path d="M362 262L638 262" stroke="white" stroke-width="52" stroke-linecap="round"/>
+  <path d="M500 262V760" stroke="white" stroke-width="52" stroke-linecap="round"/>
+  <path d="M500 486L652 486" stroke="url(#traceflux_core)" stroke-width="52" stroke-linecap="round"/>
+
+  <circle cx="500" cy="262" r="18" fill="#081120"/>
+  <circle cx="500" cy="486" r="18" fill="#081120"/>
+  <circle cx="500" cy="720" r="18" fill="#081120"/>
+</svg>

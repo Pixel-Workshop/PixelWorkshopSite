@@ -66,7 +66,7 @@
             <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-item__answer">
-            Reconnect scattered stars to rebuild each constellation. When every required connection is restored, the puzzle is complete, you earn a star rating based on hint use, and the constellation's discovery content can unlock for your atlas.
+            First, study the completed constellation before its stars scatter. Drag each free star back into place; on rotation levels, tap a star to rotate its cluster. Lines brighten as stars align. Hold Peek for a brief look at the solution, or tap Hint for one guided move. Restore every star to complete the puzzle, earn a rating, and unlock its discovery content.
           </div>
         </div>
 
@@ -77,6 +77,16 @@
           </button>
           <div class="faq-item__answer">
             Find in Sky uses your camera and location to show where a constellation is in the real sky from your current position. A live overlay draws the constellation lines on the camera view, and a direction arrow helps guide you when the target is off-screen.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Can I replay the welcome guide?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            Yes. Open Settings, choose Replay Welcome Guide, and the app will walk through the Restore, Discover, and Find flow again without changing your saved progress.
           </div>
         </div>
 
@@ -267,13 +277,18 @@
 
     // FAQ accordion
     document.querySelectorAll('.faq-item__question').forEach(function(btn) {
+      btn.setAttribute('aria-expanded', 'false');
       btn.addEventListener('click', function() {
         var item = this.closest('.faq-item');
         var isOpen = item.classList.contains('open');
         document.querySelectorAll('.faq-item').forEach(function(el) {
           el.classList.remove('open');
+          el.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
         });
-        if (!isOpen) item.classList.add('open');
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 

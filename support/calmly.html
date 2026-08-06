@@ -8,8 +8,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
 
@@ -19,19 +19,19 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Main navigation">
-        <a href="../index.html" class="nav__logo" style="font-family:monospace">
+        <a href="../index.html" class="nav__logo">
           <div class="nav__logo-pixel">
             <svg viewBox="0 0 10 10" aria-hidden="true">
               <rect x="1" y="1" width="3" height="3" fill="#000"/><rect x="6" y="1" width="3" height="3" fill="#000"/>
               <rect x="1" y="6" width="3" height="3" fill="#000"/><rect x="6" y="6" width="3" height="3" fill="#000"/>
             </svg>
           </div>
-          PIXEL_WORKSHOP
+          Pixel Workshop
         </a>
         <ul class="nav__links">
-          <li><a href="../index.html">APPS</a></li>
-          <li><a href="../about.html">ABOUT</a></li>
-          <li><a href="index.html">SUPPORT</a></li>
+          <li><a href="../index.html">Apps</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="index.html">Support</a></li>
         </ul>
       </nav>
     </div>
@@ -41,8 +41,8 @@
   <!-- ======= Hero ======= -->
   <section class="section">
     <div class="container">
-      <p class="breadcrumb" style="font-family:monospace">> <a href="index.html">SUPPORT</a> > CALMLY</p>
-      <p class="section-label">// SUPPORT_CHANNEL :: CALMLY</p>
+      <p class="breadcrumb">> <a href="index.html">Support</a> > Calmly</p>
+      <p class="section-label">Support</p>
       <h1 class="section-title">Calmly: Focus Timer Support</h1>
       <p class="section-desc">Find answers to common questions below. Can't find what you're looking for? Use the contact form and we'll get back to you.</p>
     </div>
@@ -51,7 +51,7 @@
   <!-- ======= FAQ ======= -->
   <section class="section section--alt">
     <div class="container">
-      <p class="section-label">// TROUBLESHOOT_LOG</p>
+      <p class="section-label">FAQ</p>
       <h2 class="section-title">Frequently Asked Questions</h2>
 
       <div class="faq-list">
@@ -153,7 +153,7 @@
   <!-- ======= Contact Form ======= -->
   <section class="section">
     <div class="container">
-      <p class="section-label">// CONTACT</p>
+      <p class="section-label">Contact</p>
       <h2 class="section-title">Still Need Help?</h2>
       <p class="section-desc">Send us a message and we'll get back to you as soon as possible.</p>
 
@@ -167,17 +167,17 @@
         <input type="hidden" name="app" value="Calmly: Focus Timer" />
 
         <div class="form-group">
-          <label for="calmly-name" style="font-family:monospace;text-transform:uppercase">YOUR NAME</label>
+          <label for="calmly-name">Your Name</label>
           <input type="text" id="calmly-name" name="name" placeholder="Jane Smith" required />
         </div>
 
         <div class="form-group">
-          <label for="calmly-email" style="font-family:monospace;text-transform:uppercase">EMAIL ADDRESS</label>
+          <label for="calmly-email">Email Address</label>
           <input type="email" id="calmly-email" name="email" placeholder="jane@example.com" required />
         </div>
 
         <div class="form-group">
-          <label for="calmly-topic" style="font-family:monospace;text-transform:uppercase">TOPIC</label>
+          <label for="calmly-topic">Topic</label>
           <select id="calmly-topic" name="topic" required>
             <option value="" disabled selected>Select a topic…</option>
             <option value="Presets / timer setup">Presets / timer setup</option>
@@ -194,7 +194,7 @@
         </div>
 
         <div class="form-group">
-          <label for="calmly-message" style="font-family:monospace;text-transform:uppercase">MESSAGE</label>
+          <label for="calmly-message">Message</label>
           <textarea id="calmly-message" name="message" placeholder="Describe the issue or question in as much detail as possible…" required></textarea>
         </div>
 
@@ -213,11 +213,39 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer__terminal">
-        <span>> PIXEL_WORKSHOP LLC // RICHMOND, VA</span>
-        <span><a href="../index.html">APPS</a> | <a href="../about.html">ABOUT</a> | <a href="index.html">SUPPORT</a> | <a href="../privacy.html">PRIVACY</a> | <a href="../terms.html">TERMS</a></span>
-        <span>> &copy; <span id="year"></span> // ALL RIGHTS RESERVED</span>
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            Pixel Workshop
+          </div>
+          <p class="footer__tagline">Focused apps for iPhone and iPad, built with care in Richmond, Virginia.</p>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="../apps/match-mint.html">Match Mint</a></li>
+            <li><a href="../apps/refract.html">Refract</a></li>
+            <li><a href="../apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../apps/calmly.html">Calmly</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="../support/index.html">Support Hub</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
       </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &middot; Richmond, VA</p>
     </div>
   </footer>
 
@@ -247,14 +275,16 @@
         }).then(function(response) {
           if (response.ok) {
             form.reset();
-            form.style.display = 'none';
+            form.querySelectorAll('.form-group, button[type="submit"]').forEach(function(el) {
+              el.style.display = 'none';
+            });
             document.getElementById('calmly-success').style.display = 'block';
           }
         });
       });
     }
   </script>
-  <script src="../js/glitch.js"></script>
+  <script src="../js/site.js"></script>
 
 </body>
 </html>

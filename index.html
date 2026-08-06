@@ -3,365 +3,332 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel Workshop — Digital Universe</title>
-  <meta name="description" content="Pixel Workshop builds focused iOS apps with no ads, no subscriptions, and no bloat. Ten apps in the workshop. Zero compromise." />
-  <meta property="og:title" content="Pixel Workshop — Digital Universe" />
-  <meta property="og:description" content="No ads. No subscriptions. Just software." />
+  <title>Pixel Workshop | Thoughtful Apps for Apple Platforms</title>
+  <meta name="description" content="Pixel Workshop is an independent app studio in Richmond, Virginia. We make focused games and utilities for Apple platforms without ads, tracking, or subscription traps." />
+  <meta property="og:title" content="Pixel Workshop | Thoughtful Apps for Apple Platforms" />
+  <meta property="og:description" content="Small, focused software made with care in Richmond, Virginia." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#f4f0e8" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-
-  <div id="webgl-canvas"></div>
-  <div class="vignette"></div>
-  <div class="noise-overlay"></div>
-
-  <div class="cursor-glow" id="cursor-glow"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header" id="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__logo">
-        <div class="nav__logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>
-          </svg>
+    <div class="shell">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#top" class="brand" aria-label="Pixel Workshop home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none">
+              <path d="M4 4h8v8H4V4Zm12 0h8v8h-8V4ZM4 16h8v8H4v-8Zm12 0h8v8h-8v-8Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand__name">Pixel Workshop</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="#apps">Apps</a>
+          <a href="#principles">Principles</a>
+          <a href="#studio">Studio</a>
+          <a href="support/index.html">Support</a>
         </div>
-        <span class="nav__logo-text">PIXEL<span class="accent">WORKSHOP</span></span>
-      </a>
-      <ul class="nav__links">
-        <li><a href="#universe" class="nav-link active">Home</a></li>
-        <li><a href="#modules" class="nav-link">Apps</a></li>
-        <li><a href="#system" class="nav-link">About Us</a></li>
-        <li><a href="about.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav__status">
-        <span class="status-dot"></span>
-        <span class="status-text">ONLINE</span>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main>
-
-    <!-- ===== HERO: Digital Universe Entry ===== -->
-    <section class="hero" id="universe">
-      <div class="hero__content">
-        <div class="hero__glitch-container">
-          <div class="hero__overline">
-            <span class="typing-text" id="typing-text"></span>
-            <span class="cursor-blink">_</span>
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero__wash" aria-hidden="true"></div>
+      <div class="shell hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span></span> Independent iOS studio &middot; Richmond, Virginia</p>
+          <h1>Useful software,<br />made with a <em>point of view.</em></h1>
+          <p class="hero__lede">We make games and everyday tools that are focused, private, and pleasant to use. No ad-tech. No subscription traps. No feature bloat.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#apps">
+              Explore the apps
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="button button--text" href="about.html">Meet the studio</a>
           </div>
-          <h1 class="hero__title">
-            <span class="title-line" data-delay="0">No Ads.</span>
-            <span class="title-line" data-delay="1">No Subs.</span>
-            <span class="title-line title-line--accent" data-delay="2">Just Software.</span>
-          </h1>
-          <p class="hero__subtitle">We build focused iOS apps that respect your time, your privacy, and your home screen. Ten iOS apps in the workshop. Zero compromise.</p>
+          <dl class="hero__facts" aria-label="Studio facts">
+            <div><dt>10</dt><dd>apps in the workshop</dd></div>
+            <div><dt>0</dt><dd>ads or trackers</dd></div>
+            <div><dt>RVA</dt><dd>designed in Virginia</dd></div>
+          </dl>
         </div>
 
-        <div class="hero__actions">
-          <a href="#modules" class="btn btn--holographic">
-            <span class="btn__glow"></span>
-            <span class="btn__text">Apps</span>
-            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="about.html" class="btn btn--ghost">
-            <span class="btn__text">About</span>
-          </a>
-        </div>
-
-        <div class="hero__metrics">
-          <div class="metric">
-            <div class="metric__value" data-count="10">0</div>
-            <div class="metric__label">APPS</div>
-            <div class="metric__bar"><div class="metric__fill" style="--fill: 100%"></div></div>
+        <div class="hero-stage reveal reveal--delay" aria-label="A selection of Pixel Workshop app icons">
+          <div class="hero-stage__note hero-stage__note--top">Small team.<br />Serious craft.</div>
+          <div class="hero-stage__grid" aria-hidden="true"></div>
+          <div class="icon-tile icon-tile--retro">
+            <img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld app icon" />
+            <span>Retro Handheld</span>
           </div>
-          <div class="metric">
-            <div class="metric__value" data-count="0">0</div>
-            <div class="metric__label">TRACKERS</div>
-            <div class="metric__bar"><div class="metric__fill" style="--fill: 0%"></div></div>
+          <div class="icon-tile icon-tile--snooze">
+            <img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze app icon" />
+            <span>Solve To Snooze</span>
           </div>
-          <div class="metric">
-            <div class="metric__value" data-count="5.0">0</div>
-            <div class="metric__label">RATING</div>
-            <div class="metric__bar"><div class="metric__fill" style="--fill: 90%"></div></div>
+          <div class="icon-tile icon-tile--calmly">
+            <img src="assets/icons/calmy_icon.png" alt="Calmly app icon" />
+            <span>Calmly</span>
           </div>
-        </div>
-      </div>
-
-      <div class="hero__scroll-indicator">
-        <div class="scroll-line"></div>
-        <span>SCROLL TO EXPLORE</span>
-      </div>
-    </section>
-
-    <!-- ===== MODULES: App Grid ===== -->
-    <section class="section section--modules" id="modules">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">// WORKSHOP_MODULES</span>
-          <h2 class="section__title">The <span class="gradient-text">Collection</span></h2>
-          <p class="section__desc">Games, tools, and experiences — each built to do one thing exceptionally well.</p>
-        </div>
-
-        <div class="modules-grid">
-          <a href="apps/match-mint.html" class="module-card" data-index="01">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/matchmint_icon.svg" alt="Match Mint" /></div>
-              <span class="module-card__tag">Puzzle</span>
-              <h3 class="module-card__name">Match Mint</h3>
-              <p class="module-card__desc">Memory puzzle with combo multipliers, blocker tiles, daily rewards, and Game Center leaderboards.</p>
-            </div>
-            <div class="module-card__index">01</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/refract.html" class="module-card" data-index="02">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/refract_icon.png" alt="Refract" /></div>
-              <span class="module-card__tag">Puzzle</span>
-              <h3 class="module-card__name">Refract</h3>
-              <p class="module-card__desc">Laser puzzles with accessibility modes, Game Center, and a daily challenge widget.</p>
-            </div>
-            <div class="module-card__index">02</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/forge-sets.html" class="module-card" data-index="03">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/forgesets_icon.png" alt="ForgeSets" /></div>
-              <span class="module-card__tag">AI Coach</span>
-              <h3 class="module-card__name">ForgeSets</h3>
-              <p class="module-card__desc">AI-powered strength training, fully on-device.</p>
-              <span class="module-card__status">PENDING DEPLOY</span>
-            </div>
-            <div class="module-card__index">03</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/retro-handheld.html" class="module-card" data-index="04">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld" /></div>
-              <span class="module-card__tag">Emulator</span>
-              <h3 class="module-card__name">Retro Handheld</h3>
-              <p class="module-card__desc">Game Boy through PlayStation support with controllers, cheats, save states, and no setup friction.</p>
-            </div>
-            <div class="module-card__index">04</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/solve-to-snooze.html" class="module-card" data-index="05">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze" /></div>
-              <span class="module-card__tag">Productivity</span>
-              <h3 class="module-card__name">Solve To Snooze</h3>
-              <p class="module-card__desc">Typed phrase, barcode, and step-count alarms with reliability checks and wake-up insights.</p>
-            </div>
-            <div class="module-card__index">05</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/calmly.html" class="module-card" data-index="06">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/calmy_icon.png" alt="Calmly" /></div>
-              <span class="module-card__tag">Focus Timer</span>
-              <h3 class="module-card__name">Calmly</h3>
-              <p class="module-card__desc">Custom presets, streaks, Live Activities, imported audio, and Apple Watch support.</p>
-            </div>
-            <div class="module-card__index">06</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/constellation-restore-game.html" class="module-card" data-index="07">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/stars_icon.png" alt="Constellation Restore" /></div>
-              <span class="module-card__tag">Puzzle</span>
-              <h3 class="module-card__name">Constellation Restore</h3>
-              <p class="module-card__desc">Restore constellations, unlock atlas lore, and find them in the real sky with AR guidance.</p>
-            </div>
-            <div class="module-card__index">07</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/warfront-1944.html" class="module-card" data-index="08">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/warfront1944_icon.png" alt="Warfront: 1944" /></div>
-              <span class="module-card__tag">Strategy</span>
-              <h3 class="module-card__name">Warfront: 1944</h3>
-              <p class="module-card__desc">WWII real-time strategy with campaign missions, skirmish battles, and expanding theaters.</p>
-              <span class="module-card__status">PENDING DEPLOY</span>
-            </div>
-            <div class="module-card__index">08</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/paint-by-numbers.html" class="module-card" data-index="09">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/paint_by_numbers.png" alt="Paint by Numbers" /></div>
-              <span class="module-card__tag">Creative</span>
-              <h3 class="module-card__name">Paint by Numbers</h3>
-              <p class="module-card__desc">Relaxing color-by-number puzzles with curated palettes and daily art challenges.</p>
-              <span class="module-card__status">PENDING DEPLOY</span>
-            </div>
-            <div class="module-card__index">09</div>
-            <div class="module-card__border"></div>
-          </a>
-
-          <a href="apps/traceflux.html" class="module-card" data-index="10">
-            <div class="module-card__hologram"></div>
-            <div class="module-card__content">
-              <div class="module-card__icon"><img src="assets/icons/traceflux_icon.svg" alt="Traceflux" /></div>
-              <span class="module-card__tag">Puzzle</span>
-              <h3 class="module-card__name">Traceflux</h3>
-              <p class="module-card__desc">A new Pixel Workshop puzzle game in active development. More details are on the way.</p>
-              <span class="module-card__status">PENDING DEPLOY</span>
-            </div>
-            <div class="module-card__index">10</div>
-            <div class="module-card__border"></div>
-          </a>
+          <div class="icon-tile icon-tile--stars">
+            <img src="assets/icons/stars_icon.png" alt="Constellation Restore app icon" />
+            <span>Constellation Restore</span>
+          </div>
+          <div class="hero-stage__stamp" aria-hidden="true">
+            <span>BUILT FOR</span>
+            <strong>APPLE</strong>
+            <span>PLATFORMS</span>
+          </div>
+          <p class="hero-stage__caption">Games, focus tools, fitness, and a few ideas that do not fit neatly in a category.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== SYSTEM: Core Values ===== -->
-    <section class="section section--system" id="system">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">// SYSTEM_CORE</span>
-          <h2 class="section__title">Built different, <span class="gradient-text">on purpose.</span></h2>
+    <section class="apps-section" id="apps">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> The collection</p>
+            <h2>Ten apps. Each with one clear job.</h2>
+          </div>
+          <p>Tap into the details, see what is available now, or head straight to support. Everything has a place and a purpose.</p>
         </div>
 
-        <div class="system-grid">
-          <div class="system-node" data-node="1">
-            <div class="system-node__ring"></div>
-            <div class="system-node__content">
-              <div class="system-node__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="apps-grid">
+          <article class="app-card app-card--featured reveal" style="--app-color: #3c7654; --app-tint: #dcebdd;">
+            <a class="app-card__hit-area" href="apps/retro-handheld.html" aria-label="View Retro Handheld"></a>
+            <div class="app-card__topline"><span>01</span><span class="status status--live">Available</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld app icon" />
+              <div>
+                <p class="app-card__category">Emulator</p>
+                <h3>Retro Handheld</h3>
+                <p>Classic games, modern controls, save states, cheats, and less setup friction.</p>
               </div>
-              <h3 class="system-node__title">AD_BLOCK</h3>
-              <p class="system-node__status">STATUS: PERMANENT</p>
             </div>
-          </div>
+            <div class="app-card__actions">
+              <a href="apps/retro-handheld.html">View app <span aria-hidden="true">&rarr;</span></a>
+              <a href="support/retro-handheld.html">Support</a>
+            </div>
+          </article>
 
-          <div class="system-node" data-node="2">
-            <div class="system-node__ring"></div>
-            <div class="system-node__content">
-              <div class="system-node__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          <article class="app-card app-card--featured reveal reveal--delay" style="--app-color: #b33c6b; --app-tint: #f6dce7;">
+            <a class="app-card__hit-area" href="apps/solve-to-snooze.html" aria-label="View Solve To Snooze"></a>
+            <div class="app-card__topline"><span>02</span><span class="status status--live">Available</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze app icon" />
+              <div>
+                <p class="app-card__category">Utility</p>
+                <h3>Solve To Snooze</h3>
+                <p>Alarms that ask for proof you are actually awake before they let you snooze.</p>
               </div>
-              <h3 class="system-node__title">PRIVACY_MODE</h3>
-              <p class="system-node__status">ENCRYPTION: ON-DEVICE</p>
             </div>
-          </div>
+            <div class="app-card__actions">
+              <a href="apps/solve-to-snooze.html">View app <span aria-hidden="true">&rarr;</span></a>
+              <a href="support/solve-to-snooze.html">Support</a>
+            </div>
+          </article>
 
-          <div class="system-node" data-node="3">
-            <div class="system-node__ring"></div>
-            <div class="system-node__content">
-              <div class="system-node__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+          <article class="app-card reveal" style="--app-color: #1c9364; --app-tint: #d9f1e3;">
+            <a class="app-card__hit-area" href="apps/match-mint.html" aria-label="View Match Mint"></a>
+            <div class="app-card__topline"><span>03</span><span class="status status--live">Available</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/matchmint_icon.svg" alt="Match Mint app icon" />
+              <div>
+                <p class="app-card__category">Puzzle game</p>
+                <h3>Match Mint</h3>
+                <p>Memory matching with combo multipliers, blocker tiles, daily rewards, and Game Center leaderboards.</p>
               </div>
-              <h3 class="system-node__title">SUB_TRAP</h3>
-              <p class="system-node__status">STATUS: ELIMINATED</p>
             </div>
-          </div>
+            <div class="app-card__actions"><a href="apps/match-mint.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/match-mint.html">Support</a></div>
+          </article>
 
-          <div class="system-node" data-node="4">
-            <div class="system-node__ring"></div>
-            <div class="system-node__content">
-              <div class="system-node__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <article class="app-card reveal" style="--app-color: #ee4f3e; --app-tint: #fde3dd;">
+            <a class="app-card__hit-area" href="apps/refract.html" aria-label="View Refract"></a>
+            <div class="app-card__topline"><span>04</span><span class="status status--live">Available</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/refract_icon.png" alt="Refract app icon" />
+              <div>
+                <p class="app-card__category">Puzzle game</p>
+                <h3>Refract</h3>
+                <p>Shape laser paths through handcrafted puzzles, with accessibility modes, daily challenges, and Game Center.</p>
               </div>
-              <h3 class="system-node__title">PERF_ENGINE</h3>
-              <p class="system-node__status">LATENCY: 0ms BLOAT</p>
             </div>
-          </div>
+            <div class="app-card__actions"><a href="apps/refract.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/refract.html">Support</a></div>
+          </article>
 
-          <div class="system-node" data-node="5">
-            <div class="system-node__ring"></div>
-            <div class="system-node__content">
-              <div class="system-node__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <article class="app-card reveal" style="--app-color: #b2761e; --app-tint: #f5ead1;">
+            <a class="app-card__hit-area" href="apps/forge-sets.html" aria-label="View ForgeSets"></a>
+            <div class="app-card__topline"><span>05</span><span class="status">Coming soon</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/forgesets_icon.png" alt="ForgeSets app icon" />
+              <div>
+                <p class="app-card__category">Fitness</p>
+                <h3>ForgeSets</h3>
+                <p>An on-device strength coach built for training, not screen time.</p>
               </div>
-              <h3 class="system-node__title">FOCUS_PROTOCOL</h3>
-              <p class="system-node__status">MODE: ONE_JOB_DONE_RIGHT</p>
             </div>
-          </div>
+            <div class="app-card__actions"><a href="apps/forge-sets.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/forge-sets.html">Support</a></div>
+          </article>
 
-          <div class="system-node" data-node="6">
-            <div class="system-node__ring"></div>
-            <div class="system-node__content">
-              <div class="system-node__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+          <article class="app-card reveal" style="--app-color: #257f85; --app-tint: #d8eeee;">
+            <a class="app-card__hit-area" href="apps/calmly.html" aria-label="View Calmly"></a>
+            <div class="app-card__topline"><span>06</span><span class="status status--live">Available</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/calmy_icon.png" alt="Calmly app icon" />
+              <div>
+                <p class="app-card__category">Focus timer</p>
+                <h3>Calmly</h3>
+                <p>Custom focus presets, Live Activities, imported audio, and Apple Watch support.</p>
               </div>
-              <h3 class="system-node__title">SHIP_CYCLE</h3>
-              <p class="system-node__status">STATUS: ALWAYS_ACTIVE</p>
             </div>
-          </div>
+            <div class="app-card__actions"><a href="apps/calmly.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/calmly.html">Support</a></div>
+          </article>
+
+          <article class="app-card reveal" style="--app-color: #3262a8; --app-tint: #dbe6f7;">
+            <a class="app-card__hit-area" href="apps/constellation-restore-game.html" aria-label="View Constellation Restore"></a>
+            <div class="app-card__topline"><span>07</span><span class="status status--live">Available</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/stars_icon.png" alt="Constellation Restore app icon" />
+              <div>
+                <p class="app-card__category">Puzzle game</p>
+                <h3>Constellation Restore</h3>
+                <p>Restore the night sky, unlock its stories, then find the constellations with AR.</p>
+              </div>
+            </div>
+            <div class="app-card__actions"><a href="apps/constellation-restore-game.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/constellation-restore-game.html">Support</a></div>
+          </article>
+
+          <article class="app-card reveal" style="--app-color: #9a5732; --app-tint: #f1dfd2;">
+            <a class="app-card__hit-area" href="apps/warfront-1944.html" aria-label="View Warfront 1944"></a>
+            <div class="app-card__topline"><span>08</span><span class="status">Coming soon</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/warfront1944_icon.png" alt="Warfront 1944 app icon" />
+              <div>
+                <p class="app-card__category">Strategy game</p>
+                <h3>Warfront: 1944</h3>
+                <p>A WWII real-time strategy game with campaigns, skirmishes, and expanding theaters.</p>
+              </div>
+            </div>
+            <div class="app-card__actions"><a href="apps/warfront-1944.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/warfront-1944.html">Support</a></div>
+          </article>
+
+          <article class="app-card reveal" style="--app-color: #c16b27; --app-tint: #fae5ca;">
+            <a class="app-card__hit-area" href="apps/paint-by-numbers.html" aria-label="View Paint by Numbers"></a>
+            <div class="app-card__topline"><span>09</span><span class="status">Coming soon</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/paint_by_numbers.png" alt="Paint by Numbers app icon" />
+              <div>
+                <p class="app-card__category">Creative</p>
+                <h3>Paint by Numbers</h3>
+                <p>Relaxing color-by-number artwork with considered palettes and daily creative prompts.</p>
+              </div>
+            </div>
+            <div class="app-card__actions"><a href="apps/paint-by-numbers.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/paint-by-numbers.html">Support</a></div>
+          </article>
+
+          <article class="app-card reveal" style="--app-color: #5b4a96; --app-tint: #e4def5;">
+            <a class="app-card__hit-area" href="apps/traceflux.html" aria-label="View Traceflux"></a>
+            <div class="app-card__topline"><span>10</span><span class="status">In development</span></div>
+            <div class="app-card__main">
+              <img class="app-card__icon" src="assets/icons/traceflux_icon.svg" alt="Traceflux app icon" />
+              <div>
+                <p class="app-card__category">Puzzle game</p>
+                <h3>Traceflux</h3>
+                <p>A new puzzle idea taking shape in the workshop. More details are coming soon.</p>
+              </div>
+            </div>
+            <div class="app-card__actions"><a href="apps/traceflux.html">View app <span aria-hidden="true">&rarr;</span></a><a href="support/traceflux.html">Support</a></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== TRANSMISSION: CTA ===== -->
-    <section class="section section--transmission">
-      <div class="container">
-        <div class="transmission-card">
-          <div class="transmission-card__bg"></div>
-          <div class="transmission-card__content">
-            <span class="section__tag">// INCOMING_TRANSMISSION</span>
-            <h2 class="transmission-card__title">Built by a small team,<br>driven by quality.</h2>
-            <p class="transmission-card__desc">We're an app studio in Richmond, VA. We combine deliberate design with AI-assisted development to ship software that respects your time and your home screen.</p>
-            <div class="transmission-card__actions">
-              <a href="about.html" class="btn btn--holographic">
-                <span class="btn__glow"></span>
-                <span class="btn__text">About Us</span>
-              </a>
-              <a href="support/index.html" class="btn btn--ghost">
-                <span class="btn__text">Support</span>
-              </a>
+    <section class="principles-section" id="principles">
+      <div class="shell principles-grid">
+        <div class="principles-intro reveal">
+          <p class="eyebrow eyebrow--light"><span></span> How we work</p>
+          <h2>Software should earn its place on your home screen.</h2>
+          <p>That means a clear purpose, a fair business model, and an interface that does not fight for more attention than it deserves.</p>
+          <a class="text-link" href="about.html">More about Pixel Workshop <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <ol class="principles-list">
+          <li class="reveal">
+            <span>01</span>
+            <div><h3>One job, done well</h3><p>Focused scopes make faster, clearer, more reliable products.</p></div>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <div><h3>Private by default</h3><p>On-device storage whenever possible, without surveillance disguised as analytics.</p></div>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <div><h3>Pay once, keep it</h3><p>No recurring fee where a recurring service does not exist.</p></div>
+          </li>
+          <li class="reveal">
+            <span>04</span>
+            <div><h3>Native feels better</h3><p>Built for Apple platforms with the details, speed, and accessibility that implies.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="studio-section" id="studio">
+      <div class="shell">
+        <div class="studio-card reveal">
+          <div class="studio-card__copy">
+            <p class="eyebrow"><span></span> From Richmond, Virginia</p>
+            <h2>Small studio.<br />Long list of ideas.</h2>
+            <p>Pixel Workshop is an independent app company combining deliberate design with modern development tools. The goal is simple: ship polished software without turning users into the product.</p>
+            <div class="studio-card__actions">
+              <a class="button button--ink" href="about.html">About the studio</a>
+              <a class="button button--text" href="support/index.html">Get support</a>
             </div>
+          </div>
+          <div class="studio-card__seal" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="sealPath" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs>
+              <text><textPath href="#sealPath">DESIGNED IN RICHMOND &middot; SHIPPED EVERYWHERE &middot; </textPath></text>
+              <path class="seal-mark" d="M42 42h14v14H42V42Zm22 0h14v14H64V42ZM42 64h14v14H42V64Zm22 0h14v14H64V64Z"/>
+            </svg>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <span class="footer__logo">PIXEL<span class="accent">WORKSHOP</span></span>
-          <span class="footer__location">Richmond, VA</span>
-        </div>
-        <div class="footer__links">
-          <a href="index.html">Apps</a>
-          <a href="about.html">About</a>
-          <a href="support/index.html">Support</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-        </div>
-        <div class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC</div>
+    <div class="shell footer-grid">
+      <div>
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M4 4h8v8H4V4Zm12 0h8v8h-8V4ZM4 16h8v8H4v-8Zm12 0h8v8h-8v-8Z" fill="currentColor"/></svg></span>
+          <span class="brand__name">Pixel Workshop</span>
+        </a>
+        <p>Thoughtful apps for Apple platforms.</p>
       </div>
+      <div class="footer-links">
+        <div><h2>Explore</h2><a href="#apps">Apps</a><a href="about.html">About</a><a href="hire.html">Hire us</a></div>
+        <div><h2>Help</h2><a href="support/index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Pixel Workshop LLC<br />Richmond, Virginia</p>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="js/scene.js"></script>
-  <script src="js/app.js"></script>
-
+  <script src="js/home.js"></script>
 </body>
 </html>

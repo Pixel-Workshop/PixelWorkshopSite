@@ -8,8 +8,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
 
@@ -171,11 +171,39 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer__terminal">
-        <span>&gt; Pixel Workshop LLC // Richmond, VA</span>
-        <span><a href="../index.html">Apps</a> | <a href="../about.html">About</a> | <a href="index.html">Support</a> | <a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a></span>
-        <span>&gt; &copy; <span id="year"></span> // All rights reserved</span>
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <div class="footer__logo">
+            <div class="footer__logo-pixel"></div>
+            Pixel Workshop
+          </div>
+          <p class="footer__tagline">Focused apps for iPhone and iPad, built with care in Richmond, Virginia.</p>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Apps</p>
+          <ul class="footer__nav-links">
+            <li><a href="../apps/match-mint.html">Match Mint</a></li>
+            <li><a href="../apps/refract.html">Refract</a></li>
+            <li><a href="../apps/retro-handheld.html">Retro Handheld</a></li>
+            <li><a href="../apps/calmly.html">Calmly</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Support</p>
+          <ul class="footer__nav-links">
+            <li><a href="../support/index.html">Support Hub</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-heading">Company</p>
+          <ul class="footer__nav-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
       </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Pixel Workshop LLC. All rights reserved. &middot; Richmond, VA</p>
     </div>
   </footer>
 
@@ -205,7 +233,9 @@
         }).then(function(response) {
           if (response.ok) {
             form.reset();
-            form.style.display = 'none';
+            form.querySelectorAll('.form-group, button[type="submit"]').forEach(function(el) {
+              el.style.display = 'none';
+            });
             document.getElementById('traceflux-success').style.display = 'block';
           }
         });
@@ -213,5 +243,6 @@
     }
   </script>
 
+  <script src="../js/site.js"></script>
 </body>
 </html>

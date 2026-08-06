@@ -14,6 +14,10 @@
   });
 
   if ('IntersectionObserver' in window && revealNodes.length) {
+    revealNodes.forEach(function (node) {
+      node.classList.add('will-animate');
+    });
+
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;

@@ -1,0 +1,26 @@
+Solve To Snooze 3.1 — a whole new look, and a smarter way to wake up.
+
+A BRAND-NEW DESIGN
+• Rebuilt from the ground up with Liquid Glass for iOS 26.
+• The alarm screen now has a sky that brightens toward dawn as you work through your challenge, and breaks into a sunrise when you solve it.
+• Escalated alarms burn ember red, so you know it's time to get up.
+• Your next alarm is front and center, with a live countdown and a card tinted to the time of day it rings.
+• Alarms are grouped into Today, Tomorrow, Later and Off.
+
+RELIABILITY CHECK
+• A new checklist makes sure your alarm will actually wake you: alarm access, sound, a practice challenge, and a lock-screen test.
+• If an alarm can't be scheduled, you'll see it right away, with a one-tap Retry.
+
+NOW IN 7 LANGUAGES
+• English, German, Spanish, French, Italian, Dutch and Portuguese.
+
+MORE WAYS TO UNLOCK
+• Along with the Full Unlock, you can now buy just the part you want: the Challenge Pack, the Sound Pack or the Power Pack.
+
+IMPROVEMENTS AND FIXES
+• Memory Pattern tiles have fresh colors, and the card glows with each flash.
+• Math challenges never ask for a negative answer, so you can always type it on the number pad.
+• Escalated alarms now switch to a harder challenge right away.
+• Fixed Memory Pattern sometimes flashing the wrong tiles after a restart.
+
+Sleep well, and earn it.

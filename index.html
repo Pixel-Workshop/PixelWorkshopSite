@@ -9,11 +9,13 @@
   <meta property="og:description" content="Small, focused software made with care in Richmond, Virginia." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta name="theme-color" content="#f4f0e8" />
+  <meta name="theme-color" content="#f4f0e8" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121816" media="(prefers-color-scheme: dark)" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/home.css" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -39,9 +41,9 @@
 
         <div class="nav-menu" id="nav-menu">
           <a href="#apps">Apps</a>
-          <a href="#principles">Principles</a>
-          <a href="#studio">Studio</a>
+          <a href="about.html">About</a>
           <a href="support/index.html">Support</a>
+          <a class="nav-menu__cta" href="hire.html">Hire Us</a>
         </div>
       </nav>
     </div>
@@ -73,19 +75,19 @@
           <div class="hero-stage__note hero-stage__note--top">Small team.<br />Serious craft.</div>
           <div class="hero-stage__grid" aria-hidden="true"></div>
           <div class="icon-tile icon-tile--retro">
-            <img src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld app icon" />
+            <img src="assets/icons/retrohandheld_icon.webp" width="360" height="360" alt="Retro Handheld app icon" decoding="async" />
             <span>Retro Handheld</span>
           </div>
           <div class="icon-tile icon-tile--snooze">
-            <img src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze app icon" />
+            <img src="assets/icons/solvetosnooze_icon.webp" width="360" height="360" alt="Solve To Snooze app icon" decoding="async" />
             <span>Solve To Snooze</span>
           </div>
           <div class="icon-tile icon-tile--calmly">
-            <img src="assets/icons/calmy_icon.png" alt="Calmly app icon" />
+            <img src="assets/icons/calmy_icon.webp" width="360" height="360" alt="Calmly app icon" decoding="async" />
             <span>Calmly</span>
           </div>
           <div class="icon-tile icon-tile--stars">
-            <img src="assets/icons/stars_icon.png" alt="Constellation Restore app icon" />
+            <img src="assets/icons/stars_icon.webp" width="360" height="360" alt="Constellation Restore app icon" decoding="async" />
             <span>Constellation Restore</span>
           </div>
           <div class="hero-stage__stamp" aria-hidden="true">
@@ -113,7 +115,7 @@
             <a class="app-card__hit-area" href="apps/retro-handheld.html" aria-label="View Retro Handheld"></a>
             <div class="app-card__topline"><span>01</span><span class="status status--live">Available</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/retrohandheld_icon.png" alt="Retro Handheld app icon" />
+              <img class="app-card__icon" src="assets/icons/retrohandheld_icon.webp" width="360" height="360" alt="Retro Handheld app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Emulator</p>
                 <h3>Retro Handheld</h3>
@@ -130,7 +132,7 @@
             <a class="app-card__hit-area" href="apps/solve-to-snooze.html" aria-label="View Solve To Snooze"></a>
             <div class="app-card__topline"><span>02</span><span class="status status--live">Available</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/solvetosnooze_icon.png" alt="Solve To Snooze app icon" />
+              <img class="app-card__icon" src="assets/icons/solvetosnooze_icon.webp" width="360" height="360" alt="Solve To Snooze app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Utility</p>
                 <h3>Solve To Snooze</h3>
@@ -147,7 +149,7 @@
             <a class="app-card__hit-area" href="apps/match-mint.html" aria-label="View Match Mint"></a>
             <div class="app-card__topline"><span>03</span><span class="status status--live">Available</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/matchmint_icon.svg" alt="Match Mint app icon" />
+              <img class="app-card__icon" src="assets/icons/matchmint_icon.svg" alt="Match Mint app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Puzzle game</p>
                 <h3>Match Mint</h3>
@@ -161,7 +163,7 @@
             <a class="app-card__hit-area" href="apps/refract.html" aria-label="View Refract"></a>
             <div class="app-card__topline"><span>04</span><span class="status status--live">Available</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/refract_icon.png" alt="Refract app icon" />
+              <img class="app-card__icon" src="assets/icons/refract_icon.webp" width="360" height="360" alt="Refract app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Puzzle game</p>
                 <h3>Refract</h3>
@@ -175,7 +177,7 @@
             <a class="app-card__hit-area" href="apps/forge-sets.html" aria-label="View ForgeSets"></a>
             <div class="app-card__topline"><span>05</span><span class="status">Coming soon</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/forgesets_icon.png" alt="ForgeSets app icon" />
+              <img class="app-card__icon" src="assets/icons/forgesets_icon.webp" width="360" height="360" alt="ForgeSets app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Fitness</p>
                 <h3>ForgeSets</h3>
@@ -189,7 +191,7 @@
             <a class="app-card__hit-area" href="apps/calmly.html" aria-label="View Calmly"></a>
             <div class="app-card__topline"><span>06</span><span class="status status--live">Available</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/calmy_icon.png" alt="Calmly app icon" />
+              <img class="app-card__icon" src="assets/icons/calmy_icon.webp" width="360" height="360" alt="Calmly app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Focus timer</p>
                 <h3>Calmly</h3>
@@ -203,7 +205,7 @@
             <a class="app-card__hit-area" href="apps/constellation-restore-game.html" aria-label="View Constellation Restore"></a>
             <div class="app-card__topline"><span>07</span><span class="status status--live">Available</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/stars_icon.png" alt="Constellation Restore app icon" />
+              <img class="app-card__icon" src="assets/icons/stars_icon.webp" width="360" height="360" alt="Constellation Restore app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Puzzle game</p>
                 <h3>Constellation Restore</h3>
@@ -217,7 +219,7 @@
             <a class="app-card__hit-area" href="apps/warfront-1944.html" aria-label="View Warfront 1944"></a>
             <div class="app-card__topline"><span>08</span><span class="status">Coming soon</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/warfront1944_icon.png" alt="Warfront 1944 app icon" />
+              <img class="app-card__icon" src="assets/icons/warfront1944_icon.webp" width="360" height="360" alt="Warfront 1944 app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Strategy game</p>
                 <h3>Warfront: 1944</h3>
@@ -231,7 +233,7 @@
             <a class="app-card__hit-area" href="apps/paint-by-numbers.html" aria-label="View Paint by Numbers"></a>
             <div class="app-card__topline"><span>09</span><span class="status">Coming soon</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/paint_by_numbers.png" alt="Paint by Numbers app icon" />
+              <img class="app-card__icon" src="assets/icons/paint_by_numbers.webp" width="360" height="360" alt="Paint by Numbers app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Creative</p>
                 <h3>Paint by Numbers</h3>
@@ -245,7 +247,7 @@
             <a class="app-card__hit-area" href="apps/traceflux.html" aria-label="View Traceflux"></a>
             <div class="app-card__topline"><span>10</span><span class="status">In development</span></div>
             <div class="app-card__main">
-              <img class="app-card__icon" src="assets/icons/traceflux_icon.svg" alt="Traceflux app icon" />
+              <img class="app-card__icon" src="assets/icons/traceflux_icon.svg" alt="Traceflux app icon" loading="lazy" decoding="async" />
               <div>
                 <p class="app-card__category">Puzzle game</p>
                 <h3>Traceflux</h3>

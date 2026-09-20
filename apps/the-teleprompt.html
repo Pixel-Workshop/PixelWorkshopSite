@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Teleprompt — Pixel Workshop</title>
-  <meta name="description" content="The Teleprompt is a video teleprompter for iPhone and iPad. Write scripts, read them right under the lens, and record with the front or rear camera." />
+  <meta name="description" content="The Teleprompt is a video teleprompter for iPhone and iPad. Read your script while you record, import from Files, Mail, or Notes, export .srt captions, and drive the prompter from a keyboard, game controller, Apple Watch, or a browser." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +54,7 @@
           <div class="app-hero__badges">
             <p class="app-hero__category">PHOTO &amp; VIDEO // PRODUCTIVITY</p>
             <span class="app-card__platform-badge">iPhone &amp; iPad</span>
+            <span class="app-card__platform-badge">Apple Watch</span>
             <span class="app-card__platform-badge">iCloud Sync</span>
             <span class="app-card__platform-badge">One-Time Pro</span>
             <span class="badge--coming-soon">Coming Soon</span>
@@ -67,7 +68,7 @@
               <span class="btn__label-main">App Store</span>
             </span>
           </a>
-          <p class="app-hero__note">Version 1.0 is in final device validation. Requires iOS or iPadOS 17 and later.</p>
+          <p class="app-hero__note">Version 1.0 has been submitted and is pending App Store review. Requires iOS or iPadOS 17 and later.</p>
         </div>
       </div>
     </div>
@@ -78,32 +79,20 @@
     <div class="container">
       <p class="section-label">Screenshots</p>
       <h2 class="section-title">A Look at the App</h2>
-      <p class="section-desc">Final captures are being made on real devices ahead of launch. Here is what each one will show.</p>
+      <p class="section-desc">Captured from the shipping build. The recording screen is shot on a real device rather than the simulator, so it isn&apos;t in this set yet.</p>
+      <p class="screenshots__label">iPhone</p>
       <div class="screenshots">
-        <div class="screenshot screenshot--placeholder">
-          <div class="screenshot-placeholder__content">
-            <strong>Keep your words in view</strong>
-            <span>The camera preview with the scrolling script band sitting close to the lens.</span>
-          </div>
-        </div>
-        <div class="screenshot screenshot--placeholder">
-          <div class="screenshot-placeholder__content">
-            <strong>Make the script fit you</strong>
-            <span>Prompt mode with the type, color, margin, and speed controls open.</span>
-          </div>
-        </div>
-        <div class="screenshot screenshot--placeholder">
-          <div class="screenshot-placeholder__content">
-            <strong>Give yourself a cue</strong>
-            <span>A script with [pause] and [smile] highlighted, plus the reading indicator.</span>
-          </div>
-        </div>
-        <div class="screenshot screenshot--placeholder">
-          <div class="screenshot-placeholder__content">
-            <strong>Ready for the next take</strong>
-            <span>The library and folder views, with word counts and estimated reading time.</span>
-          </div>
-        </div>
+        <div class="screenshot"><img src="../assets/screenshots/theteleprompt/01-library.webp" width="644" height="1400" alt="The Scripts library with four scripts, each showing a preview, word count, and estimated reading time" loading="lazy" decoding="async" /></div>
+        <div class="screenshot"><img src="../assets/screenshots/theteleprompt/02-editor.webp" width="644" height="1400" alt="The script editor with [pause] and [smile] cues in the text, and Record and Prompt buttons at the bottom" loading="lazy" decoding="async" /></div>
+        <div class="screenshot"><img src="../assets/screenshots/theteleprompt/03-prompt-mode.webp" width="644" height="1400" alt="Prompt mode scrolling a script in large type with the cues highlighted in yellow and a transport bar below" loading="lazy" decoding="async" /></div>
+        <div class="screenshot"><img src="../assets/screenshots/theteleprompt/04-settings.webp" width="644" height="1400" alt="Prompter Settings with font, size, text colour, and a pace picker set to Reading Time, Timed, or Speed" loading="lazy" decoding="async" /></div>
+        <div class="screenshot"><img src="../assets/screenshots/theteleprompt/05-pro.webp" width="644" height="1400" alt="The Teleprompt Pro screen listing unlimited script imports, text mirroring, 4K recording, and a one-time purchase" loading="lazy" decoding="async" /></div>
+      </div>
+      <p class="screenshots__label">iPad</p>
+      <div class="screenshots screenshots--tablet">
+        <div class="screenshot screenshot--tablet"><img src="../assets/screenshots/theteleprompt/ipad-01-library.webp" width="1080" height="1440" alt="The library on iPad in a split view, with the script list beside the editor" loading="lazy" decoding="async" /></div>
+        <div class="screenshot screenshot--tablet"><img src="../assets/screenshots/theteleprompt/ipad-03-prompt-mode.webp" width="1080" height="1440" alt="Prompt mode filling the iPad screen with a scrolling script" loading="lazy" decoding="async" /></div>
+        <div class="screenshot screenshot--tablet"><img src="../assets/screenshots/theteleprompt/ipad-04-settings.webp" width="1080" height="1440" alt="Prompter Settings open over a script on iPad" loading="lazy" decoding="async" /></div>
       </div>
     </div>
   </section>
@@ -124,13 +113,13 @@
         <div class="feature-item">
           <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></div>
           <p class="feature-item__title">Find Your Reading Rhythm</p>
-          <p class="feature-item__desc">Adjust scrolling speed, text size, font, colors, and margins until the page reads the way you talk. Tap the text to pause or resume, and drag to find your place again.</p>
+          <p class="feature-item__desc">Adjust speed, text size, font, colors, and margins until the page reads the way you talk. Set a duration and let the pace follow it, or drive the pace by speed. Tap the text to pause or resume, and drag to find your place again.</p>
         </div>
 
         <div class="feature-item">
           <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v20" stroke-dasharray="3 3"/><path d="M9 5L3 12l6 7Z"/><path d="M15 5l6 7-6 7Z"/></svg></div>
-          <p class="feature-item__title">Mirroring and Direction</p>
-          <p class="feature-item__desc">Flip the text horizontally or vertically for a beam splitter or a mirrored rig, and reverse the scrolling direction when your setup calls for it.</p>
+          <p class="feature-item__title">Mirroring for Rigs</p>
+          <p class="feature-item__desc">Flip the text horizontally or vertically for a beam splitter or a mirrored teleprompter rig, and reverse the scrolling direction when your setup calls for it. Included with Pro.</p>
         </div>
 
         <div class="feature-item">
@@ -148,13 +137,31 @@
         <div class="feature-item">
           <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
           <p class="feature-item__title">A Library That Stays Tidy</p>
-          <p class="feature-item__desc">Write and edit in one place, sort and search your scripts, group them in folders, and check word count and estimated reading time before a take.</p>
+          <p class="feature-item__desc">Write and edit in one place, sort and search your scripts, drag them into the order you want, group them in folders, and check word count and estimated reading time before a take.</p>
         </div>
 
         <div class="feature-item">
           <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
           <p class="feature-item__title">iCloud Sync</p>
           <p class="feature-item__desc">Scripts and folders sync between your iPhone and iPad through your private iCloud database when iCloud is available. No app account to create.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+          <p class="feature-item__title">Bring In What You Already Wrote</p>
+          <p class="feature-item__desc">Import a script from Files, Mail, or Notes as plain text, Rich Text, PDF, or Word. Send a script back out as text or Rich Text, or back up your whole library to a single file and restore it on another device.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="6" y1="13" x2="11" y2="13"/><line x1="13" y1="13" x2="18" y2="13"/><line x1="6" y1="16" x2="14" y2="16"/></svg></div>
+          <p class="feature-item__title">Caption Your Take</p>
+          <p class="feature-item__desc">Get an .srt subtitle file for any recording. The timings come from your script and how fast it scrolled rather than from transcribing the audio, so they follow your delivery.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="3"/><line x1="7" y1="12" x2="11" y2="12"/><line x1="9" y1="10" x2="9" y2="14"/><circle cx="16" cy="11" r="1"/><circle cx="18.5" cy="13" r="1"/></svg></div>
+          <p class="feature-item__title">Control It Without Touching the Screen</p>
+          <p class="feature-item__desc">Use a Bluetooth keyboard, a presentation remote, or a foot pedal that sends arrow keys — all included free. A connected game controller works the same way. With Pro, add the Apple Watch app on your wrist and a browser remote on your laptop.</p>
         </div>
 
         <div class="feature-item">
@@ -184,10 +191,12 @@
           </div>
           <div class="pricing-card__body">
             <ul class="pricing-card__features">
-              <li>Up to 3 scripts</li>
+              <li>Unlimited scripts</li>
+              <li>Up to 5 imported documents</li>
               <li>Recording up to 1080p</li>
-              <li>Full prompting and appearance controls</li>
-              <li>Mirroring, cues, marks, and folders</li>
+              <li>Full prompting, pacing, and appearance controls</li>
+              <li>Cues, marks, folders, and .srt captions</li>
+              <li>Keyboard, pedal, and game controller remotes</li>
               <li>Prompt mode for camera-free rehearsal</li>
             </ul>
           </div>
@@ -197,15 +206,17 @@
           <div class="pricing-card__header">
             <p class="pricing-card__tier">The Teleprompt Pro</p>
             <p class="pricing-card__price">One-time</p>
-            <p class="pricing-card__subtitle">Unlimited scripts. 4K on supported devices.</p>
+            <p class="pricing-card__subtitle">Unlimited imports. Mirroring. 4K on supported devices.</p>
           </div>
           <div class="pricing-card__body">
             <ul class="pricing-card__features">
-              <li>Unlimited scripts</li>
+              <li>Unlimited document imports</li>
+              <li>Horizontal and vertical text mirroring</li>
+              <li>Apple Watch remote on your wrist</li>
+              <li>Browser remote from a laptop on the same network</li>
               <li>4K recording on supported devices</li>
               <li>Everything in the free version</li>
-              <li>One purchase, no subscription</li>
-              <li>Restore on your other devices</li>
+              <li>One purchase, no subscription, restores on your other devices</li>
             </ul>
           </div>
         </div>

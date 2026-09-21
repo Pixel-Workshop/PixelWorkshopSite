@@ -657,6 +657,12 @@ div {
   height: auto;
 }
 
+/* Watch captures are nearly square, so the shared 560px height would render them
+   wider than the iPhone shots sitting next to them */
+.screenshot--watch img {
+  height: 340px;
+}
+
 .screenshot--placeholder {
   min-height: 420px;
   display: grid;
@@ -1580,6 +1586,10 @@ div {
   .screenshots--tablet .screenshot img,
   .screenshot--tablet img {
     height: auto;
+  }
+
+  .screenshot--watch img {
+    height: 280px;
   }
 }
 

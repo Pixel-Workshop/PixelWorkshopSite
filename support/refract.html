@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Refract Support — Pixel Workshop</title>
-  <meta name="description" content="Support and FAQ for Refract, the laser puzzle game for iPhone and iPad with accessibility, Game Center, and a daily challenge widget." />
+  <meta name="description" content="Support and FAQ for Refract, the neon laser puzzle game for iPhone and iPad &mdash; stars and hints, the daily board, colorblind assist, and restoring purchases." />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,11 +83,11 @@
 
         <div class="faq-item">
           <button class="faq-item__question">
-            How do I change music, sound effects, or haptics?
+            How do I change sound effects or haptics?
             <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-item__answer">
-            Open the Settings screen in Refract. Music, sound effects, and haptics can each be toggled independently so you can tune the feel of the game to your preference.
+            Open the Settings tab in Refract. Sound effects and haptics each have their own toggle. Refract plays no music of its own &mdash; its chimes are mixed so that whatever you are already listening to keeps playing.
           </div>
         </div>
 
@@ -97,27 +97,17 @@
             <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-item__answer">
-            Yes. Refract includes color blind palettes for Deuteranopia, Protanopia, and Tritanopia, plus an optional symbol overlay so beams are readable by shape as well as color.
+            Yes. Turn on Colorblind assist in the Settings tab and every beam colour is given its own distinct shape, so no puzzle information depends on colour alone. Refract also supports VoiceOver, Dynamic Type and Reduce Motion.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">
-            How do Game Center achievements and leaderboards work?
-            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            How do stars and hints work?
+<svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-item__answer">
-            Refract supports Game Center achievements for stars earned, puzzles solved, login streaks, and hint-free clears. Leaderboards track total stars and login streak globally when you are signed into Game Center.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-item__question">
-            Why is my Game Center progress or streak not syncing?
-            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="faq-item__answer">
-            Make sure you are signed into Game Center in iOS Settings and that you have an internet connection available. Core puzzle progress remains on-device, but Game Center features need Apple&apos;s service to sync achievements and leaderboard data.
+            Finishing a board earns the first star, solving it within the move budget earns the second, and a clean run &mdash; inside par plus two, with no hints and without clearing the board &mdash; earns the third. Taking a mirror back off the grid is always free and never counts against you. Hints come in two stages: the first marks the cell, the second places the mirror, and only the first one charges.
           </div>
         </div>
 
@@ -127,17 +117,17 @@
             <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-item__answer">
-            Core gameplay and local progress do not require an internet connection. Game Center achievements, leaderboards, and profile sync use Apple&apos;s services and may need internet access to update.
+            No. Every level ships inside the app and your progress is stored on your device, so Refract plays fully offline. The only network traffic is Apple&apos;s StoreKit, used when you make or restore an App Store purchase.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">
-            How do I add the daily challenge widget?
+            How does the daily board work?
             <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-item__answer">
-            Touch and hold your Home Screen, tap Edit, then Add Widget. Search for Refract and choose the daily challenge widget. Tapping it will deep link you straight into today&apos;s challenge.
+            Open the Daily tab. The board there is built for that date rather than pulled from the campaign, it is the same one everyone gets that day, and it resets at midnight. Solving it earns bonus coins and gems.
           </div>
         </div>
 
@@ -207,8 +197,8 @@
             <option value="Puzzle rules">Puzzle rules</option>
             <option value="Audio / haptics">Audio / haptics</option>
             <option value="Accessibility">Accessibility</option>
-            <option value="Game Center">Game Center</option>
-            <option value="Widget / daily challenge">Widget / daily challenge</option>
+            <option value="Stars / hints">Stars / hints</option>
+            <option value="Daily board">Daily board</option>
             <option value="Progress or save data">Progress or save data</option>
             <option value="Visual issue">Visual issue</option>
             <option value="Performance">Performance</option>
